@@ -1,0 +1,115 @@
+
+@media (max-width: 850px) {
+  .norm_padding {
+    padding: 12px 36px 12px 36px !important;
+  }
+  .box:last-child {
+    display: none;
+  }
+  .box:before {
+    margin-top: 100% !important;
+  }
+  .box {
+    width: 24% !important;
+  }
+  .blocks .box_line:nth-child(3) {
+    display: none !important;
+  }
+  .left {
+    width: 50% !important;
+    flex-direction: column !important;
+  }
+  .right {
+    width: 50% !important;
+    flex-direction: column-reverse !important;
+  }
+  .box_big {
+    width: 100% !important;
+  }
+  .box_smalls {
+    flex-direction: row !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+  }
+  .right .box_smalls {
+    margin-bottom: 10px !important;
+    margin-top: 0 !important;
+  }
+  .box_small:before {
+    margin-top: 100% !important; 
+  }
+  .box_smalls .box_small {
+    height: 100% !important;
+    width: 48.5% !important;    
+  }
+  .name_category {
+    display: none !important;   
+  }
+  .about_us .mid {
+    flex-direction: column !important;
+  }
+  .about_us .mid .block {
+    margin-bottom: 10px !important;
+    width: 100% !important;
+  }
+  .about_us .mid .block p{
+    width: 60% !important;
+    margin: auto !important;
+  }
+
+  footer .info {
+    flex-direction: row !important;
+  }
+  footer .cell {
+    width: 25% !important;
+  }
+  .cell ul {
+    display: block !important;
+  }
+  #options_frame .modal {
+    width: 600px !important;
+    left: 50% !important;
+    margin-top: -300px !important; 
+  }
+}
+/*for window option*/
+@media (max-width: 680px){
+  #options_frame .modal {
+    width: 80% !important;
+    left: 10% !important;
+    margin-left: 0px !important ;
+  }
+}
+@media (max-width: 500px) {
+  .norm_padding {
+    padding: 12px 10px 12px 10px !important;
+  }
+  header {
+    padding: 12px 10px 12px 10px !important;
+  }
+  .blocks .box_line {
+    margin: 0 0 10px 0 !important;
+  }
+  .blocks .box_line:nth-child(3) {
+    display: flex !important;
+  }
+  .box:nth-child(3) {
+    display: none !important;
+  }
+  .box:nth-child(4) {
+    display: none !important;
+  }
+  .box {
+    width: 49% !important;
+  }
+
+  footer .info {
+    flex-direction: column !important;
+  }
+  footer .cell {
+    width: 100% !important;
+  }
+  /*.cell ul {
+    display: none !important;
+  }*/
+}
