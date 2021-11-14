@@ -61,17 +61,25 @@
     flex-direction: row !important;
   }
   footer .cell {
-    width: 25% !important;
-  }
-  .cell ul {
-    display: block !important;
+    width: 100% !important;
   }
   #options_frame .modal {
     width: 600px !important;
     left: 50% !important;
     margin-top: -300px !important; 
   }
+  body footer .info .cell .wapper {
+    width: 100px !important;
+  }
 }
+
+
+
+
+
+
+
+
 /*for window option*/
 @media (max-width: 680px){
   #options_frame .modal {
@@ -80,6 +88,12 @@
     margin-left: 0px !important ;
   }
 }
+
+
+
+
+
+
 @media (max-width: 500px) {
   .norm_padding {
     padding: 12px 10px 12px 10px !important;
@@ -107,9 +121,16 @@
     flex-direction: column !important;
   }
   footer .cell {
-    width: 100% !important;
+    /*width: 100% !important;*/
   }
-  /*.cell ul {
-    display: none !important;
-  }*/
+  footer .cell:hover{
+    box-shadow: 0 0 1px 5px #0000003b;
+  }
+  body footer .info .cell .wapper {
+    margin: 10px 0 0 10px !important;
+  }
+  body footer .info .cell .wapper {
+    width: 99% !important; 
+
+}
 }

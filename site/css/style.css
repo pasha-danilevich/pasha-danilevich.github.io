@@ -90,23 +90,6 @@ a {
   color: black;
 }
 
-.nav {
-  display: block;
-  width: 100%;
-  position: relative;
-  position: fixed;
-  z-index: 10;
-}
-
-#bar {
-  position: absolute;
-  left: -8px;
-  bottom: 6px;
-  background-color: red;
-  width: 0px;
-  height: 3px;
-}
-
 .norm_padding {
   padding: 12px 36px 12px 36px !important;
 }
@@ -526,16 +509,15 @@ body section.about_us .bottom button {
   left: calc(50% - 60px);
 }
 body footer .info {
-  padding: 50px 0px 50px 0px;
+  padding: 50px 7px 50px 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: darkgray;
 }
-body footer .info h2 {
+body footer .info .h2_button {
   font-size: 20px;
-  color: #6b6b6b;
-  margin-bottom: 10px;
+  display: block;
 }
 body footer .info ul {
   padding: 0;
@@ -550,11 +532,19 @@ body footer .info ul li a {
   text-decoration: none;
 }
 body footer .info .cell {
+  border-radius: 6px;
   width: 25%;
+  -webkit-transition: -webkit-box-shadow 200ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+  transition: -webkit-box-shadow 200ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+  transition: box-shadow 200ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+  transition: box-shadow 200ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-box-shadow 200ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
 }
 body footer .info .cell .wapper {
   margin: 0 auto;
   width: 100px;
+}
+body footer .info .cell .wapper #list {
+  display: none;
 }
 body footer .botton {
   padding: 10px 10px 10px 50px;
@@ -709,4 +699,25 @@ body footer .botton .options ul li:last-child {
 body footer .botton .copyright {
   margin-right: 20px;
   padding: 5px 0 0 0;
+}
+body .nav {
+  display: block;
+  width: 100%;
+  position: relative;
+  position: fixed;
+  z-index: 10;
+}
+body #bar {
+  position: absolute;
+  left: -8px;
+  bottom: 6px;
+  background-color: red;
+  width: 0px;
+  height: 3px;
+}
+body .menu_item {
+  display: none;
+}
+body .active {
+  display: inline-block;
 }

@@ -82,24 +82,6 @@ a {
 	text-decoration: none;
 	color: black;
 }
-// --------------------------------------------------------------
-.nav {
-  display: block;
-  width: 100%;
-  position: relative;
-  position: fixed;
-  z-index: 10;
-}
-
-#bar{
-    position:absolute;
-    left: -8px;
-    bottom: 6px;
-    background-color:red;
-    width: 0px;
-    height: 3px;
-}
-// --------------------------------------------------------------
 
 .norm_padding {
 	padding: 12px 36px 12px 36px !important;
@@ -499,13 +481,12 @@ body {
 	}
 	footer{
 		.info {
-			padding: 50px 0px 50px 0px;
+			padding: 50px 7px 50px 7px;
 			display: flex;
 			background-color: rgb(169 169 169);
-			h2 {
+			.h2_button {
 				font-size: 20px;
-				color: rgb(107 107 107);
-				margin-bottom: 10px;
+				display: block;
 			}
 			ul {
 				padding: 0;
@@ -520,12 +501,18 @@ body {
 				}
 			}
 			.cell {
+				border-radius: 6px;
 				width: 25%;
+				transition: box-shadow 200ms cubic-bezier(.2,0,.7,1), transform 200ms cubic-bezier(.2,0,.7,1);
 				.wapper {
 					margin: 0 auto;
 					width: 100px;
+					#list {
+						display: none;
+					}
 				}
 			}
+
 			.shop {
 			}
 			.sell {
@@ -684,6 +671,33 @@ body {
 
 		}
 	}
+// --------------------------------------------------------------
+.nav {
+  display: block;
+  width: 100%;
+  position: relative;
+  position: fixed;
+  z-index: 10;
+}
+
+#bar{
+    position:absolute;
+    left: -8px;
+    bottom: 6px;
+    background-color:red;
+    width: 0px;
+    height: 3px;
+}
+.menu_item{
+  display: none;
+}
+
+.active{
+  display: inline-block;
+}
+
+// --------------------------------------------------------------
+
 }
 
 
