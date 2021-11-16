@@ -9,6 +9,7 @@ $(function () {
     $('#list').show();
   });
 });
+
 $(document).ready(function(){
   $('.menu-mobile').on('click',function(){
     if($(this).next().hasClass('active')){
