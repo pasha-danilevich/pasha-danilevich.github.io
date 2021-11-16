@@ -71,6 +71,13 @@
   body footer .info .cell .wapper {
     width: 100px !important;
   }
+  footer .botton .flex {
+    width: 300px !important;
+    flex-direction: column;
+  }
+  footer .botton .copyright{
+    padding: 0 !important;
+  }
 }
 
 
@@ -131,6 +138,41 @@
   }
   body footer .info .cell .wapper {
     width: 99% !important; 
-
+  }
+  #options_frame .modal .main_options {
+    height: 375px !important;
+  }
+  #options_frame .modal .buttons div{
+    padding: 0 10px !important;
+  }
+  #options_frame .modal .buttons #close{
+    width: 100% !important;
+  }
+  #options_frame .modal .buttons #save{
+    width: 100% !important;
+  }
+  #options_frame .modal i {
+    right: 27px !important;
+  }
+  #options_frame .modal select {
+    width: 92% !important;
+  }
+  #options_frame .modal .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #options_frame .modal .buttons div{
+    padding: 0 10px !important;
+  }
+  #options_frame .modal .buttons #close{
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+  #options_frame .modal .buttons #save{
+    width: 100% !important;
+  }
 }
+@media (max-width: 350px) {
+  
 }
