@@ -46,8 +46,12 @@ function changeLanguage() {
     document.querySelector('title').innerHTML = langArr['unit'][hash];
     for (let key in langArr) {
         let elem = document.querySelector('.lng-' + key);
+        let elem_input = document.querySelector('.lng-input-' + key);
         if (elem) {
             elem.innerHTML = langArr[key][hash];
+        }
+        if (elem_input) {
+            elem_input.placeholder = langArr[key][hash];
         }
 
     }
@@ -55,3 +59,4 @@ function changeLanguage() {
 }
 
 changeLanguage();
+

@@ -514,6 +514,8 @@ body footer .info {
   display: -ms-flexbox;
   display: flex;
   background-color: darkgray;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 body footer .info .menu-mobile {
   font-size: 22px;
@@ -562,7 +564,7 @@ body footer .botton .options {
   position: relative;
 }
 body footer .botton .options input {
-  width: 219px;
+  width: 233px;
   position: absolute;
   top: 16px;
   left: 39px;
