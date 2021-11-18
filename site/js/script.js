@@ -1,3 +1,13 @@
+$(function (){
+  $('#sing_up_button').click(function (){
+    $('#sing_up_back_show').show();
+  })
+  $('#close_sing_up').click(function(){
+    $('#sing_up_back_show').hide();
+  })
+});
+
+
 $(function () {
   $('#options_frame_').click(function () {
     $('#options_frame').show();

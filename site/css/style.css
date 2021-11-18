@@ -192,6 +192,173 @@ header .top .sing_up {
   margin-left: auto;
   padding: 8px 0px 0px 30px;
 }
+header .top .sing_up div {
+  width: 22px;
+  height: 22px;
+}
+header .top .sing_up i {
+  cursor: pointer;
+}
+header .top .sing_up_back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: none;
+  -webkit-transition: 0.3s, 0.1s;
+  transition: 0.3s, 0.1s;
+}
+header .top .sing_up_back .sing_up_modal {
+  width: 600px;
+  height: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -300px;
+  background-color: #fff;
+  background: url("/img/scale_1200.webp");
+  border-radius: 10px;
+  z-index: 11;
+  color: #000;
+}
+header .top .sing_up_back .sing_up_modal .wapper {
+  padding: 0px 50px;
+  height: 100%;
+  background-color: #0000004f;
+  border-radius: 10px;
+}
+header .top .sing_up_back .sing_up_modal .hello {
+  height: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 25px 0 0 0;
+  text-transform: uppercase;
+  color: white;
+}
+header .top .sing_up_back .sing_up_modal .hello span {
+  font-size: 35px;
+}
+header .top .sing_up_back .sing_up_modal .steps {
+  height: 100px;
+}
+header .top .sing_up_back .sing_up_modal .main .icon {
+  height: 50px;
+  width: 10%;
+  background-color: #000000b5;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+header .top .sing_up_back .sing_up_modal .main .icon i {
+  color: white;
+  font-size: 22px;
+  margin: 15px;
+}
+header .top .sing_up_back .sing_up_modal .main .input {
+  height: 50px;
+  width: 90%;
+  background-color: #000000b5;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+header .top .sing_up_back .sing_up_modal .main .input input {
+  background-color: #fff0;
+  border: none;
+  height: 100%;
+  width: 100%;
+  color: white;
+  outline: none;
+  padding: 0 0 0 15px;
+}
+header .top .sing_up_back .sing_up_modal .main .name {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+header .top .sing_up_back .sing_up_modal .main .email {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+header .top .sing_up_back .sing_up_modal .main .passwords {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .top .sing_up_back .sing_up_modal .main .passwords .icon {
+  height: 50px;
+  width: 22.5%;
+  background-color: #000000b5;
+}
+header .top .sing_up_back .sing_up_modal .main .passwords input {
+  width: 93%;
+}
+header .top .sing_up_back .sing_up_modal .main .passwords .passwodr-one {
+  width: 47%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .top .sing_up_back .sing_up_modal .main .passwords .password-two {
+  width: 47%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .top .sing_up_back .sing_up_modal .buttons {
+  height: 100px;
+  padding: 50px 0 0 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .top .sing_up_back .sing_up_modal .buttons #close_sing_up {
+  height: 50px;
+  width: 47%;
+  background-color: #000000b5;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+header .top .sing_up_back .sing_up_modal .buttons #continue_sing_up {
+  height: 50px;
+  width: 47%;
+  background-color: #000000b5;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+header .top .sing_up_back .sing_up_modal .info {
+  height: 100px;
+  padding: 50px 0 0 0;
+}
+header .top .sing_up_back .sing_up_modal .info p {
+  color: white;
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: center;
+}
 header .top .bascket {
   width: 34px;
   height: 48px;
@@ -199,6 +366,7 @@ header .top .bascket {
 }
 header .top .bascket i {
   font-size: 20px;
+  cursor: pointer;
 }
 header .top .bascket .fa-shopping-basket {
   float: right;
@@ -611,7 +779,15 @@ body footer .botton .options #options_frame .modal i:nth-child(5) {
   top: 291px;
   right: 45px;
 }
-body footer .botton .options #options_frame .modal select {
+body footer .botton .options #options_frame .modal .wapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body footer .botton .options #options_frame .modal .wapper select {
   -webkit-transition: border-color 200ms ease-out, -webkit-box-shadow 200ms ease-out;
   transition: border-color 200ms ease-out, -webkit-box-shadow 200ms ease-out;
   transition: border-color 200ms ease-out, box-shadow 200ms ease-out;
@@ -619,7 +795,6 @@ body footer .botton .options #options_frame .modal select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  margin: 0 20px 0 20px;
   width: 92%;
   height: 48px;
   padding-left: 12px;

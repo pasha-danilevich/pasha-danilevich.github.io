@@ -170,14 +170,170 @@ header {
 			height: 48px;
 			margin-left: auto;
 			padding: 8px 0px 0px 30px;
-
+			div {
+				width: 22px;
+				height: 22px;
+			}
+			i {
+				cursor: pointer;
+			}
 		}
+		.sing_up_back {
+					position: fixed;
+			    top: 0;
+			    left: 0;
+			    height: 100%;
+			    width: 100%;
+			    background-color: rgba(0,0,0,0.5);
+			    z-index: 10;
+					display: none;
+					transition: .30s , .10s ;
+					.sing_up_modal {
+				    width: 600px;
+				    height: 600px;
+				    position: fixed;
+				    top: 50%; 
+				    left: 50%;
+				    margin-top: -300px;
+				    margin-left: -300px;
+				    background-color: #fff;
+				    background: url('/img/scale_1200.webp');
+				    border-radius: 10px;
+				    z-index: 11;
+				    color: #000;
+				    .wapper {
+				    	padding: 0px 50px;
+					    height: 100%;
+					    background-color: #0000004f;
+					    border-radius: 10px;
+				    }
+				    .hello {
+				    	height: 100px;
+					    font-size: 30px;
+					    font-weight: bold;
+					    text-align: center;
+					    padding: 25px 0 0 0;
+					    text-transform: uppercase;
+					    color: white;
+				    	span {
+				    		font-size: 35px;
+				    	}
+						}
+						.steps {
+							height: 100px;
+						}
+						.main {
+							.icon{
+								height: 50px;
+								width: 10%;
+								background-color: #000000b5;
+								border-radius: 10px;
+								border-top-right-radius: 0;
+								border-bottom-right-radius: 0;
+								i {
+									color: white;
+									font-size: 22px;
+									margin: 15px;
+								}
+
+							}
+							.input{
+								height: 50px;
+								width: 90%;
+								background-color: #000000b5;
+    						border-radius: 10px;
+								border-top-left-radius: 0;
+								border-bottom-left-radius: 0;
+								input {
+									background-color: #fff0;
+							    border: none;
+							    height: 100%;
+							    width: 100%;
+							    color: white;
+							    outline: none;
+							    padding: 0 0 0 15px;
+								}
+							}
+							.name {
+								height: 50px;
+								display: flex;
+								margin-bottom: 20px;
+							}
+							.email {
+								height: 50px;
+								display: flex;
+								margin-bottom: 20px;
+							}
+							.passwords {
+								height: 50px;
+								display: flex;
+								justify-content: space-between;
+								.icon{
+									height: 50px;
+									width: 22.5%;
+									background-color: #000000b5;
+								}
+								input {
+									width: 93%;
+								}
+								.passwodr-one {
+									width: 47%;
+									height: 50px;
+									display: flex;
+								}
+								.password-two {
+									width: 47%;
+									height: 50px;
+									display: flex;
+								}
+							}
+						}
+						.buttons {
+							height: 100px;
+							padding: 50px 0 0 200px;
+							display: flex;
+							justify-content: space-between;
+
+							#close_sing_up {
+								height: 50px;
+								width: 47%;
+								background-color: #000000b5;
+								border-radius: 10px;
+								border: 0;
+								color: white;
+								cursor: pointer;
+
+							}
+							#continue_sing_up {
+								height: 50px;
+								width: 47%;
+								background-color: #000000b5;
+								border-radius: 10px;
+								border: 0;
+								color: white;
+								cursor: pointer;
+							}
+						}
+						.info {
+							height: 100px;
+							padding: 50px 0 0 0;
+							p {
+								color: white;
+								font-size: 18px;
+								font-weight: lighter;
+								text-align: center;
+							}
+						}
+				  }
+				}
 		.bascket {
 			width: 34px;
 			height: 48px;
+			
 			padding: 8px 0px 0px 33px;
 			i {
 				font-size: 20px;
+				cursor: pointer;
 			}
 			.fa-shopping-basket {
 				float: right;
@@ -566,24 +722,27 @@ body {
 				    	top: 291px;
     					right: 45px;
 				    }
-
-				    select {
-				    	transition: border-color 200ms ease-out,box-shadow 200ms ease-out;
-				    	appearance: none;
-				    	margin: 0 20px 0 20px;
-				    	width: 92%;
-				    	height: 48px;
-				    	padding-left: 12px;
-				    	border-radius: 6px;
-					    background: #FFFFFF;
-					    border-color: rgba(34, 34, 34, 0.15);
-					    border-style: solid;
-					    border-width: 2px;
-					    color: #222222;
-					    text-indent: 0.01px;
-					    cursor: pointer;
-					    outline: none;
+				    .wapper {
+				    	display: flex;
+				    	justify-content: center;
+				    	select {
+					    	transition: border-color 200ms ease-out,box-shadow 200ms ease-out;
+					    	appearance: none;
+					    	width: 92%;
+					    	height: 48px;
+					    	padding-left: 12px;
+					    	border-radius: 6px;
+						    background: #FFFFFF;
+						    border-color: rgba(34, 34, 34, 0.15);
+						    border-style: solid;
+						    border-width: 2px;
+						    color: #222222;
+						    text-indent: 0.01px;
+						    cursor: pointer;
+						    outline: none;
+					    }
 				    }
+					    
 						.title {
 							height: 100px;
 							width: 100%;

@@ -10,8 +10,8 @@ const langArr = {
         "ua": "",
     }, 
     "hello": {
-        "ru": "ПРИВЕТ",
-        "en": "HELLO",
+        "ru": "ПРИВЕТ ^_^",
+        "en": "HELLO ^_^",
         "ua": "",
     },
     "top-today": {
