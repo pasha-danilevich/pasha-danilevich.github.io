@@ -94,11 +94,6 @@ a {
   padding: 12px 36px 12px 36px !important;
 }
 
-header {
-  width: 100%;
-  height: 100%;
-  padding: 12px 36px 12px 36px;
-}
 header .nav {
   display: block;
   width: 100%;
@@ -114,32 +109,36 @@ header .nav #bar {
   height: 3px;
 }
 header .top {
-  width: inherit;
+  width: 100%;
   height: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 6px 0 0 0;
+  -webkit-box-shadow: 0px 5px 10px 0px #00000052;
+          box-shadow: 0px 5px 10px 0px #00000052;
 }
 header .top .logo {
   width: 80px;
   height: 48px;
+  padding: 8px 0 0 0;
 }
 header .top .logo i {
-  font-size: 44px;
+  font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 header .top .logo .fa-star-of-life:before {
   content: "";
   vertical-align: middle;
 }
 header .top .bars {
-  width: 80px;
   height: 48px;
+  margin-right: 18px;
 }
 header .top .bars i {
   padding: 8px 0px 0px 0px;
@@ -148,11 +147,11 @@ header .top .bars i {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 header .top .search {
-  width: 78%;
+  width: 165px;
   height: 48px;
   padding: 5px 0px 0px 0px;
 }
@@ -164,7 +163,6 @@ header .top .search .search_line {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 3px solid black;
   position: relative;
 }
 header .top .search .search_line input {
@@ -178,19 +176,17 @@ header .top .search .search_line input {
 }
 header .top .search .search_line button {
   width: 42px;
-  height: 33px;
   border: none;
-  /* background: #7BA7AB; */
-  /* border-radius: 0 5px 5px 0; */
   cursor: pointer;
   right: 0;
   position: absolute;
 }
 header .top .sing_up {
-  width: 80px;
+  width: 64px;
   height: 48px;
   margin-left: auto;
-  padding: 8px 0px 0px 30px;
+  padding: 5px 0px 0px 0px;
+  font-size: 18px;
 }
 header .top .sing_up div {
   width: 22px;
@@ -220,7 +216,7 @@ header .top .sing_up_back .sing_up_modal {
   margin-top: -300px;
   margin-left: -300px;
   background-color: #fff;
-  background: url("../img/scale_1200.webp");
+  background: url(..//img/scale_1200.webp);
   border-radius: 10px;
   z-index: 11;
   color: #000;
@@ -362,7 +358,7 @@ header .top .sing_up_back .sing_up_modal .info p {
 header .top .bascket {
   width: 34px;
   height: 48px;
-  padding: 8px 0px 0px 33px;
+  padding: 8px 36px 0px 0px;
 }
 header .top .bascket i {
   font-size: 20px;
@@ -405,6 +401,7 @@ body section.hello {
   height: 200px;
   font-size: 95px;
   text-align: center;
+  padding: 38px 0 0 0 !important;
 }
 body section.blocks .box:before {
   content: "";
@@ -753,9 +750,9 @@ body footer .botton .options #options_frame {
 }
 body footer .botton .options #options_frame .modal {
   width: 600px;
-  height: 600px;
+  height: 535px;
   position: fixed;
-  top: 50%;
+  top: 54%;
   left: 50%;
   margin-top: -300px;
   margin-left: -300px;
@@ -809,7 +806,7 @@ body footer .botton .options #options_frame .modal .wapper select {
   outline: none;
 }
 body footer .botton .options #options_frame .modal .title {
-  height: 100px;
+  height: 55px;
   width: 100%;
   position: relative;
 }

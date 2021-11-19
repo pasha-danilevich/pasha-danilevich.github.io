@@ -108,6 +108,29 @@
   header {
     padding: 12px 10px 12px 10px !important;
   }
+  header .top .bascket {
+    padding: 8px 14px 0px 0px !important;
+  }
+  header .top .logo {
+    width: 52px !important;
+  }
+  header .top .bars {
+    margin-right: 15px !important;
+  }
+  header .top .search {
+    padding: 5px 0px 0px 0px !important;
+  }
+  header .top .sing_up {
+    width: 43px !important;
+    padding: 5px 0px 0px 0px !important;
+  }
+  header .top .bascket {
+    width: 34px !important;
+    padding: 8px 14px 0px 0px !important;
+  }
+  section.hello {
+    height: 350px !important;
+  }
   .blocks .box_line {
     margin: 0 0 10px 0 !important;
   }
@@ -140,7 +163,7 @@
     width: 99% !important; 
   }
   #options_frame .modal .main_options {
-    height: 375px !important;
+    height: 350px !important;
   }
   #options_frame .modal .buttons div{
     padding: 0 10px !important;
@@ -174,5 +197,7 @@
   }
 }
 @media (max-width: 350px) {
-  
+  section.hello {
+    font-size:75px !important;
+  }
 }

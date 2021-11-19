@@ -94,11 +94,6 @@ const langArr = {
         "en": "Go to help center",
         "ua": "",
     },
-    "": {
-        "ru": "",
-        "en": "",
-        "ua": "",
-    },
     "shop": {
         "ru": "Магазин",
         "en": "Shop",
