@@ -220,7 +220,7 @@ header .top .sing_up_back .sing_up_modal {
   margin-top: -300px;
   margin-left: -300px;
   background-color: #fff;
-  background: url("/img/scale_1200.webp");
+  background: url("../img/scale_1200.webp");
   border-radius: 10px;
   z-index: 11;
   color: #000;
