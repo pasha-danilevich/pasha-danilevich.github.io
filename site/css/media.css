@@ -90,15 +90,22 @@
 /*for window option*/
 @media (max-width: 680px){
   #options_frame .modal {
-    width: 80% !important;
-    left: 10% !important;
-    margin-left: 0px !important ;
+    width: 94% !important;
+    left: 0 !important;
+    top: 50% !important;
+    margin-left: 3% !important;
+    height: 525px !important;
+    margin-top: -265px !important;
   }
   header .top .sing_up_back .sing_up_modal{
-    width: 80% !important;
-    left: 0 !important; 
-    margin-left: 10% !important;
+    width: 94% !important;
+    left: 0 !important;
+    top: 50% !important;
+    margin-left: 3% !important;
+    height: 525px !important;
+    margin-top: -265px !important;
   }
+
   .sing_up_back .sing_up_modal .wapper{
     padding: 0px 20px !important;
   }
@@ -116,6 +123,13 @@
   }
   .sing_up_back .sing_up_modal .main .input {
     width: 100% !important;
+    
+  }
+  header .top .sing_up_back .sing_up_modal .steps {
+    height: 17px !important
+  }
+  header .top .sing_up_back .sing_up_modal .main .input input{
+    padding: 0 !important;
   }
   .sing_up_back .sing_up_modal .buttons {
     padding: 50px 0 0 0px !important;
@@ -152,6 +166,9 @@
   header .top .search {
     padding: 5px 0px 0px 0px !important;
   }
+  header .top .search .search_line button {
+    display: none;
+  }
   header .top .sing_up {
     width: 43px !important;
     padding: 5px 0px 0px 0px !important;
@@ -159,6 +176,10 @@
   header .top .bascket {
     width: 34px !important;
     padding: 8px 14px 0px 0px !important;
+  }
+  header .top .setting{
+    width: 39px !important;
+    padding: 8px 17px 0px 0px !important;
   }
   section.hello {
     height: 350px !important;
@@ -194,11 +215,14 @@
   body footer .info .cell .wapper {
     width: 99% !important; 
   }
+  .botton .options #options_frame .modal .wapper{
+    padding: 0 !important;
+  }
   #options_frame .modal .main_options {
     height: 350px !important;
   }
   #options_frame .modal .buttons div{
-    padding: 0 10px !important;
+    padding: 0 20px !important;
   }
   #options_frame .modal .buttons #close{
     width: 100% !important;
@@ -207,7 +231,7 @@
     width: 100% !important;
   }
   #options_frame .modal i {
-    right: 27px !important;
+    right: 53px !important;
   }
   #options_frame .modal select {
     width: 92% !important;
@@ -218,14 +242,15 @@
     justify-content: center;
   }
   #options_frame .modal .buttons div{
-    padding: 0 10px !important;
+    padding: 0 20px !important;
   }
   #options_frame .modal .buttons #close{
-    width: 100% !important;
-    margin-bottom: 10px;
+    width: 47% !important;
+    height: 50px !important;
   }
   #options_frame .modal .buttons #save{
-    width: 100% !important;
+    width: 47% !important;
+    height: 50px !important;
   }
 }
 @media (max-width: 350px) {
