@@ -94,6 +94,38 @@
     left: 10% !important;
     margin-left: 0px !important ;
   }
+  header .top .sing_up_back .sing_up_modal{
+    width: 80% !important;
+    left: 0 !important; 
+    margin-left: 10% !important;
+  }
+  .sing_up_back .sing_up_modal .wapper{
+    padding: 0px 20px !important;
+  }
+  .sing_up_back .sing_up_modal .main .icon{
+    width: 50px !important;
+  }
+  .sing_up_back .sing_up_modal .main .passwords .passwodr-one {
+    width: 47% !important;
+  }
+  .sing_up_back .sing_up_modal .main .passwords .password-two {
+    width: 47% !important;
+  }
+  .sing_up_back .sing_up_modal .main .passwords .icon {
+    width: 50px !important;
+  }
+  .sing_up_back .sing_up_modal .main .input {
+    width: 100% !important;
+  }
+  .sing_up_back .sing_up_modal .buttons {
+    padding: 50px 0 0 0px !important;
+  }
+  .sing_up_back .sing_up_modal .buttons #close_sing_up {
+    width: 47% !important;
+  }
+  .sing_up_back .sing_up_modal .buttons #continue_sing_up{
+    width: 47% !important;
+  }
 }
 
 

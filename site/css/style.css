@@ -216,7 +216,6 @@ header .top .sing_up_back .sing_up_modal {
   margin-top: -300px;
   margin-left: -300px;
   background-color: #fff;
-  background: url(..//img/scale_1200.webp);
   border-radius: 10px;
   z-index: 11;
   color: #000;
@@ -224,7 +223,8 @@ header .top .sing_up_back .sing_up_modal {
 header .top .sing_up_back .sing_up_modal .wapper {
   padding: 0px 50px;
   height: 100%;
-  background-color: #0000004f;
+  background: -webkit-gradient(linear, right bottom, left top, from(#00c7e1), to(#ff8398));
+  background: linear-gradient(to top left, #00c7e1, #ff8398);
   border-radius: 10px;
 }
 header .top .sing_up_back .sing_up_modal .hello {
@@ -258,13 +258,13 @@ header .top .sing_up_back .sing_up_modal .main .icon i {
 header .top .sing_up_back .sing_up_modal .main .input {
   height: 50px;
   width: 90%;
-  background-color: #000000b5;
+  background-color: #000000b5 !important;
   border-radius: 10px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 header .top .sing_up_back .sing_up_modal .main .input input {
-  background-color: #fff0;
+  background-color: #fff0 !important;
   border: none;
   height: 100%;
   width: 100%;
@@ -844,18 +844,17 @@ body footer .botton .options #options_frame .modal .buttons #close {
   width: 140px;
   height: 40px;
   border-radius: 10px;
-  border-width: 2px;
-  border-color: #222222;
-  border-style: solid;
+  border-width: 0px;
   cursor: pointer;
+  background-color: #ccc;
 }
 body footer .botton .options #options_frame .modal .buttons #save {
   width: 100px;
   height: 40px;
   border-radius: 10px;
   border-width: 2px;
-  border-color: #222222;
-  background-color: #222222;
+  border-color: #ff0000ba;
+  background-color: #ff0000ba;
   border-style: solid;
   color: white;
   cursor: pointer;

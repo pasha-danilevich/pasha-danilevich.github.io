@@ -6,28 +6,23 @@ const langArr = {
     }, 
     "search": {
         "ru": "Искать здесь...",
-        "en": "Search...",
-        "ua": "",
+        "en": "Search..."
     }, 
     "hello": {
         "ru": "ПРИВЕТ ^_^",
-        "en": "HELLO ^_^",
-        "ua": "",
+        "en": "HELLO ^_^"
     },
     "top-today": {
         "ru": "Лучшее за сегодня!",
-        "en": "Top today!",
-        "ua": "",
+        "en": "Top today!"
     },
     "best-fot-you": {
         "ru": "Лучшее для тебя",
-        "en": "Best for you",
-        "ua": "",
+        "en": "Best for you"
     },
     "picture": {
         "ru": "картины",
-        "en": "painting",
-        "ua": "",
+        "en": "painting"
     },
     "still-life": {
         "ru": "натюрморт",

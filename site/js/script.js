@@ -32,5 +32,7 @@ $(document).ready(function(){
   });
 });
 
-
+window.onload = function(event) {
+  console.log("load");
+}
 
