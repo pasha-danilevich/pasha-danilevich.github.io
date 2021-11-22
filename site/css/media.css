@@ -178,8 +178,9 @@
     padding: 8px 14px 0px 0px !important;
   }
   header .top .setting{
+    margin: 0 0px 0 0 !important;
     width: 39px !important;
-    padding: 8px 17px 0px 0px !important;
+    padding: 6px 0px 0px 0px !important
   }
   section.hello {
     height: 350px !important;

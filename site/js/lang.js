@@ -2,7 +2,6 @@ const langArr = {
     "unit" :  {
         "ru": "Магазин картин ZZZ",
         "en": "Art store ZZZ",
-        "ua": "Магазин картин ZZZ",
     }, 
     "search": {
         "ru": "Искать здесь...",

@@ -202,6 +202,7 @@ header .top .search .search_line button {
   cursor: pointer;
   right: 0;
   position: absolute;
+  background-color: #fff;
 }
 header .top .sing_up {
   width: 64px;
@@ -224,6 +225,8 @@ header .top .sing_up_back {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   z-index: 10;
   display: none;
   -webkit-transition: 0.3s, 0.1s;
@@ -385,7 +388,7 @@ header .top .sing_up_back .sing_up_modal .info p {
 header .top .bascket {
   width: 34px;
   height: 48px;
-  padding: 8px 36px 0px 0px;
+  padding: 8px 27px 0px 0px;
 }
 header .top .bascket i {
   font-size: 20px;
@@ -395,13 +398,16 @@ header .top .bascket .fa-shopping-basket {
   float: right;
 }
 header .top .setting {
-  width: 34px;
+  width: 24px;
   height: 48px;
-  padding: 8px 36px 0px 0px;
+  padding: 6px 0px 0px 0px;
+  margin: 0 36px 0 0;
 }
-header .top .setting i {
-  font-size: 20px;
+header .top .setting img {
+  width: 24px;
+  height: 20px;
   cursor: pointer;
+  border-radius: 6px;
 }
 header .top .setting .fa-cog {
   float: right;
@@ -473,6 +479,13 @@ body section.blocks .box {
   float: left;
   font-size: 12px;
 }
+body section.blocks .box img {
+  background-color: #fff;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
 body section.blocks .box .content {
   /* Positioning */
   position: absolute;
@@ -483,30 +496,36 @@ body section.blocks .box .content {
   color: #fff;
   /* Styling */
   background: black;
-  padding: 10px;
   text-align: center;
   vertical-align: center;
   text-transform: uppercase;
   border-radius: 6%;
+  overflow: hidden;
+}
+body section.blocks .box .content .wapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 body section.blocks .box .content .like {
+  margin: 10px;
   height: 30px;
   width: 30px;
-  border: 1px solid black;
   border-radius: 100%;
   background-color: white;
   float: right;
   color: black;
   font-size: 18px;
-  padding: 2px 0 0 0px;
+  padding: 3px 0 0 1px;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.3s opacity, 0.1s visibility;
   transition: 0.3s opacity, 0.1s visibility;
 }
 body section.blocks .box .content .price {
+  margin-left: 10px;
   height: 20px;
-  width: 50%;
+  width: 35%;
   position: absolute;
   bottom: 10px;
   background-color: white;
@@ -515,7 +534,7 @@ body section.blocks .box .content .price {
   padding: 2px;
   border-radius: 5px;
 }
-body section.blocks .box .content:hover .like {
+body section.blocks .box .wapper:hover .like {
   opacity: 1;
   visibility: visible;
 }
@@ -550,34 +569,47 @@ body section.blocks_size .content {
   color: #fff;
   /* Styling */
   background: black;
-  padding: 10px;
   text-align: center;
   vertical-align: center;
   text-transform: uppercase;
   border-radius: 6%;
+  overflow: hidden;
+}
+body section.blocks_size .content .wapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+body section.blocks_size .content img {
+  background-color: #fff;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 body section.blocks_size .content:hover .like {
   opacity: 1;
   visibility: visible;
 }
 body section.blocks_size .like {
+  margin: 10px;
   height: 30px;
   width: 30px;
-  border: 1px solid black;
   border-radius: 100%;
   background-color: white;
   float: right;
   color: black;
   font-size: 18px;
-  padding: 2px 0 0 0px;
+  padding: 3px 0 0 1px;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.3s opacity, 0.1s visibility;
   transition: 0.3s opacity, 0.1s visibility;
 }
 body section.blocks_size .price {
+  margin-left: 10px;
   height: 20px;
-  width: 50%;
+  width: 35%;
   position: absolute;
   bottom: 10px;
   background-color: white;
@@ -782,6 +814,8 @@ body footer .botton .options #options_frame {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   z-index: 10;
   display: none;
   -webkit-transition: 0.3s, 0.1s;

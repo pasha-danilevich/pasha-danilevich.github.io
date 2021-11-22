@@ -189,6 +189,7 @@ header {
 			    cursor: pointer;
 			    right: 0;
 			    position: absolute;
+			    background-color: #fff;
 				}
 			}
 		}
@@ -213,6 +214,7 @@ header {
 			    height: 100%;
 			    width: 100%;
 			    background-color: rgba(0,0,0,0.5);
+			    backdrop-filter: blur(5px);
 			    z-index: 10;
 					display: none;
 					transition: .30s , .10s ;
@@ -366,7 +368,7 @@ header {
 		.bascket {
 			width: 34px;
 	    height: 48px;
-	    padding: 8px 36px 0px 0px;
+	    padding: 8px 27px 0px 0px;
 			i {
 				font-size: 20px;
 				cursor: pointer;
@@ -376,12 +378,18 @@ header {
 			}
 		}
 		.setting {
-			width: 34px;
+			width: 24px;
 	    height: 48px;
-	    padding: 8px 36px 0px 0px;
-			i {
-				font-size: 20px;
+	    padding: 6px 0px 0px 0px;
+    	margin: 0 36px 0 0;
+    	div {
+
+    	}
+			img {
+				width: 24px;
+    		height: 20px;
 				cursor: pointer;
+				border-radius: 6px;
 			}
 			.fa-cog {
 				float: right;
@@ -451,6 +459,12 @@ body {
 		  margin: 0;
 		  float: left;
 		  font-size: 12px;
+		  img {
+					background-color: #fff;
+					position: absolute;
+					pointer-events: none;
+					transform: scale(2);
+				}
 		  
 			.content {
 			  /* Positioning */
@@ -464,28 +478,36 @@ body {
 
 			  /* Styling */
 			  background: black;
-			  padding: 10px;
+			  // padding: 10px;
 			  text-align: center;
 			  vertical-align: center;
 			  text-transform: uppercase;
 			  border-radius: 6%;
+			  overflow: hidden;
+			  
+			  .wapper {
+			  	width: 100%;
+			  	height: 100%;
+			  	position: absolute;
+			  }
 			  .like {
+			  	margin: 10px;
 				  height: 30px;
 				  width: 30px;
-				  border: 1px solid black;
 				  border-radius: 100%;
 				  background-color: white;
 				  float: right;
 				  color:black;
 				  font-size: 18px;
-				  padding: 2px 0 0 0px;
+				  padding: 3px 0 0 1px;
 				  opacity: 0;
     			visibility: hidden;
     			transition: .30s opacity, .10s visibility;
 				}
 				.price {
+					margin-left: 10px;
 					height: 20px;
-					width: 50%;
+					width: 35%;
 					position: absolute;
 					bottom: 10px;
 					background-color: white;
@@ -494,9 +516,10 @@ body {
 					padding: 2px;
 					border-radius: 5px;
 				}
+
 			}
-			.content:hover .like {
-				opacity: 1;
+			.wapper:hover .like {
+				opacity: 1 ;
     		visibility: visible;
 			}
 		}
@@ -536,40 +559,56 @@ body {
 
 		  /* Styling */
 		  background: black;
-		  padding: 10px;
 		  text-align: center;
 		  vertical-align: center;
 		  text-transform: uppercase; 
 		  border-radius: 6%; 
+		  overflow: hidden;
+		  .wapper {
+			  	width: 100%;
+			  	height: 100%;
+			  	position: absolute;
+			  }
+			  img {
+					background-color: #fff;
+					position: absolute;
+					pointer-events: none;
+					transform: scale(2);
+				}
 		}
+
+			  
+			  
 		.content:hover .like {
 			opacity: 1;
     	visibility: visible;
 		}
 		.like {
-		  height: 30px;
-		  width: 30px;
-		  border: 1px solid black;
-		  border-radius: 100%;
-		  background-color: white;
-		  float: right;
-		  color:black;
-		  font-size: 18px;
-		  padding: 2px 0 0 0px;
-		  opacity: 0;
-    	visibility: hidden;
-    	transition: .30s opacity, .10s visibility;
+		  margin: 10px;
+	    height: 30px;
+	    width: 30px;
+	    border-radius: 100%;
+	    background-color: white;
+	    float: right;
+	    color: black;
+	    font-size: 18px;
+	    padding: 3px 0 0 1px;
+	    opacity: 0;
+	    visibility: hidden;
+	    -webkit-transition: 0.3s opacity, 0.1s visibility;
+	    transition: 0.3s opacity, 0.1s visibility;
 		}
 		.price {
-			height: 20px;
-			width: 50%;
-			position: absolute;
-			bottom: 10px;
-			background-color: white;
-			color:gray;
-			font-weight: bold;
-			padding: 2px;
-			border-radius: 5px;
+			margin-left: 10px;
+	    height: 20px;
+	    width: 35%;
+	    position: absolute;
+	    bottom: 10px;
+	    background-color: white;
+	    color: gray;
+	    font-weight: bold;
+	    padding: 2px;
+	    border-radius: 5px;
 		}
 		
 
@@ -741,6 +780,7 @@ body {
 			    height: 100%;
 			    width: 100%;
 			    background-color: rgba(0,0,0,0.5);
+			    backdrop-filter: blur(5px);
 			    z-index: 10;
 					display: none;
 					transition: .30s , .10s ;
