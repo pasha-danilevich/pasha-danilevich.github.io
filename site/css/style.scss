@@ -460,7 +460,8 @@ body {
 		  float: left;
 		  font-size: 12px;
 		  img {
-					background-color: #fff;
+					background-color: rgba(0,0,0,0.5);
+			    backdrop-filter: blur(5px);
 					position: absolute;
 					pointer-events: none;
 					transform: scale(2);
