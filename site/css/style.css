@@ -121,13 +121,12 @@ header .nav {
   width: 100%;
   position: relative;
   position: fixed;
+  height: 3px;
+  top: 0px;
+  z-index: 11;
 }
 header .nav #bar {
-  position: absolute;
-  left: -36px;
-  bottom: 9px;
   background-color: red;
-  width: 0px;
   height: 3px;
 }
 header .top {
@@ -930,7 +929,7 @@ body footer .botton .options #options_frame .modal .buttons div {
 }
 body footer .botton .options #options_frame .modal .buttons #close {
   width: 140px;
-  height: 40px;
+  height: 50px;
   border-radius: 10px;
   border-width: 0px;
   cursor: pointer;
@@ -939,7 +938,7 @@ body footer .botton .options #options_frame .modal .buttons #close {
 }
 body footer .botton .options #options_frame .modal .buttons #save {
   width: 140px;
-  height: 40px;
+  height: 50px;
   border-radius: 10px;
   border: 0;
   background-color: #000000b5 !important;
@@ -961,21 +960,6 @@ body footer .botton .copyright {
 }
 body footer .botton .copyright p {
   text-align: center;
-}
-body .nav {
-  display: block;
-  width: 100%;
-  position: relative;
-  position: fixed;
-  z-index: 10;
-}
-body #bar {
-  position: absolute;
-  left: -8px;
-  bottom: 6px;
-  background-color: red;
-  width: 0px;
-  height: 3px;
 }
 body .menu_item {
   display: none;

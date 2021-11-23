@@ -1,4 +1,3 @@
-
 var 
     bar = $('#bar'),
     $window = $(window),
@@ -6,7 +5,8 @@ var
     winHeight = $window.height(),
     baseX = docHeight - winHeight;
 
+console.log($window.scrollTop())
 $window.scroll(function(e) {      
-    var x = ($window.scrollTop() / baseX) * 100;
+    var x = ($window.scrollTop() / baseX) * 110;
     bar.css({'width': + x + '%'});
 });

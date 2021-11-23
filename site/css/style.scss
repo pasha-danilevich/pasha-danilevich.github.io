@@ -114,12 +114,11 @@ header {
 	  width: 100%;
 	  position: relative;
 	  position: fixed;
+	  height: 3px;
+	  top: 0px;
+	  z-index: 11;
 	  #bar{
-	    position:absolute;
-	    left: -36px;
-	    bottom: 9px;
-	    background-color:red;
-	    width: 0px;
+	    background-color: red;
 	    height: 3px;
 		}
 	}
@@ -883,7 +882,7 @@ body {
 							}
 							#close {
 								width: 140px;
-								height: 40px;
+								height: 50px;
 								border-radius: 10px;
 								border-width: 0px;
 						    cursor: pointer;
@@ -892,7 +891,7 @@ body {
 							}
 							#save {
 								width: 140px;
-								height: 40px;
+								height: 50px;
 								border-radius: 10px;
 								border: 0;
     						background-color: #000000b5 !important;
@@ -925,22 +924,7 @@ body {
 		}
 	}
 // --------------------------------------------------------------
-.nav {
-  display: block;
-  width: 100%;
-  position: relative;
-  position: fixed;
-  z-index: 10;
-}
 
-#bar{
-    position:absolute;
-    left: -8px;
-    bottom: 6px;
-    background-color:red;
-    width: 0px;
-    height: 3px;
-}
 .menu_item{
   display: none;
 }

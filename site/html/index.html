@@ -40,7 +40,11 @@
 			<div id="sing_up_button"><i class="fas fa-user-plus"></i></div>
 		</div>
 
-		<div id="sing_up_back_show" class="sing_up_back">
+		<div id="sing_up_back_show" onclick="
+		if(event.target.className == 'sing_up_back'){
+      		$('#sing_up_back_show').hide();
+    	}" 
+    	class="sing_up_back">
 			<div class="sing_up_modal">
 				<div class="wapper">
 					<div class="hello">Hello it is <span>ZZZ</span>  ^_^</div>
@@ -481,7 +485,10 @@
 		<div class="flex">
 			<div class="options">
 			<input id="options_frame_" type="button" value="Click">
-			<div id="options_frame">
+			<div class="options_frame" id="options_frame" 
+			onclick="if(event.target.className == 'options_frame'){
+				$('#options_frame').hide();
+			}" >
 				<div class="modal">
 					<div class="title">
 						<p>Update your settings</p>

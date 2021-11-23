@@ -151,8 +151,18 @@
   .norm_padding {
     padding: 12px 10px 12px 10px !important;
   }
+  header .nav {
+    left: 0 !important;
+  }
   header {
     padding: 12px 10px 12px 10px !important;
+  }
+  header .top {
+    position: fixed !important;
+    left: 0px !important;
+    top: 0px !important;
+    background-color: #fff;
+    z-index: 10;
   }
   header .top .bascket {
     padding: 8px 14px 0px 0px !important;
