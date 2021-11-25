@@ -68,7 +68,6 @@ $(function () {
 if(pageWidth < 500){
   $('#menu').css({"width": pageWidth + 70})
 }
-
 $(window).scroll(function(e) {      
     if (window.pageYOffset > 200){
   checkboxClose()
