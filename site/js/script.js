@@ -74,12 +74,6 @@ $(window).scroll(function(e) {
 }
 });
 
-// window.addEventListener('resize', function(event) {
-//   menuVoidBack.css({"width": pageWidth})
-//   menuVoidBack.css({"height": windowInnerHeight})
-//   console.log('fff')
-// }, true);
-
 $(document).ready(function(){
     $("#menu").on("click","a", function (event) {
         event.preventDefault();
