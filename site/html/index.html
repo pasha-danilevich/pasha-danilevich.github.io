@@ -25,8 +25,8 @@
 		<div class="logo">
 			<a href=""><i class="fas fa-star-of-life"></i></a>
 		</div>
-		<div class="bars">
-			<i class="fas fa-bars"></i>
+		<div  class="bars">
+			<!-- <i id="menu_bar_open" class="fas fa-bars"></i> -->
 		</div>
 		<div class="search">
 			<div class="search_line">
@@ -91,15 +91,39 @@
 		<div class="bascket">
 			<div ><i class="fas fa-shopping-basket"></i></div>
 		</div>
+		
 		<div class="setting">
 			<div><img class="country-flag" id="options_frame_" src="../img/country/ru.svg" alt=""></div>
 		</div>
 	</div>
+	<div class="menu-bar">
+		<div class="menu-void-back"></div>
+		 <nav role="navigation">
+			  <div id="menuToggle">
+			  	<input type="checkbox" id="mycheckbox">
+			    <input id="menu-checkbox" type="checkbox" />
+			    
 
+			    <span></span>
+			    <span></span>
+			    <span></span>
+
+			    <ul id="menu">
+			      <a href="#"><li>Home</li></a>
+			      <a href="#about"><li>About</li></a>
+			      <a href="#best-for-you"><li class="lng-best-fot-you">Best for you</li></a>
+			      <a href="#contact"><li>Contact</li></a>
+
+			    </ul>
+			  </div>
+
+		</nav>
+	</div>
 </header>
 <body>
 	<section class="hello norm_padding lng-hello">
 		HELLO ^_^
+
 		
 	</section>
 
@@ -290,7 +314,7 @@
 		</div>
 
 	</section>
-	<section class="name norm_padding lng-best-fot-you">
+	<section id="best-for-you" class="name norm_padding lng-best-fot-you">
 		<h1>
 			Best for you
 		</h1>
@@ -402,7 +426,7 @@
 		</div>
 	</section>
 	<section class="about_us norm_padding">
-		<div class="top">
+		<div id="about" class="top">
 			<h1 class="lng-how">how?</h1>
 			<h3 class="lng-lorem10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit repellendus ducimus</h3>
 		</div>
@@ -443,7 +467,7 @@
 </body>
 
 <footer>
-	<div class="info">
+	<div id="contact" class="info">
 	<div class="menu-mobile lng-shop">Shop</div>
     <div class="menu_item">
     	<div class="menu-flex">
