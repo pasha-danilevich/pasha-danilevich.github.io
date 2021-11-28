@@ -202,6 +202,7 @@
   }
   section.hello {
     height: 350px !important;
+    font-size: 80px !important;
   }
   .blocks .box_line {
     margin: 0 0 10px 0 !important;
@@ -218,7 +219,12 @@
   .box {
     width: 49% !important;
   }
-
+  footer .mobile {
+    display: block !important;
+  }
+  footer .desktop {
+    display: none;
+  }
   footer .info {
     flex-direction: column !important;
   }
@@ -275,5 +281,6 @@
 @media (max-width: 350px) {
   section.hello {
     font-size:75px !important;
+    font-size: 80px !important;
   }
 }

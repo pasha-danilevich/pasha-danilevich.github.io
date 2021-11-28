@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 @keyframes animation-linear-grdient {
   0% {
     background-position: 10% 0%;
@@ -250,7 +254,8 @@ header .top .sing_up_back .sing_up_modal .wapper {
   height: 100%;
   border-radius: 10px;
   background: linear-gradient(135deg, #00c7e1, #ff8398);
-  background-size: 400% 400%;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   animation: animation-linear-grdient 30s ease infinite;
   -webkit-animation: animation-linear-grdient 30s ease infinite;
   -moz-animation: animation-linear-grdient 30s ease infinite;
@@ -803,8 +808,12 @@ body section.blocks_size .box_smalls .box_small {
   float: left;
   font-size: 12px;
 }
+body section.about_us {
+  margin-top: 50px;
+}
 body section.about_us .top {
   padding: 50px 0 50px 0;
+  background-color: #ffcb9a;
 }
 body section.about_us .top h1 {
   text-align: center;
@@ -814,13 +823,14 @@ body section.about_us .top h3 {
   text-align: center;
 }
 body section.about_us .mid {
-  padding: 50px 0 50px 0;
+  padding: 50px 0 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #ffcb9a;
 }
 body section.about_us .mid .second {
   margin: 0 10px 0 10px 0;
@@ -837,7 +847,7 @@ body section.about_us .mid p {
   text-align: center;
 }
 body section.about_us .bottom {
-  padding: 50px 0 300px 0;
+  padding: 50px 0 130px 0;
 }
 body section.about_us .bottom p {
   text-align: center;
@@ -854,27 +864,114 @@ body section.about_us .bottom button {
   position: absolute;
   left: calc(50% - 60px);
 }
-body footer .info {
-  padding: 50px 7px 50px 7px;
+body footer .desktop {
+  height: 300px;
+  width: 100%;
+  padding: 0 20px;
+  background: #143952;
+  padding: 30px 20px 0px 20px;
+}
+body footer .desktop .info {
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: darkgray;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #d6d6d6;
+}
+body footer .desktop .info .menu-desktop {
+  margin-bottom: 15px;
+}
+body footer .desktop .info .menu-flex .wapper {
+  margin-bottom: 7px;
+}
+body footer .desktop .info .menu-flex .wapper .menu-item-child {
+  color: #878787;
+}
+body footer .desktop .info .form {
+  width: 30%;
+}
+body footer .desktop .info .form h1 {
+  color: white;
+}
+body footer .desktop .info .form p {
+  width: 250px;
+  color: #878787;
+}
+body footer .desktop .info .about {
+  width: 20%;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+body footer .desktop .info .sell {
+  width: 20%;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+body footer .desktop .info .contact {
+  width: 30%;
+  margin-top: 10px;
+}
+body footer .desktop .info .contact i {
+  width: 25px;
+  color: #d6d6d6;
+}
+body footer .desktop .bottom {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 2px solid white;
+}
+body footer .mobile {
+  padding: 0 20px;
+  background-color: #262626;
+  display: none;
+}
+body footer .mobile .info {
+  padding: 30px 7px 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #262626;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  color: #bcbcbc;
 }
-body footer .info .menu-mobile {
+body footer .mobile .info a {
+  color: #868686;
+}
+body footer .mobile .info .menu-mobile {
   font-size: 22px;
   border-radius: 6px;
-  padding: 5px 0 5px 7px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 5px 0 5px 0;
   -webkit-transition: 0.3s, 0.1s;
   transition: 0.3s, 0.1s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-body footer .info .menu-mobile:hover {
-  background-color: #ccc;
+body footer .mobile .info .menu-mobile:hover {
+  background-color: #353535;
 }
-body footer .info .menu_item .menu-flex {
+body footer .mobile .info .menu_item {
+  background-color: #353535;
+  border-radius: 6px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+body footer .mobile .info .menu_item .menu-flex {
   padding: 0 0 5px 7px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -884,10 +981,19 @@ body footer .info .menu_item .menu-flex {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-body footer .botton {
+body footer .mobile .info .menu_item .menu-flex .wapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px 0px;
+}
+body footer .mobile .botton {
   padding: 10px 10px 10px 10px;
-  background-color: #6b6b6b;
-  color: white;
+  background-color: #262626;
+  color: #bcbcbc;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -895,8 +1001,9 @@ body footer .botton {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-top: 2px solid #353535;
 }
-body footer .botton .flex {
+body footer .mobile .botton .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -905,11 +1012,20 @@ body footer .botton .flex {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-body footer .botton .options {
+body footer .mobile .botton .flex ul li {
+  display: inline;
+  border-right: 1px solid;
+  border-width: 3px;
+  padding-right: 5px;
+}
+body footer .mobile .botton .flex ul li:last-child {
+  border: none;
+}
+body footer .mobile .botton .options {
   width: 300px;
   position: relative;
 }
-body footer .botton .options input {
+body footer .mobile .botton .options input {
   width: 233px;
   position: absolute;
   top: 16px;
@@ -917,7 +1033,14 @@ body footer .botton .options input {
   opacity: 0;
   cursor: pointer;
 }
-body footer .botton .options #options_frame {
+body footer .mobile .botton .copyright {
+  padding: 15px 0 0 0;
+  width: 300px;
+}
+body footer .mobile .botton .copyright p {
+  text-align: center;
+}
+body #options_frame {
   position: fixed;
   top: 0;
   left: 0;
@@ -931,7 +1054,7 @@ body footer .botton .options #options_frame {
   -webkit-transition: 0.3s, 0.1s;
   transition: 0.3s, 0.1s;
 }
-body footer .botton .options #options_frame .modal {
+body #options_frame .modal {
   width: 600px;
   height: 535px;
   position: fixed;
@@ -944,28 +1067,28 @@ body footer .botton .options #options_frame .modal {
   z-index: 11;
   color: #fff;
   background: linear-gradient(135deg, #00c7e1, #ff8398);
-  background-size: 400% 400%;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   animation: animation-linear-grdient 30s ease infinite;
   -webkit-animation: animation-linear-grdient 30s ease infinite;
   -moz-animation: animation-linear-grdient 30s ease infinite;
   -o-animation: animation-linear-grdient 30s ease infinite;
 }
-body footer .botton .options #options_frame .modal i {
+body #options_frame .modal i {
   position: absolute;
   top: 74px;
   right: 66px;
 }
-body footer .botton .options #options_frame .modal i:nth-child(4) {
+body #options_frame .modal i:nth-child(4) {
   position: absolute;
   top: 185px;
   right: 66px;
 }
-body footer .botton .options #options_frame .modal i:nth-child(5) {
+body #options_frame .modal i:nth-child(5) {
   position: absolute;
   top: 297px;
   right: 66px;
 }
-body footer .botton .options #options_frame .modal .wapper {
+body #options_frame .modal .wapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -974,7 +1097,7 @@ body footer .botton .options #options_frame .modal .wapper {
           justify-content: center;
   padding: 0 20px;
 }
-body footer .botton .options #options_frame .modal .wapper select {
+body #options_frame .modal .wapper select {
   -webkit-transition: border-color 200ms ease-out, -webkit-box-shadow 200ms ease-out;
   transition: border-color 200ms ease-out, -webkit-box-shadow 200ms ease-out;
   transition: border-color 200ms ease-out, box-shadow 200ms ease-out;
@@ -995,39 +1118,39 @@ body footer .botton .options #options_frame .modal .wapper select {
   cursor: pointer;
   outline: none;
 }
-body footer .botton .options #options_frame .modal .title {
+body #options_frame .modal .title {
   height: 55px;
   width: 100%;
   position: relative;
   text-align: center;
 }
-body footer .botton .options #options_frame .modal .title p {
+body #options_frame .modal .title p {
   font-size: 30px;
   padding: 34px 0 0 0px;
 }
-body footer .botton .options #options_frame .modal .main_options {
+body #options_frame .modal .main_options {
   height: 400px;
   width: 100%;
   position: relative;
 }
-body footer .botton .options #options_frame .modal .main_options p {
+body #options_frame .modal .main_options p {
   font-size: 18px;
   padding: 34px 0 0 20px;
 }
-body footer .botton .options #options_frame .modal .main_options p:nth-child(3) {
+body #options_frame .modal .main_options p:nth-child(3) {
   font-size: 18px;
   padding: 34px 0 0 20px;
 }
-body footer .botton .options #options_frame .modal .main_options p:nth-child(5) {
+body #options_frame .modal .main_options p:nth-child(5) {
   font-size: 18px;
   padding: 34px 0 0 20px;
 }
-body footer .botton .options #options_frame .modal .buttons {
+body #options_frame .modal .buttons {
   height: 100px;
   width: 100%;
   position: relative;
 }
-body footer .botton .options #options_frame .modal .buttons div {
+body #options_frame .modal .buttons div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1036,7 +1159,7 @@ body footer .botton .options #options_frame .modal .buttons div {
           justify-content: space-between;
   padding: 0 50px 0 50px;
 }
-body footer .botton .options #options_frame .modal .buttons #close {
+body #options_frame .modal .buttons #close {
   width: 140px;
   height: 50px;
   border-radius: 10px;
@@ -1045,7 +1168,7 @@ body footer .botton .options #options_frame .modal .buttons #close {
   background-color: #000000b5 !important;
   color: #fff;
 }
-body footer .botton .options #options_frame .modal .buttons #save {
+body #options_frame .modal .buttons #save {
   width: 140px;
   height: 50px;
   border-radius: 10px;
@@ -1053,22 +1176,6 @@ body footer .botton .options #options_frame .modal .buttons #save {
   background-color: #000000b5 !important;
   color: white;
   cursor: pointer;
-}
-body footer .botton .options ul li {
-  display: inline;
-  border-right: 1px solid;
-  border-width: 3px;
-  padding-right: 5px;
-}
-body footer .botton .options ul li:last-child {
-  border: none;
-}
-body footer .botton .copyright {
-  padding: 15px 0 0 0;
-  width: 300px;
-}
-body footer .botton .copyright p {
-  text-align: center;
 }
 body .menu_item {
   display: none;
