@@ -531,11 +531,6 @@ header {
 		{
 		  transform: rotate(-45deg) translate(0, -1px);
 		}
-
-		/*
-		 * Make this absolute positioned
-		 * at the top left of the screen
-		 */
 		#menu
 		{
 		  position: absolute;
@@ -560,10 +555,6 @@ header {
 		  padding: 10px 0;
 		  font-size: 22px;
 		}
-
-		/*
-		 * And let's slide it in from the left
-		 */
 		#menuToggle input:checked ~ ul
 		{
 		  transform: none;
@@ -889,7 +880,7 @@ body {
 			background-color: #21D4FD;
 			background-image: linear-gradient(163deg, #21D4FD 0%, #B721FF 100%);
 
-			// background: linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(41,41,41,1) 40%);
+			
 			padding: 30px 20px 0px 20px;
 
 			.info{
