@@ -637,7 +637,7 @@ body {
 			  text-align: center;
 			  vertical-align: center;
 			  text-transform: uppercase;
-			  border-radius: 10px;
+			  border-radius: 6%;
 			  overflow: hidden;
 			  
 			  .wapper {
@@ -717,7 +717,7 @@ body {
 		  text-align: center;
 		  vertical-align: center;
 		  text-transform: uppercase; 
-		  border-radius: 10px; 
+		  border-radius: 6%; 
 		  overflow: hidden;
 		  .wapper {
 			  	width: 100%;
@@ -833,7 +833,7 @@ body {
 			}
 		}
 		.mid {
-			padding: 0px 0 50px 0;
+			padding: 50px 0 20px 0;
 			display: flex;
 			justify-content: center;
 			background-color: #ffcb9a;
@@ -882,13 +882,10 @@ body {
 	}
 	footer{
 		.desktop{
-			height: 283px;
+			height: 300px;
 			width: 100%;
 			padding: 0 20px;
 			background: #143952;
-			background-color: #21D4FD;
-			background-image: linear-gradient(163deg, #21D4FD 0%, #B721FF 100%);
-
 			// background: linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(41,41,41,1) 40%);
 			padding: 30px 20px 0px 20px;
 
@@ -896,7 +893,7 @@ body {
 				height: 200px;
 				display: flex;
 				justify-content: center;
-				color:white;
+				color:#d6d6d6;
 				.menu-desktop{
 					margin-bottom: 15px;
 				}
@@ -904,9 +901,8 @@ body {
   				
   				.wapper {
   					margin-bottom: 7px;
-  					font-weight: lighter;
   					.menu-item-child {
-  						color: white;
+  						color: #878787;
   					}
   				}
   			}
@@ -919,7 +915,7 @@ body {
 					}
 					p {
 						width: 250px;
-						color: white;
+						color: #878787;
 					}
 				}
 				.about{
@@ -937,7 +933,7 @@ body {
 					margin-top: 10px;
 					i {
 						width: 25px;
-						color:white;
+						color:#d6d6d6;
 					}
 				}
 			}
@@ -945,41 +941,7 @@ body {
 				height: 50px;
 				display: flex;
 	    	justify-content: center;
-	    	border-top: 1px solid white;
-	    	color: white;
-	    	.left {
-	    		width: 40%;
-	    		p {
-	    			margin: 16px 0;
-	    			font-size: 15px;
-	    		}
-	    	}
-	    	.mid {
-	    		width: 20%;
-	    		padding: 16px 0;
-	    		.social {
-	    			display: flex;
-	    			justify-content: space-between;
-    				font-size: 20px;
-	    		}
-	    	}
-	    	.right {
-	    		width: 40%;
-	    		
-	    		ul {
-	    			float: right;
-	    		li {
-				    display: inline;
-				    border-right: 1px solid;
-				    border-width: 2px;
-				    padding-right: 5px;
-				    font-size: 15px;
-				   }
-				   li:last-child{
-							border: none;
-						}
-				}
-	    	}
+	    	border-top: 2px solid white;
 			}
 		}
 		.mobile {

@@ -140,24 +140,6 @@
   .sing_up_back .sing_up_modal .buttons #continue_sing_up{
     width: 47% !important;
   }
-  footer .mobile {
-    display: block !important;
-  }
-  footer .desktop {
-    display: none;
-  }
-  footer .info {
-    flex-direction: column !important;
-  }
-  footer .cell:hover{
-    box-shadow: 0 0 1px 5px #0000003b;
-  }
-  body footer .info .cell .wapper {
-    margin: 10px 0 0 10px !important;
-  }
-  body footer .info .cell .wapper {
-    width: 99% !important; 
-  }
 }
 
 
@@ -237,8 +219,27 @@
   .box {
     width: 49% !important;
   }
-  
-  
+  footer .mobile {
+    display: block !important;
+  }
+  footer .desktop {
+    display: none;
+  }
+  footer .info {
+    flex-direction: column !important;
+  }
+  footer .cell {
+    /*width: 100% !important;*/
+  }
+  footer .cell:hover{
+    box-shadow: 0 0 1px 5px #0000003b;
+  }
+  body footer .info .cell .wapper {
+    margin: 10px 0 0 10px !important;
+  }
+  body footer .info .cell .wapper {
+    width: 99% !important; 
+  }
   .botton .options #options_frame .modal .wapper{
     padding: 0 !important;
   }
