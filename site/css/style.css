@@ -614,7 +614,7 @@ body section.blocks .box .content {
   text-align: center;
   vertical-align: center;
   text-transform: uppercase;
-  border-radius: 6%;
+  border-radius: 10px;
   overflow: hidden;
 }
 body section.blocks .box .content .wapper {
@@ -687,7 +687,7 @@ body section.blocks_size .content {
   text-align: center;
   vertical-align: center;
   text-transform: uppercase;
-  border-radius: 6%;
+  border-radius: 10px;
   overflow: hidden;
 }
 body section.blocks_size .content .wapper {
@@ -823,7 +823,7 @@ body section.about_us .top h3 {
   text-align: center;
 }
 body section.about_us .mid {
-  padding: 50px 0 20px 0;
+  padding: 0px 0 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -865,10 +865,12 @@ body section.about_us .bottom button {
   left: calc(50% - 60px);
 }
 body footer .desktop {
-  height: 300px;
+  height: 283px;
   width: 100%;
   padding: 0 20px;
   background: #143952;
+  background-color: #21D4FD;
+  background-image: linear-gradient(163deg, #21D4FD 0%, #B721FF 100%);
   padding: 30px 20px 0px 20px;
 }
 body footer .desktop .info {
@@ -879,16 +881,17 @@ body footer .desktop .info {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #d6d6d6;
+  color: white;
 }
 body footer .desktop .info .menu-desktop {
   margin-bottom: 15px;
 }
 body footer .desktop .info .menu-flex .wapper {
   margin-bottom: 7px;
+  font-weight: lighter;
 }
 body footer .desktop .info .menu-flex .wapper .menu-item-child {
-  color: #878787;
+  color: white;
 }
 body footer .desktop .info .form {
   width: 30%;
@@ -898,7 +901,7 @@ body footer .desktop .info .form h1 {
 }
 body footer .desktop .info .form p {
   width: 250px;
-  color: #878787;
+  color: white;
 }
 body footer .desktop .info .about {
   width: 20%;
@@ -916,7 +919,7 @@ body footer .desktop .info .contact {
 }
 body footer .desktop .info .contact i {
   width: 25px;
-  color: #d6d6d6;
+  color: white;
 }
 body footer .desktop .bottom {
   height: 50px;
@@ -926,7 +929,44 @@ body footer .desktop .bottom {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-top: 2px solid white;
+  border-top: 1px solid white;
+  color: white;
+}
+body footer .desktop .bottom .left {
+  width: 40%;
+}
+body footer .desktop .bottom .left p {
+  margin: 16px 0;
+  font-size: 15px;
+}
+body footer .desktop .bottom .mid {
+  width: 20%;
+  padding: 16px 0;
+}
+body footer .desktop .bottom .mid .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+}
+body footer .desktop .bottom .right {
+  width: 40%;
+}
+body footer .desktop .bottom .right ul {
+  float: right;
+}
+body footer .desktop .bottom .right ul li {
+  display: inline;
+  border-right: 1px solid;
+  border-width: 2px;
+  padding-right: 5px;
+  font-size: 15px;
+}
+body footer .desktop .bottom .right ul li:last-child {
+  border: none;
 }
 body footer .mobile {
   padding: 0 20px;
