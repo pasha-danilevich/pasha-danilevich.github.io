@@ -273,8 +273,20 @@ header .top .sing_up_back .sing_up_modal .hello {
 header .top .sing_up_back .sing_up_modal .hello span {
   font-size: 35px;
 }
+header .top .sing_up_back .sing_up_modal .comment {
+  height: 50px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
 header .top .sing_up_back .sing_up_modal .steps {
-  height: 100px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+header .top .sing_up_back .sing_up_modal .main {
+  margin-top: 20px;
 }
 header .top .sing_up_back .sing_up_modal .main .icon {
   height: 50px;
@@ -382,7 +394,7 @@ header .top .sing_up_back .sing_up_modal .buttons #continue_sing_up {
 }
 header .top .sing_up_back .sing_up_modal .info {
   height: 100px;
-  padding: 50px 0 0 0;
+  padding: 37px 0 0 0;
 }
 header .top .sing_up_back .sing_up_modal .info p {
   color: white;
@@ -430,13 +442,6 @@ header .menu-bar {
    */
   /*
    * Ohyeah and the last one should go the other direction
-   */
-  /*
-   * Make this absolute positioned
-   * at the top left of the screen
-   */
-  /*
-   * And let's slide it in from the left
    */
 }
 header .menu-bar .menu-void-back {
@@ -926,7 +931,9 @@ body footer .desktop .bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-top: 1px solid white;
   color: white;
 }

@@ -278,10 +278,20 @@ header {
 				    		font-size: 35px;
 				    	}
 						}
+						.comment{
+							height: 50px;
+							text-align: center;
+							color:white;
+							font-size: 20px;
+						}
 						.steps {
-							height: 100px;
+							height: 50px;
+							text-align: center;
+							color:white;
+							font-size: 20px;
 						}
 						.main {
+							margin-top: 20px;
 							.icon{
 								height: 50px;
 								width: 10%;
@@ -376,7 +386,7 @@ header {
 						}
 						.info {
 							height: 100px;
-							padding: 50px 0 0 0;
+							padding: 37px 0 0 0;
 							p {
 								color: white;
 								font-size: 18px;

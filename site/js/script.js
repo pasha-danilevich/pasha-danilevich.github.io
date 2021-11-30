@@ -88,3 +88,29 @@ window.onload = function(event) {
   console.log("load");
 }
 
+user_name.oninput = function() {
+    result_user_name.innerHTML = user_name.value;
+    console.log(result_user_name.innerHTML.length)
+    switch (result_user_name.innerHTML.length) {
+      case 0:
+        result_user_name.innerHTML ='Передумал?';
+        break;
+      case 1:
+      case 2:
+      case 3:
+        result_user_name.innerHTML = user_name.value + ', такое короткое имя)))';
+        break;
+      case 4:
+      case 5:
+      case 6:
+        result_user_name.innerHTML = user_name.value + ', довольно строго.';
+        break;
+      case 7:
+      case 8:
+      case 9:
+        result_user_name.innerHTML = user_name.value + ', что надо, хотя...';
+        break;
+      default:
+        result_user_name.innerHTML = user_name.value + ', ого o_O';
+    }
+  };
