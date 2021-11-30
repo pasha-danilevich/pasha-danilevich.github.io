@@ -817,8 +817,7 @@ body section.about_us {
   margin-top: 50px;
 }
 body section.about_us .top {
-  padding: 50px 0 50px 0;
-  background-color: #ffcb9a;
+  padding: 0px 0 50px 0;
 }
 body section.about_us .top h1 {
   text-align: center;
@@ -835,24 +834,31 @@ body section.about_us .mid {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #ffcb9a;
 }
 body section.about_us .mid .second {
   margin: 0 10px 0 10px 0;
 }
 body section.about_us .mid .block {
   width: 30%;
+  background-color: #ffcb9a;
+  padding: 30px;
+  border-radius: 30px;
+  margin: 0 15px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 body section.about_us .mid h2 {
   text-align: center;
-  padding: 0 0 20px 0;
+  padding: 0 0 10px 0;
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid black;
 }
 body section.about_us .mid p {
   padding: 0 10px 0 10px;
   text-align: center;
 }
 body section.about_us .bottom {
-  padding: 50px 0 130px 0;
+  padding: 50px 0 40px 0;
 }
 body section.about_us .bottom p {
   text-align: center;

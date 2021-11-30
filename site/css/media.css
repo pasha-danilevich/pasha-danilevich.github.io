@@ -47,13 +47,15 @@
   }
   .about_us .mid {
     flex-direction: column !important;
+    padding: 0px 10px 0 10px !important;
   }
   .about_us .mid .block {
-    margin-bottom: 10px !important;
+    margin-bottom: 40px !important;
     width: 100% !important;
+    margin: 20px 0 !important;
   }
   .about_us .mid .block p{
-    width: 60% !important;
+    
     margin: auto !important;
   }
 

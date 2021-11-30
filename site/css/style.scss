@@ -822,8 +822,8 @@ body {
 	section.about_us {
 		margin-top: 50px;
 		.top {
-			padding: 50px 0 50px 0;
-			background-color: #ffcb9a;
+			padding: 0px 0 50px 0;
+			
 			h1{
 				text-align: center;
 				font-size: 40px;
@@ -837,30 +837,40 @@ body {
 			padding: 0px 0 50px 0;
 			display: flex;
 			justify-content: center;
-			background-color: #ffcb9a;
+			
 			.second {
 				margin: 0 10px 0 10px 0;
 			}
 			.block {
 				width: 30%;
-			}
+				background-color: #ffcb9a;
+				padding: 30px;
+    		border-radius: 30px;
+    		margin: 0 15px;
+
+    		box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    		}
 			h2{
 					text-align: center;
-					padding: 0 0 20px 0;
+					padding: 0 0 10px 0;
+					margin: 0 0 10px 0;
+					border-bottom: 1px solid black;
 				}
 				p {
 					padding: 0 10px 0 10px;
 					text-align: center;
 				}
 			.first {
+				
 			}
 			.second {
+
 			}
 			.third {
 			}
 		}
 		.bottom {
-			padding: 50px 0 130px 0;
+			padding: 50px 0 40px 0;
 			
 			p {
 				text-align: center;
