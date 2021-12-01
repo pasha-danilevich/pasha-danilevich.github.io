@@ -100,16 +100,17 @@
     margin-top: -265px !important;
   }
   header .top .sing_up_back .sing_up_modal{
-    width: 94% !important;
-    left: 0 !important;
-    top: 50% !important;
-    margin-left: 3% !important;
-    height: 525px !important;
-    margin-top: -265px !important;
+    width: 100% !important;
+    left: 0px !important;
+    top: 0px !important;
+    margin-left: 0% !important;
+    height: 100% !important;
+    margin-top: 0px !important;
   }
 
   .sing_up_back .sing_up_modal .wapper{
     padding: 0px 20px !important;
+    border-radius: 0px !important;
   }
   .sing_up_back .sing_up_modal .main .icon{
     width: 50px !important;
@@ -128,7 +129,7 @@
     
   }
   header .top .sing_up_back .sing_up_modal .steps {
-    height: 17px !important
+    
   }
   header .top .sing_up_back .sing_up_modal .main .input input{
     padding: 0 !important;
@@ -182,7 +183,7 @@
     left: 0px !important;
     top: 0px !important;
     background-color: #fff;
-    z-index: 10;
+    z-index: 1;
   }
   header .top .bascket {
     padding: 8px 14px 0px 0px !important;
@@ -214,7 +215,7 @@
   }
   header .menu-bar {
     position: fixed !important;
-    z-index: 10 !important;
+    z-index: 3 !important;
     left: -21px !important;
   }
   header .menu-bar #menu li {

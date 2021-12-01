@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Art store ZZZ</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	
+	<script async src="https://kit.fontawesome.com/b5aefe840c.js" crossorigin="anonymous"></script>
+
+	<title>Document</title>
+</head>
+<header>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+	<nav class="nav">
+    	<div id="bar"></div>
+  	</nav>
+	<div  class="top">
+		<div class="logo">
+			<a href=""><i class="fas fa-star-of-life"></i></a>
+
+		</div>
+		<div  class="bars">
+			 <!-- <i id="menu_bar_open" class="fas fa-bars"></i>  -->
+			 	<div class="menu-bar">
+					<div class="menu-void-back"></div>
+					 <nav role="navigation">
+						  <div id="menuToggle">
+						    <input id="menu-checkbox" type="checkbox" />
+						    
+						    <span></span>
+						    <span></span>
+						    <span></span>
+
+						    <ul id="menu">
+						      <a href="#home_anchor"><li>Home</li></a>
+						      <a href="#about_anchor"><li>About</li></a>
+						      <a href="#best-for-you_anchor"><li class="lng-best-fot-you">Best for you</li></a>
+						      <a href="#contact_anchor"><li>Contact</li></a>
+
+						    </ul>
+						  </div>
+
+					</nav>
+				</div>
+		</div>
+		<div class="search">
+			<div class="search_line">
+			  <form>
+			  <input class="lng-input-search"type="text" placeholder="Search...">
+			  <button type="submit"><i class="fas fa-search"></i></button>
+			  </form>
+			</div>
+		</div>
+		<div class="sing_up">
+			<div id="sing_up_button"><i class="fas fa-user-plus"></i></div>
+		</div>
+
+		<div id="sing_up_back_show" onclick="
+		if(event.target.className == 'sing_up_back'){
+      		$('#sing_up_back_show').hide();
+    	}" 
+    	class="sing_up_back">
+			<div class="sing_up_modal">
+				<div class="wapper">
+					<div class="hello">Hello it is <span>ZZZ</span>  ^_^</div>
+					<div id="result_user_name" class="comment">Как же тебя зовут??</div>
+					<div class="steps">Жду пароль.</div>
+					<div class="main">
+						<div class="name">
+							<div class="icon"><i class="fas fa-user-edit"></i></div>
+							<div class="input">
+								<input id="user_name" type="text" placeholder="Nickname">
+							</div>
+						</div>
+						<div class="email">
+							<div class="icon"><i class="fas fa-at"></i></div>
+							<div class="input">
+								<input type="text" placeholder="Your email">
+							</div>
+						</div>
+						<div class="passwords">
+							<div class="passwodr-one">
+								<div class="icon"><i class="fas fa-key"></i></div>
+							<div class="input">
+								<input type="password" placeholder="Password">
+							</div>
+							</div>
+							<div class="password-two">
+								<div class="icon"><i class="fas fa-lock"></i></div>
+							<div class="input">
+								<input type="password" placeholder="Yet again">
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="buttons">
+						<button id="close_sing_up">Close</button>
+						<button id="continue_sing_up">Continue</button>
+					</div>
+					<div class="info">
+						<p>Мега супер</p>
+						<p>Дупер</p>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="bascket">
+			<div ><i class="fas fa-shopping-basket"></i></div>
+		</div>
+		
+		<div class="setting">
+			<div><img class="country-flag" id="options_frame_" src="../img/country/en.svg" alt=""></div>
+		</div>
+		<div class="options">
+				<div class="options_frame" id="options_frame" 
+				onclick="if(event.target.className == 'options_frame'){
+					$('#options_frame').hide();
+				}" >
+					<div class="modal">
+						<div class="title">
+							<p>Update your settings</p>
+						</div>
+						<div class="main_options">
+							<p>Language</p>
+							<div class="wapper">
+								<select class="change-lang">
+									<option value = "ru">Руский</option>
+									<option value = "en" selected>English</option>
+								</select>
+							</div>
+							
+							<i class="fas fa-sort-down"></i>
+							<i class="fas fa-sort-down"></i>
+							<i class="fas fa-sort-down"></i>
+							<p>Currency</p>
+							<div class="wapper">
+								<select>
+									<option value = "A">Option A</option>
+									<option value = "B">Option B</option>
+									<option value = "C" disabled>Option C</option>
+								</select>
+							</div>
+								
+							<p>Region</p>
+							<div class="wapper">
+								<select>
+									<option value = "A">Option A</option>
+									<option value = "B">Option B</option>
+									<option value = "C" disabled>Option C</option>
+								</select>
+							</div>
+								
+						</div>
+						
+						<div class="buttons">
+							<div>
+								<button id="close">Close</button>
+								<button id="save">Save</button>
+							</div>
+							<script src="../js/change_lng.js"></script>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+	</div>
+
+</header>
+<body>
+	<section id="home_anchor" class="hello norm_padding lng-hello">
+		HELLO ^_^
+
+		
+	</section>
+
+	<section class="name norm_padding lng-top-today">
+		<h2>
+			Top today!
+		</h2>
+	</section>
+	<section class="blocks norm_padding">
+		<div class="box_line">
+			<div class="box">
+
+			    <div class="content">
+			    	<!-- <img src="../img/1.jpg" alt=""> -->
+			    	<div class="wapper">
+			    		<div class="like">
+				    		<i class="far fa-heart"></i>
+				    	</div>
+				    	<div class="price">
+				    		300$
+				    	</div>
+			    	</div>
+			    	
+
+			    </div>
+			    
+		  	</div>
+		  	<div class="box">
+			    <div class="content">
+			    	<!-- <img src="../img/2.jpg" alt=""> -->
+			    	<div class="wapper">
+			    		<div class="like">
+				    		<i class="far fa-heart"></i>
+				    	</div>
+				    	<div class="price">
+				    		330$
+				    	</div>
+			    	</div>
+				    	
+			    </div>
+		  	</div>
+		  	<div class="box">
+			    <div class="content">
+			    	<!-- <img src="../img/3.webp" alt=""> -->
+			    	<div class="wapper">
+			    		<div class="like">
+				    		<i class="far fa-heart"></i>
+				    	</div>
+				    	<div class="price">
+				    		400$
+				    	</div>
+			    	</div>
+				    	
+			    </div>
+		  	</div>
+		  	<div class="box">
+			    <div class="content">
+			    	
+			    	<div class="wapper">
+			    		<div class="like">
+				    		<i class="far fa-heart"></i>
+				    	</div>
+				    	<div class="price">
+				    		3030$
+				    	</div>
+			    	</div>
+				    		
+			    </div>
+		  	</div>
+		  	<div class="box">
+			    <div class="content">
+			    	<div class="like">
+			    		<i class="far fa-heart"></i>
+			    	</div>
+			    	<div class="price">
+			    		11110$
+			    	</div>
+			    </div>
+		  	</div>
+		</div>
+		<div class="box_line">
+			<div class="box">
+			    <div class="content">
+			    	<!-- <img src="../img/4.jpg" alt=""> -->
+			    	<div class="wapper">
+			    		<div class="like">
+				    		<i class="far fa-heart"></i>
+				    	</div>
+				    	<div class="price">
+				    		300$
+				    	</div>
+			    	</div>
+				    	
+			    </div>
+		  	</div>
+		  	<div class="box">
+			    <div class="content">
+			    	<div class="like">
+			    		<i class="far fa-heart"></i>
+			    	</div>
+			    	<div class="price">
+			    		3600$
+			    	</div>
+			    </div>
+		  	</div>
+		  	<div class="box">
+			    <div class="content">
+			    	<div class="like">
+			    		<i class="far fa-heart"></i>
+			    	</div>
+			    	<div class="price">
+			    		360$
+			    	</div>
+			    </div>
+		  	</div>
+		  	<div class="box">
+			    <div class="content">
+			    	<div class="like">
+			    		<i class="far fa-heart"></i>
+			    	</div>
+			    	<div class="price">
+			    		333$
+			    	</div>
+			    </div>
+		  	</div>
+		  	<div class="box">
+			    <div class="content">
+			    	<div class="like">
+			    		<i class="far fa-heart"></i>
+			    	</div>
+			    	<div class="price">
+			    		100$
+			    	</div>
+			    </div>
+		  	</div>
+		</div>
+		<div class="box_line">
+			<div class="box">
+			    <div class="content">
+			    	<div class="like">
+			    		<i class="far fa-heart"></i>
+			    	</div>
+			    	<div class="price">
+			    		300$
+			    	</div>
+			    </div>
+		  	</div>
+		  	<div class="box">
+			    <div class="content">
+			    	<div class="like">
+			    		<i class="far fa-heart"></i>
+			    	</div>
+			    	<div class="price">
+			    		3600$
+			    	</div>
+			    </div>
+		  	</div>
+		  	<div class="box">
+			    <div class="content">
+			    	<div class="like">
+			    		<i class="far fa-heart"></i>
+			    	</div>
+			    	<div class="price">
+			    		360$
+			    	</div>
+			    </div>
+		  	</div>
+		  	<div class="box">
+			    <div class="content">
+			    	<div class="like">
+			    		<i class="far fa-heart"></i>
+			    	</div>
+			    	<div class="price">
+			    		333$
+			    	</div>
+			    </div>
+		  	</div>
+		  	<div class="box">
+			    <div class="content">
+			    	<div class="like">
+			    		<i class="far fa-heart"></i>
+			    	</div>
+			    	<div class="price">
+			    		100$
+			    	</div>
+			    </div>
+		  	</div>
+		</div>
+
+	</section>
+	<section id="best-for-you_anchor" class="name norm_padding lng-best-fot-you">
+		<h1>
+			Best for you
+		</h1>
+	</section>
+	<section class="name_category norm_padding">
+		<div class="block">
+			<div class="big">
+				<h3 class="lng-picture">
+					picture
+				</h3>
+			</div>
+			<div class="small">
+				<h3 class="lng-still-life">
+					still-life
+				</h3>
+			</div >
+		</div>
+		<div class="block">
+			<div class="big left">
+				<h3 class="lng-landscape">
+					landscape
+				</h3>
+			</div>
+			<div class="small">
+				<h3 class="lng-painting">
+					painting 
+				</h3>
+			</div>
+		</div>
+		
+		
+	</section>
+	<section class="blocks_size norm_padding">
+		<div class="box_line">
+			<div class="left">
+				<div class="box_big">
+				    <div class="content">
+				    	<!-- <img src="../img/3.webp" alt=""> -->
+				    	<div class="wapper">
+				    		<div class="like">
+					    		<i class="far fa-heart"></i>
+					    	</div>
+					    	<div class="price">
+					    		340$
+					    	</div>
+				    	</div>
+					    	
+				    </div>
+			  	</div>
+			  	<div class="box_smalls">
+				    <div class="box_small">
+					    <div class="content">
+					    	<div class="like">
+					    		<i class="far fa-heart"></i>
+					    	</div>
+					    	<div class="price">
+					    		200$
+					    	</div>
+					    </div>
+				  	</div>
+				  	<div class="box_small">
+					    <div class="content">
+					    	<div class="like">
+					    		<i class="far fa-heart"></i>
+					    	</div>
+					    	<div class="price">
+					    		1000$
+					    	</div>
+					    </div>
+				  	</div>
+			  	</div>
+			</div>
+			<div class="right">
+				<div class="box_big">
+				    <div class="content">
+				    	<div class="like">
+				    		<i class="far fa-heart"></i>
+				    	</div>
+				    	<div class="price">
+				    		325$
+				    	</div>
+				    </div>
+			  	</div>
+			  	<div class="box_smalls">
+				    <div class="box_small">
+					    <div class="content">
+					    	<div class="like">
+					    		<i class="far fa-heart"></i>
+					    	</div>
+					    	<div class="price">
+					    		300$
+					    	</div>
+					    </div>
+				  	</div>
+				  	<div class="box_small">
+					    <div class="content">
+					    	<div class="like">
+					    		<i class="far fa-heart"></i>
+					    	</div>
+					    	<div class="price">
+					    		300$
+					    	</div>
+					    </div>
+				  	</div>
+			  	</div>
+			</div>
+			
+		  	
+		</div>
+	</section>
+	<section class="about_us ">
+		<div id="about_anchor" class="top">
+			<h1 class="lng-how">how?</h1>
+			<h3 class="lng-lorem10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit repellendus ducimus</h3>
+		</div>
+		<div class="mid">
+			<div class="first block">
+				
+				<h2 class="lng-lorem11">ipsum dolor sit </h2>
+				
+				<p class="lng-lorem30">Lorem ipsum dolor, sit amet consectetur
+					adipisicing elit. Vero commodi eos, sunt
+					dolores possimus alias impedit, architecto,
+					similique unde saepe modi? Similique
+					aperiam, consequuntur, ex eius
+					quibusdam maxime ea nesciunt!
+				</p>
+			</div>
+
+			<div class="second block">
+				<h2 class="lng-lorem12">Ok lets goooo </h2>
+				<p class="lng-lorem20"> Architecto,
+					similique unde saepe modi? Similique
+					aperiam, consequuntur, ex eius
+					quibusdam maxime ea nesciunt!
+				</p>
+			</div>
+			<div class="third block ">
+				<h2 class="lng-lorem13">Big joooooke! </h2>
+				<p class="lng-lorem21">Vero commodi eos, sunt
+					dolores possimus alias impedit, architecto,
+					similique unde saepe modi? Similique
+					aperiam, consequuntur, ex eius
+					quibusdam maxime ea nesciunt!
+				</p>
+			</div>
+		</div>
+		<div class="bottom">
+			
+		</div>
+	</section>		
+</body>
+
+<footer>
+	<div id="contact_anchor" class="desktop">
+		<div class="info">
+			<div class="form">
+				<h1>Picture store ZZZ</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit.</p>
+			</div>
+			<div class="about">
+				<div class="menu-desktop lng-about">About</div>
+			    <div class="menu-item-desktop">
+			    	<div class="menu-flex">
+			    		<div class="wapper"><a class="menu-item-child" href="">Policies</a></div>
+					    <div class="wapper"><a class="menu-item-child" href="">Careers</a></div>
+					    <div class="wapper"><a class="menu-item-child" href="">Press</a></div>
+			    	</div>
+			    </div>
+			</div>
+			<div class="sell">
+				<div class="menu-desktop lng-sell">Sell</div>
+			    <div class="menu-item-desktop">
+			    	<div class="menu-flex">
+			    		<div class="wapper"><a class="menu-item-child" href="">Hello</a></div>
+					    <div class="wapper"><a class="menu-item-child" href="">Affiliates</a></div>
+					    <div class="wapper"><a class="menu-item-child" href="">Forums</a></div>
+					    <div class="wapper"><a class="menu-item-child" href="">Teams </a></div>
+			    	</div>
+			    </div>
+			</div>
+			<div class="contact">
+				<div class="menu-desktop lng-help">Help</div>
+				<div class="menu-item-desktop">
+			    	<div class="menu-flex">
+			    		<div class="wapper">
+			    			<i class="fas fa-phone"></i>
+			    			<a class="menu-item-child" href="">+7(900)800-70-60</a>
+			    		</div>
+					    <div class="wapper">
+					    	<i class="fas fa-envelope-open"></i>
+					    	<a class="menu-item-child" href="">Picture_ZZZ@logo.com</a>
+					    </div>
+					    <div class="wapper">
+					    	<i class="fas fa-map-marker-alt"></i>
+					    	<a class="menu-item-child" href="">New Orlean pr. Rio </a>
+					    </div>
+			    	</div>
+			    </div>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="left">
+				<p>©2021 ZZZ, Inc.</p>
+			</div>
+			<div class="mid">
+				<div class="social">
+					<i class="fab fa-vk"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-youtube"></i>
+					<i class="fab fa-twitter"></i>
+				</div>
+			</div>
+			<div class="right">
+				<ul >
+					<li class="lng-language">English</li>
+					<li>English (US)</li>
+					<li>$ (USD)</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="mobile">
+		<div id="contact_anchor" class="info">
+		<div class="menu-mobile lng-shop">Shop</div>
+	    <div class="menu_item">
+	    	<div class="menu-flex">
+	    		<div class="wapper"><a class="menu__links-item" href="">Sitemap</a></div>
+			    <div class="wapper"><a class="menu__links-item" href="">Gift cards</a></div>
+			    <div class="wapper"><a class="menu__links-item" href="">Etsy blog</a></div>
+	    	</div>
+	    </div>
+	    <div class="menu-mobile lng-sell">Sell</div>
+	    <div class="menu_item">
+	    	<div class="menu-flex">
+	    		<div class="wapper"><a class="menu-item-child" href="">Hello</a></div>
+			    <div class="wapper"><a class="menu-item-child" href="">Teams</a></div>
+			    <div class="wapper"><a class="menu-item-child" href="">Forums</a></div>
+			    <div class="wapper"><a class="menu-item-child" href="">Affiliates</a></div>
+	    	</div>
+	      
+	    </div>
+	    <div class="menu-mobile lng-about">About</div>
+	    <div class="menu_item">
+	    	<div class="menu-flex">
+	    		<div class="wapper"><a class="menu-item-child" href="">Policies</a></div>
+			    <div class="wapper"><a class="menu-item-child" href="">Careers</a></div>
+			    <div class="wapper"><a class="menu-item-child" href="">Press</a></div>
+	    	</div>
+	      
+	    </div>
+	    <div class="menu-mobile lng-help">Help</div>
+	    <div class="menu_item">
+	    	<div class="menu-flex">
+		    	<div class="wapper"><a class="menu-item-child" href="">Help center</a></div>
+		        <div class="wapper"><a class="menu-item-child" href="">Trust</a></div>
+		        <div class="wapper"><a class="menu-item-child" href="">Privacy</a></div>
+	    	</div>
+	      
+	    </div>
+		</div>
+		<div class="botton">
+			<div class="flex">
+			<ul >
+				<li class="lng-language">English</li>
+				<li>English (US)</li>
+				<li>$ (USD)</li>
+			</ul>
+			<div class="copyright">
+				<p>©2021 ZZZ, Inc.</p>
+			</div>
+			</div>
+			
+		</div>	
+	</div>
+</footer>
+<link rel="stylesheet" href="../css/media.css">
+<script src="../js/script_scroll.js"></script>
+<script src="../js/script.js"></script>
+
+</html>

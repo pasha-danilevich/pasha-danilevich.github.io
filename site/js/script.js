@@ -85,7 +85,7 @@ $(document).ready(function(){
 
 
 window.onload = function(event) {
-  console.log("load");
+  console.log("web-load");
 }
 
 user_name.oninput = function() {
