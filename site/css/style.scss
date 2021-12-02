@@ -123,6 +123,12 @@ a {
 .norm_padding {
 	padding: 12px 36px 12px 36px !important;
 }
+.unselectable {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
 
 
 
@@ -215,7 +221,7 @@ header {
 			}
 		}
 		.sing_up {
-			width: 64px;
+			width: 50px;
 	    height: 48px;
 	    margin-left: auto;
 	    padding: 5px 0px 0px 0px;
@@ -228,7 +234,25 @@ header {
 				cursor: pointer;
 			}
 		}
-		.sing_up_back {
+		.or {
+			line-height: 36px;
+	    width: 40px;
+	    font-weight: 900;
+		}
+		.log_in {
+			width: 64px;
+	    height: 48px;
+	    padding: 5px 0px 0px 0px;
+	    font-size: 18px;
+			div {
+				width: 22px;
+				height: 22px;
+			}
+			i {
+				cursor: pointer;
+			}
+		}
+		.sing_up_back, .log_in_back  {
 					position: fixed;
 			    top: 0;
 			    left: 0;
@@ -239,7 +263,7 @@ header {
 			    z-index: 10;
 					display: none;
 					transition: .30s , .10s ;
-					.sing_up_modal {
+					.sing_up_modal, .log_in_modal {
 				    width: 600px;
 				    height: 600px;
 				    position: fixed;
@@ -279,6 +303,10 @@ header {
 				    		font-size: 35px;
 				    	}
 						}
+						.hello-log {
+							height: 150px;
+							padding: 50px 0 0 0;
+						}
 						.comment{
 							height: 50px;
 							text-align: center;
@@ -291,6 +319,17 @@ header {
 							color:white;
 							font-size: 20px;
 						}
+						.center {
+							height: 100px;
+							width: 100%;
+							display: flex;
+							justify-content: center;
+							i {
+								font-size: 100px;
+    						color: #3e1f33;
+							}
+						}
+
 						.main {
 							margin-top: 20px;
 							.icon{
@@ -307,6 +346,7 @@ header {
 								}
 
 							}
+
 							.input{
 								height: 50px;
 								width: 90%;
@@ -344,6 +384,9 @@ header {
 									width: 22.5%;
 									background-color: #000000b5;
 								}
+								.icon-log {
+									width: 10%;
+								}
 								input {
 									width: 93%;
 								}
@@ -352,6 +395,9 @@ header {
 									height: 50px;
 									display: flex;
 								}
+								.passwodr-one-log {
+									width: 100%;
+								}
 								.password-two {
 									width: 47%;
 									height: 50px;
@@ -359,13 +405,16 @@ header {
 								}
 							}
 						}
+						.main-log {
+							margin-top: 50px;
+						}
 						.buttons {
 							height: 100px;
 							padding: 50px 0 0 200px;
 							display: flex;
 							justify-content: space-between;
 
-							#close_sing_up {
+							#close_sing_up,#close_log_in{
 								height: 50px;
 								width: 47%;
 								background-color: #000000b5;
@@ -373,7 +422,6 @@ header {
 								border: 0;
 								color: white;
 								cursor: pointer;
-
 							}
 							#continue_sing_up {
 								height: 50px;

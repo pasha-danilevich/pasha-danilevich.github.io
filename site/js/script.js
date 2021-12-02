@@ -7,6 +7,14 @@ $(function (){
   })
 });
 
+$(function (){
+  $('#log_in_button').click(function (){
+    $('#log_in_back_show').show();
+  })
+  $('#close_log_in').click(function(){
+    $('#log_in_back_show').hide();
+  })
+});
 
 $(function () {
   $('#options_frame_').click(function () {

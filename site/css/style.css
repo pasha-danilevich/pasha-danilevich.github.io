@@ -120,6 +120,13 @@ a {
   padding: 12px 36px 12px 36px !important;
 }
 
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
 header .nav {
   display: block;
   width: 100%;
@@ -210,7 +217,7 @@ header .top .search .search_line button {
   background-color: #fff;
 }
 header .top .sing_up {
-  width: 64px;
+  width: 50px;
   height: 48px;
   margin-left: auto;
   padding: 5px 0px 0px 0px;
@@ -223,7 +230,25 @@ header .top .sing_up div {
 header .top .sing_up i {
   cursor: pointer;
 }
-header .top .sing_up_back {
+header .top .or {
+  line-height: 36px;
+  width: 40px;
+  font-weight: 900;
+}
+header .top .log_in {
+  width: 64px;
+  height: 48px;
+  padding: 5px 0px 0px 0px;
+  font-size: 18px;
+}
+header .top .log_in div {
+  width: 22px;
+  height: 22px;
+}
+header .top .log_in i {
+  cursor: pointer;
+}
+header .top .sing_up_back, header .top .log_in_back {
   position: fixed;
   top: 0;
   left: 0;
@@ -237,7 +262,7 @@ header .top .sing_up_back {
   -webkit-transition: 0.3s, 0.1s;
   transition: 0.3s, 0.1s;
 }
-header .top .sing_up_back .sing_up_modal {
+header .top .sing_up_back .sing_up_modal, header .top .sing_up_back .log_in_modal, header .top .log_in_back .sing_up_modal, header .top .log_in_back .log_in_modal {
   width: 600px;
   height: 600px;
   position: fixed;
@@ -250,7 +275,7 @@ header .top .sing_up_back .sing_up_modal {
   z-index: 11;
   color: #000;
 }
-header .top .sing_up_back .sing_up_modal .wapper {
+header .top .sing_up_back .sing_up_modal .wapper, header .top .sing_up_back .log_in_modal .wapper, header .top .log_in_back .sing_up_modal .wapper, header .top .log_in_back .log_in_modal .wapper {
   padding: 0px 50px;
   height: 100%;
   border-radius: 10px;
@@ -262,7 +287,7 @@ header .top .sing_up_back .sing_up_modal .wapper {
   -moz-animation: animation-linear-grdient 30s ease infinite;
   -o-animation: animation-linear-grdient 30s ease infinite;
 }
-header .top .sing_up_back .sing_up_modal .hello {
+header .top .sing_up_back .sing_up_modal .hello, header .top .sing_up_back .log_in_modal .hello, header .top .log_in_back .sing_up_modal .hello, header .top .log_in_back .log_in_modal .hello {
   height: 100px;
   font-size: 30px;
   font-weight: bold;
@@ -271,25 +296,43 @@ header .top .sing_up_back .sing_up_modal .hello {
   text-transform: uppercase;
   color: white;
 }
-header .top .sing_up_back .sing_up_modal .hello span {
+header .top .sing_up_back .sing_up_modal .hello span, header .top .sing_up_back .log_in_modal .hello span, header .top .log_in_back .sing_up_modal .hello span, header .top .log_in_back .log_in_modal .hello span {
   font-size: 35px;
 }
-header .top .sing_up_back .sing_up_modal .comment {
+header .top .sing_up_back .sing_up_modal .hello-log, header .top .sing_up_back .log_in_modal .hello-log, header .top .log_in_back .sing_up_modal .hello-log, header .top .log_in_back .log_in_modal .hello-log {
+  height: 150px;
+  padding: 50px 0 0 0;
+}
+header .top .sing_up_back .sing_up_modal .comment, header .top .sing_up_back .log_in_modal .comment, header .top .log_in_back .sing_up_modal .comment, header .top .log_in_back .log_in_modal .comment {
   height: 50px;
   text-align: center;
   color: white;
   font-size: 20px;
 }
-header .top .sing_up_back .sing_up_modal .steps {
+header .top .sing_up_back .sing_up_modal .steps, header .top .sing_up_back .log_in_modal .steps, header .top .log_in_back .sing_up_modal .steps, header .top .log_in_back .log_in_modal .steps {
   height: 50px;
   text-align: center;
   color: white;
   font-size: 20px;
 }
-header .top .sing_up_back .sing_up_modal .main {
+header .top .sing_up_back .sing_up_modal .center, header .top .sing_up_back .log_in_modal .center, header .top .log_in_back .sing_up_modal .center, header .top .log_in_back .log_in_modal .center {
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .top .sing_up_back .sing_up_modal .center i, header .top .sing_up_back .log_in_modal .center i, header .top .log_in_back .sing_up_modal .center i, header .top .log_in_back .log_in_modal .center i {
+  font-size: 100px;
+  color: #3e1f33;
+}
+header .top .sing_up_back .sing_up_modal .main, header .top .sing_up_back .log_in_modal .main, header .top .log_in_back .sing_up_modal .main, header .top .log_in_back .log_in_modal .main {
   margin-top: 20px;
 }
-header .top .sing_up_back .sing_up_modal .main .icon {
+header .top .sing_up_back .sing_up_modal .main .icon, header .top .sing_up_back .log_in_modal .main .icon, header .top .log_in_back .sing_up_modal .main .icon, header .top .log_in_back .log_in_modal .main .icon {
   height: 50px;
   width: 10%;
   background-color: #000000b5;
@@ -297,12 +340,12 @@ header .top .sing_up_back .sing_up_modal .main .icon {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-header .top .sing_up_back .sing_up_modal .main .icon i {
+header .top .sing_up_back .sing_up_modal .main .icon i, header .top .sing_up_back .log_in_modal .main .icon i, header .top .log_in_back .sing_up_modal .main .icon i, header .top .log_in_back .log_in_modal .main .icon i {
   color: white;
   font-size: 22px;
   margin: 15px;
 }
-header .top .sing_up_back .sing_up_modal .main .input {
+header .top .sing_up_back .sing_up_modal .main .input, header .top .sing_up_back .log_in_modal .main .input, header .top .log_in_back .sing_up_modal .main .input, header .top .log_in_back .log_in_modal .main .input {
   height: 50px;
   width: 90%;
   background-color: #000000b5 !important;
@@ -311,7 +354,7 @@ header .top .sing_up_back .sing_up_modal .main .input {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-header .top .sing_up_back .sing_up_modal .main .input input {
+header .top .sing_up_back .sing_up_modal .main .input input, header .top .sing_up_back .log_in_modal .main .input input, header .top .log_in_back .sing_up_modal .main .input input, header .top .log_in_back .log_in_modal .main .input input {
   background-color: #fff0 !important;
   border: none;
   height: 100%;
@@ -320,21 +363,21 @@ header .top .sing_up_back .sing_up_modal .main .input input {
   outline: none;
   padding: 0 0 0 15px;
 }
-header .top .sing_up_back .sing_up_modal .main .name {
+header .top .sing_up_back .sing_up_modal .main .name, header .top .sing_up_back .log_in_modal .main .name, header .top .log_in_back .sing_up_modal .main .name, header .top .log_in_back .log_in_modal .main .name {
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
 }
-header .top .sing_up_back .sing_up_modal .main .email {
+header .top .sing_up_back .sing_up_modal .main .email, header .top .sing_up_back .log_in_modal .main .email, header .top .log_in_back .sing_up_modal .main .email, header .top .log_in_back .log_in_modal .main .email {
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
 }
-header .top .sing_up_back .sing_up_modal .main .passwords {
+header .top .sing_up_back .sing_up_modal .main .passwords, header .top .sing_up_back .log_in_modal .main .passwords, header .top .log_in_back .sing_up_modal .main .passwords, header .top .log_in_back .log_in_modal .main .passwords {
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -343,29 +386,38 @@ header .top .sing_up_back .sing_up_modal .main .passwords {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-header .top .sing_up_back .sing_up_modal .main .passwords .icon {
+header .top .sing_up_back .sing_up_modal .main .passwords .icon, header .top .sing_up_back .log_in_modal .main .passwords .icon, header .top .log_in_back .sing_up_modal .main .passwords .icon, header .top .log_in_back .log_in_modal .main .passwords .icon {
   height: 50px;
   width: 22.5%;
   background-color: #000000b5;
 }
-header .top .sing_up_back .sing_up_modal .main .passwords input {
+header .top .sing_up_back .sing_up_modal .main .passwords .icon-log, header .top .sing_up_back .log_in_modal .main .passwords .icon-log, header .top .log_in_back .sing_up_modal .main .passwords .icon-log, header .top .log_in_back .log_in_modal .main .passwords .icon-log {
+  width: 10%;
+}
+header .top .sing_up_back .sing_up_modal .main .passwords input, header .top .sing_up_back .log_in_modal .main .passwords input, header .top .log_in_back .sing_up_modal .main .passwords input, header .top .log_in_back .log_in_modal .main .passwords input {
   width: 93%;
 }
-header .top .sing_up_back .sing_up_modal .main .passwords .passwodr-one {
+header .top .sing_up_back .sing_up_modal .main .passwords .passwodr-one, header .top .sing_up_back .log_in_modal .main .passwords .passwodr-one, header .top .log_in_back .sing_up_modal .main .passwords .passwodr-one, header .top .log_in_back .log_in_modal .main .passwords .passwodr-one {
   width: 47%;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-header .top .sing_up_back .sing_up_modal .main .passwords .password-two {
+header .top .sing_up_back .sing_up_modal .main .passwords .passwodr-one-log, header .top .sing_up_back .log_in_modal .main .passwords .passwodr-one-log, header .top .log_in_back .sing_up_modal .main .passwords .passwodr-one-log, header .top .log_in_back .log_in_modal .main .passwords .passwodr-one-log {
+  width: 100%;
+}
+header .top .sing_up_back .sing_up_modal .main .passwords .password-two, header .top .sing_up_back .log_in_modal .main .passwords .password-two, header .top .log_in_back .sing_up_modal .main .passwords .password-two, header .top .log_in_back .log_in_modal .main .passwords .password-two {
   width: 47%;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-header .top .sing_up_back .sing_up_modal .buttons {
+header .top .sing_up_back .sing_up_modal .main-log, header .top .sing_up_back .log_in_modal .main-log, header .top .log_in_back .sing_up_modal .main-log, header .top .log_in_back .log_in_modal .main-log {
+  margin-top: 50px;
+}
+header .top .sing_up_back .sing_up_modal .buttons, header .top .sing_up_back .log_in_modal .buttons, header .top .log_in_back .sing_up_modal .buttons, header .top .log_in_back .log_in_modal .buttons {
   height: 100px;
   padding: 50px 0 0 200px;
   display: -webkit-box;
@@ -375,7 +427,7 @@ header .top .sing_up_back .sing_up_modal .buttons {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-header .top .sing_up_back .sing_up_modal .buttons #close_sing_up {
+header .top .sing_up_back .sing_up_modal .buttons #close_sing_up, header .top .sing_up_back .sing_up_modal .buttons #close_log_in, header .top .sing_up_back .log_in_modal .buttons #close_sing_up, header .top .sing_up_back .log_in_modal .buttons #close_log_in, header .top .log_in_back .sing_up_modal .buttons #close_sing_up, header .top .log_in_back .sing_up_modal .buttons #close_log_in, header .top .log_in_back .log_in_modal .buttons #close_sing_up, header .top .log_in_back .log_in_modal .buttons #close_log_in {
   height: 50px;
   width: 47%;
   background-color: #000000b5;
@@ -384,7 +436,7 @@ header .top .sing_up_back .sing_up_modal .buttons #close_sing_up {
   color: white;
   cursor: pointer;
 }
-header .top .sing_up_back .sing_up_modal .buttons #continue_sing_up {
+header .top .sing_up_back .sing_up_modal .buttons #continue_sing_up, header .top .sing_up_back .log_in_modal .buttons #continue_sing_up, header .top .log_in_back .sing_up_modal .buttons #continue_sing_up, header .top .log_in_back .log_in_modal .buttons #continue_sing_up {
   height: 50px;
   width: 47%;
   background-color: #000000b5;
@@ -393,10 +445,10 @@ header .top .sing_up_back .sing_up_modal .buttons #continue_sing_up {
   color: white;
   cursor: pointer;
 }
-header .top .sing_up_back .sing_up_modal .info {
+header .top .sing_up_back .sing_up_modal .info, header .top .sing_up_back .log_in_modal .info, header .top .log_in_back .sing_up_modal .info, header .top .log_in_back .log_in_modal .info {
   padding: 20px 0 0 0;
 }
-header .top .sing_up_back .sing_up_modal .info p {
+header .top .sing_up_back .sing_up_modal .info p, header .top .sing_up_back .log_in_modal .info p, header .top .log_in_back .sing_up_modal .info p, header .top .log_in_back .log_in_modal .info p {
   color: white;
   font-size: 18px;
   font-weight: lighter;

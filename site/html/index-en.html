@@ -55,13 +55,55 @@
 			  </form>
 			</div>
 		</div>
+		<button>я уже пользователь(demo)</button>
 		<div class="sing_up">
 			<div id="sing_up_button"><i class="fas fa-user-plus"></i></div>
 		</div>
+		<div class="or unselectable">or</div>					
+		<div class="log_in">
+			<div id="log_in_button"><i class="fas fa-sign-in-alt"></i></div>
+		</div>
 
+		<div id="log_in_back_show" onclick="
+		if(event.target.className == 'sing_up_back log_in_back'){
+      		$('#log_in_back_show').hide();
+      		
+    	}" 
+    	class="sing_up_back log_in_back">
+			<div class="log_in_modal sing_up_modal">
+				<div class="wapper">
+					<div class="hello hello-log">Hello it is <span>ZZZ</span>  ^_^</div>
+					<div class="center"><i class="fas fa-user"></i></div>
+					<div class="main main-log">
+						<div class="email">
+							<div class="icon icon-log"><i class="fas fa-at"></i></div>
+							<div class="input">
+								<input type="text" placeholder="Your email">
+							</div>
+						</div>
+						<div class="passwords">
+							<div class="passwodr-one passwodr-one-log">
+								<div class="icon icon-log"><i class="fas fa-key"></i></div>
+							<div class="input">
+								<input type="password" placeholder="Password">
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="buttons">
+						<button id="close_log_in">Close</button>
+						<button id="continue_sing_up">Continue</button>
+					</div>
+					<div class="info">
+					
+					</div>
+				</div>	
+			</div>
+		</div>
 		<div id="sing_up_back_show" onclick="
 		if(event.target.className == 'sing_up_back'){
       		$('#sing_up_back_show').hide();
+
     	}" 
     	class="sing_up_back">
 			<div class="sing_up_modal">
@@ -102,15 +144,14 @@
 						<button id="continue_sing_up">Continue</button>
 					</div>
 					<div class="info">
-						<p>Мега супер</p>
-						<p>Дупер</p>
+						
 					</div>
 				</div>	
 			</div>
 		</div>
-		<div class="bascket">
+		<!-- <div class="bascket">
 			<div ><i class="fas fa-shopping-basket"></i></div>
-		</div>
+		</div> -->
 		
 		<div class="setting">
 			<div><img class="country-flag" id="options_frame_" src="../img/country/en.svg" alt=""></div>
