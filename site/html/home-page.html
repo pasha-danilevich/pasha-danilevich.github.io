@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style_home_page.css">
+	<script async src="https://kit.fontawesome.com/b5aefe840c.js" crossorigin="anonymous"></script>
+	<title>My account</title>
+</head>
+<header>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+	<nav class="nav">
+    	<div id="bar"></div>
+  	</nav>
+	<div  class="top">
+		<div class="logo">
+			<a href=""><i class="fas fa-star-of-life"></i></a>
+
+		</div>
+		<div  class="bars">
+			 <!-- <i id="menu_bar_open" class="fas fa-bars"></i>  -->
+			 	<div class="menu-bar">
+					<div class="menu-void-back"></div>
+					 <nav role="navigation">
+						  <div id="menuToggle">
+						    <input id="menu-checkbox" type="checkbox" />
+						    
+						    <span></span>
+						    <span></span>
+						    <span></span>
+
+						    <ul id="menu">
+						      <li><a href="#home_anchor">Home</a></li>
+						      <li><a href="#about_anchor">About</a></li>
+						      <li><a href="#best-for-you_anchor">Best for you</a></li>
+						      <li><a href="#contact_anchor">Contact</a></li>
+
+						    </ul>
+						  </div>
+
+					</nav>
+				</div>
+		</div>
+		<div class="search">
+			<div class="search_line">
+			  <form>
+			  <input class="lng-input-search"type="text" placeholder="Search...">
+			  <button type="submit"><i class="fas fa-search"></i></button>
+			  </form>
+			</div>
+		</div>
+		<div class="sing_up">
+			<div id="sing_up_button"><i class="fas fa-user-plus"></i></div>
+		</div>
+		<div class="or unselectable">or</div>					
+		<div class="log_in">
+			<div id="log_in_button"><i class="fas fa-sign-in-alt"></i></div>
+		</div>
+
+		<div id="log_in_back_show" onclick="
+		if(event.target.className == 'sing_up_back log_in_back'){
+      		$('#log_in_back_show').hide();
+      		
+    	}" 
+    	class="sing_up_back log_in_back">
+			<div class="log_in_modal sing_up_modal">
+				<div class="wapper">
+					<div class="hello hello-log">Hello it is <span>ZZZ</span>  ^_^</div>
+					<div class="center"><i class="fas fa-user"></i></div>
+					<div class="main main-log">
+						<div class="email">
+							<div class="icon icon-log"><i class="fas fa-at"></i></div>
+							<div class="input">
+								<input type="text" placeholder="Your email">
+							</div>
+						</div>
+						<div class="passwords">
+							<div class="passwodr-one passwodr-one-log">
+								<div class="icon icon-log"><i class="fas fa-key"></i></div>
+							<div class="input">
+								<input type="password" placeholder="Password">
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="buttons">
+						<button id="close_log_in">Close</button>
+						<button id="continue_sing_up">Continue</button>
+					</div>
+					<div class="info">
+					
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div id="sing_up_back_show" onclick="
+		if(event.target.className == 'sing_up_back'){
+      		$('#sing_up_back_show').hide();
+
+    	}" 
+    	class="sing_up_back">
+			<div class="sing_up_modal">
+				<div class="wapper">
+					<div class="hello">Hello it is <span>ZZZ</span>  ^_^</div>
+					<div id="result_user_name" class="comment">Как же тебя зовут??</div>
+					<div class="steps">Жду пароль.</div>
+					<div class="main">
+						<div class="name">
+							<div class="icon"><i class="fas fa-user-edit"></i></div>
+							<div class="input">
+								<input id="user_name" type="text" placeholder="Nickname">
+							</div>
+						</div>
+						<div class="email">
+							<div class="icon"><i class="fas fa-at"></i></div>
+							<div class="input">
+								<input type="text" placeholder="Your email">
+							</div>
+						</div>
+						<div class="passwords">
+							<div class="passwodr-one">
+								<div class="icon"><i class="fas fa-key"></i></div>
+							<div class="input">
+								<input type="password" placeholder="Password">
+							</div>
+							</div>
+							<div class="password-two">
+								<div class="icon"><i class="fas fa-lock"></i></div>
+							<div class="input">
+								<input type="password" placeholder="Yet again">
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="buttons">
+						<button id="close_sing_up">Close</button>
+						<button id="continue_sing_up">Continue</button>
+					</div>
+					<div class="info">
+						
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!-- <div class="bascket">
+			<div ><i class="fas fa-shopping-basket"></i></div>
+		</div> -->
+		
+		<div class="setting">
+			<div><img class="country-flag" id="options_frame_" src="../img/country/en.svg" alt=""></div>
+		</div>
+		<div class="options">
+				<div class="options_frame" id="options_frame" 
+				onclick="if(event.target.className == 'options_frame'){
+					$('#options_frame').hide();
+				}" >
+					<div class="modal">
+						<div class="title">
+							<p>Update your settings</p>
+						</div>
+						<div class="main_options">
+							<p>Language</p>
+							<div class="wapper">
+								<select class="change-lang">
+									<option value = "ru">Руский</option>
+									<option value = "en" selected>English</option>
+								</select>
+							</div>
+							
+							<i class="fas fa-sort-down"></i>
+							<i class="fas fa-sort-down"></i>
+							<i class="fas fa-sort-down"></i>
+							<p>Currency</p>
+							<div class="wapper">
+								<select>
+									<option value = "A">Option A</option>
+									<option value = "B">Option B</option>
+									<option value = "C" disabled>Option C</option>
+								</select>
+							</div>
+								
+							<p>Region</p>
+							<div class="wapper">
+								<select>
+									<option value = "A">Option A</option>
+									<option value = "B">Option B</option>
+									<option value = "C" disabled>Option C</option>
+								</select>
+							</div>
+								
+						</div>
+						
+						<div class="buttons">
+							<div>
+								<button id="close">Close</button>
+								<button id="save">Save</button>
+							</div>
+							<script src="../js/change_lng.js"></script>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+	</div>
+
+</header>
+
+<body>
+	<div class="background ">
+		<img src="../img/home_page/back-1.jpg" alt="">
+		<div class="content">
+			<div class="left">
+				<div class="setting-bar">
+					<div class="cell"><i class="fas fa-share"></i></div>
+					<div class="cell"><i class="fas fa-user-cog"></i></div>
+				</div>
+				<div class="avatar">
+					<div class="center">
+						<div class="circle">
+							
+						</div>
+					</div>
+				</div>
+				<div class="name">
+					<div class="center">
+						<p>Mona Lisa</p>
+					</div>
+				</div>
+				<div class="adout">
+					<div class="center">
+						<p>La Gioconda</p>
+					</div>
+				</div>
+				<div class="info">
+					<div class="center">
+						<div class="cell">
+							<i class="fas fa-pen"></i>
+							<p>15</p>
+						</div>
+						<div class="cell">
+							<i class="fas fa-heart"></i>
+							<p>1,234</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="add">
+					<div class="wapper"></div>
+					<i class="fas fa-plus"></i>
+					<p>add a picture</p>
+				</div>
+				<div class="statistics">
+					<i class="fas fa-info"></i>
+					<p>view statistics</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="backet">
+		<div class="top">
+			<div class="refresh">
+				<div class="cell">
+					<i class="fas fa-sync-alt"></i>
+				</div>
+				
+				<div class="cell">
+					<p>1,234 likes</p>
+				</div>
+			</div>
+			
+		</div>
+		<div class="content"></div>
+	</div>
+</body>
+
+<link rel="stylesheet" href="../css/media_home_page.css">
+<script src="../js/script_scroll.js"></script>
+<script src="../js/script.js"></script>
+</html>

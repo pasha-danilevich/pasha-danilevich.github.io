@@ -1,0 +1,248 @@
+body .background {
+  height: 600px;
+  width: 100%;
+  position: relative;
+}
+body .background img {
+  background-image: cover;
+  height: 600px;
+  width: 100%;
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+body .background .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+body .background .content .left {
+  width: 30%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-box-shadow: 5px 0 20px -14px black;
+          box-shadow: 5px 0 20px -14px black;
+}
+body .background .content .left i {
+  color: #fffff7;
+  font-size: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+body .background .content .left .setting-bar {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .background .content .left .setting-bar .cell {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .background .content .left .center {
+  width: 200px;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .background .content .left .avatar {
+  height: 300px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .background .content .left .avatar .circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin-top: 50%;
+  background-position: 0px 0px;
+  background-image: url(../img/1.jpg);
+  background-size: 110% auto;
+  background-repeat: no-repeat;
+}
+body .background .content .left .name {
+  height: 70px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .background .content .left .name p {
+  font-size: 30px;
+  color: white;
+  line-height: 85px;
+}
+body .background .content .left .adout {
+  height: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .background .content .left .adout p {
+  font-size: 18px;
+  line-height: 30px;
+  color: white;
+}
+body .background .content .left .info {
+  height: 150px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0 20px 0;
+}
+body .background .content .left .info .cell {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .background .content .left .info .cell i {
+  font-size: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .background .content .left .info .cell p {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 50px;
+  font-size: 20px;
+}
+body .background .content .right {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
+body .background .content .right p {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 100px;
+  text-transform: uppercase;
+}
+body .background .content .right i {
+  font-size: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .background .content .right .add {
+  width: 50%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .background .content .right .statistics {
+  width: 50%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .backet {
+  height: 100%;
+  width: 100%;
+  border-color: #f0f0f0;
+  padding: 0 36px 0 36px;
+}
+body .backet .top {
+  height: 100px;
+  width: 100%;
+  color: #cbcbcb;
+}
+body .backet .top .refresh {
+  height: inherit;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .backet .top .refresh .cell {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .backet .top .refresh i {
+  font-size: 25px;
+}
+body .backet .top .refresh p {
+  font-size: 22px;
+}
