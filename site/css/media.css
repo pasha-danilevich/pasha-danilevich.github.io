@@ -214,9 +214,7 @@
     padding: 6px 0px 0px 0px !important
   }
   header .menu-bar {
-    position: fixed !important;
-    z-index: 3 !important;
-    left: -21px !important;
+    
   }
   header .menu-bar #menu li {
     text-align: center !important;

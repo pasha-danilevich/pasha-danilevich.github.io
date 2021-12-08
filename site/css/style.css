@@ -143,35 +143,27 @@ header .nav #bar {
 }
 header .top {
   width: 100%;
-  height: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 6px 0 0 0;
+  padding: 10px 10px 10px 10px;
   -webkit-box-shadow: 0px 5px 10px 0px #00000052;
-          box-shadow: 0px 5px 10px 0px #00000052;
-}
-header .top .logo {
-  width: 80px;
-  height: 48px;
-  padding: 8px 0 0 0;
+  box-shadow: 0px 5px 10px 0px #00000052;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 header .top .logo i {
-  font-size: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  font-size: 25px;
 }
 header .top .logo .fa-star-of-life:before {
   content: "";
   vertical-align: middle;
 }
 header .top .bars {
-  height: 48px;
-  margin-right: 18px;
+  height: 29px;
+  padding: 4px 0 0 0;
 }
 header .top .bars i {
   padding: 8px 0px 0px 0px;
@@ -482,9 +474,7 @@ header .top .setting .fa-cog {
   float: right;
 }
 header .menu-bar {
-  position: absolute;
-  top: 48px;
-  left: 0;
+  position: relative;
   /*
    * Just a quick hamburger
    */
@@ -504,7 +494,6 @@ header .menu-bar .menu-void-back {
 }
 header .menu-bar #menuToggle {
   display: block;
-  position: relative;
   top: -32px;
   left: 70px;
   width: 30px;
@@ -528,8 +517,8 @@ header .menu-bar #menuToggle input {
   width: 23px;
   height: 22px;
   position: absolute;
-  top: -7px;
-  left: -5px;
+  top: -4px;
+  left: -3px;
   cursor: pointer;
   opacity: 0;
   z-index: 2;
@@ -538,9 +527,9 @@ header .menu-bar #menuToggle input {
 }
 header .menu-bar #menuToggle span {
   display: block;
-  width: 21px;
-  height: 3px;
-  margin-bottom: 3px;
+  width: 24px;
+  height: 4px;
+  margin-bottom: 4px;
   position: relative;
   background: #000;
   border-radius: 3px;
@@ -563,8 +552,8 @@ header .menu-bar #menuToggle span:nth-last-child(2) {
 header .menu-bar #menuToggle input:checked ~ span {
   opacity: 1;
   -webkit-transform: rotate(45deg) translate(-2px, -1px);
-          transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  transform: rotate(45deg) translate(1px, 2px);
+  background: #000;
   width: 24px;
 }
 header .menu-bar #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -577,8 +566,10 @@ header .menu-bar #menuToggle input:checked ~ span:nth-last-child(2) {
           transform: rotate(-45deg) translate(0, -1px);
 }
 header .menu-bar #menu {
-  position: absolute;
+  position: fixed;
   width: 300px;
+  z-index: 10;
+  left: 0px;
   margin: 11px 0 0 -90px;
   padding: 50px;
   padding-top: 15px;

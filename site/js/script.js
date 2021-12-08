@@ -44,7 +44,6 @@ $(document).ready(function(){
 var checkbox =  $('#menu-checkbox');
 function checkboxClose() {
   document.querySelector('#menu-checkbox').checked = false;
-  $('#menuToggle').css({'top': + -32 + 'px'});
   menuVoidBack.css({"width": 0 + 'px'})
   menuVoidBack.css({"height": 0 + 'px'})
 }
@@ -57,7 +56,7 @@ var menuVoidBack = $('.menu-void-back')
 $(function () {
   checkbox.click(function () {
     if (this.checked) {
-      $('#menuToggle').css({'top': + -30 + 'px'});
+      
       menuVoidBack.css({"width": pageWidth})
       menuVoidBack.css({"height": windowInnerHeight})
       
@@ -122,3 +121,8 @@ user_name.oninput = function() {
         result_user_name.innerHTML = user_name.value + ', ого o_O';
     }
   };
+
+$(document).ready (function() {
+    var ishod = $('#view_ing_width').width();
+    console.log(ishod);
+});

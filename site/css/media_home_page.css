@@ -1,0 +1,18 @@
+@media (max-width: 500px) {
+	body .background .content .main-profil{
+		width: 100%
+	}
+	body .background .content .right {
+		display: none !important;
+	}
+	body .background .content .main-profil .setting-bar .cell {
+		width: 25% !important;
+	}
+	body .background .content .main-profil .setting-bar .cell:nth-child(3) {
+		display: flex;
+	}
+	body .background .content .main-profil .setting-bar .cell:nth-child(4) {
+		display: flex;
+	}
+	
+}

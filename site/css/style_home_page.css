@@ -21,7 +21,7 @@ body .background .content {
   display: flex;
   overflow: hidden;
 }
-body .background .content .left {
+body .background .content .main-profil {
   width: 30%;
   height: 100%;
   -webkit-backdrop-filter: blur(5px);
@@ -29,13 +29,17 @@ body .background .content .left {
   -webkit-box-shadow: 5px 0 20px -14px black;
           box-shadow: 5px 0 20px -14px black;
 }
-body .background .content .left i {
+body .background .content .main-profil i {
   color: #fffff7;
   font-size: 20px;
   margin-top: 30px;
   cursor: pointer;
 }
-body .background .content .left .setting-bar {
+body .background .content .main-profil i:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+body .background .content .main-profil .setting-bar {
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,8 +47,9 @@ body .background .content .left .setting-bar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 30px;
 }
-body .background .content .left .setting-bar .cell {
+body .background .content .main-profil .setting-bar .cell {
   width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,7 +58,13 @@ body .background .content .left .setting-bar .cell {
       -ms-flex-pack: center;
           justify-content: center;
 }
-body .background .content .left .center {
+body .background .content .main-profil .setting-bar .cell:nth-child(3) {
+  display: none;
+}
+body .background .content .main-profil .setting-bar .cell:nth-child(4) {
+  display: none;
+}
+body .background .content .main-profil .center {
   width: 200px;
   height: inherit;
   display: -webkit-box;
@@ -63,7 +74,7 @@ body .background .content .left .center {
       -ms-flex-pack: center;
           justify-content: center;
 }
-body .background .content .left .avatar {
+body .background .content .main-profil .avatar {
   height: 300px;
   width: 100%;
   display: -webkit-box;
@@ -73,7 +84,7 @@ body .background .content .left .avatar {
       -ms-flex-pack: center;
           justify-content: center;
 }
-body .background .content .left .avatar .circle {
+body .background .content .main-profil .avatar .circle {
   width: 200px;
   height: 200px;
   border-radius: 100%;
@@ -82,8 +93,15 @@ body .background .content .left .avatar .circle {
   background-image: url(../img/1.jpg);
   background-size: 110% auto;
   background-repeat: no-repeat;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-body .background .content .left .name {
+body .background .content .main-profil .avatar .circle:hover {
+  border-radius: 20%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+body .background .content .main-profil .name {
   height: 70px;
   width: 100%;
   display: -webkit-box;
@@ -93,12 +111,12 @@ body .background .content .left .name {
       -ms-flex-pack: center;
           justify-content: center;
 }
-body .background .content .left .name p {
+body .background .content .main-profil .name p {
   font-size: 30px;
   color: white;
   line-height: 85px;
 }
-body .background .content .left .adout {
+body .background .content .main-profil .adout {
   height: 30px;
   width: 100%;
   display: -webkit-box;
@@ -108,12 +126,12 @@ body .background .content .left .adout {
       -ms-flex-pack: center;
           justify-content: center;
 }
-body .background .content .left .adout p {
+body .background .content .main-profil .adout p {
   font-size: 18px;
   line-height: 30px;
   color: white;
 }
-body .background .content .left .info {
+body .background .content .main-profil .info {
   height: 150px;
   width: 100%;
   display: -webkit-box;
@@ -124,7 +142,7 @@ body .background .content .left .info {
           justify-content: center;
   padding: 20px 0 20px 0;
 }
-body .background .content .left .info .cell {
+body .background .content .main-profil .info .cell {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,7 +152,7 @@ body .background .content .left .info .cell {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-body .background .content .left .info .cell i {
+body .background .content .main-profil .info .cell i {
   font-size: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,8 +160,9 @@ body .background .content .left .info .cell i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 10px;
 }
-body .background .content .left .info .cell p {
+body .background .content .main-profil .info .cell p {
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,7 +185,7 @@ body .background .content .right p {
   width: 100%;
   text-align: center;
   font-size: 30px;
-  line-height: 100px;
+  line-height: 70px;
   text-transform: uppercase;
 }
 body .background .content .right i {
@@ -177,6 +196,30 @@ body .background .content .right i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 20px;
+}
+body .background .content .right .wrapper {
+  width: 300px;
+  height: 300px;
+  margin-top: calc(160px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 30px;
+  cursor: pointer;
+}
+body .background .content .right .wrapper:hover {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-box-shadow: 0px 0 20px -14px black;
+          box-shadow: 0px 0 20px -14px black;
 }
 body .background .content .right .add {
   width: 50%;
@@ -187,10 +230,6 @@ body .background .content .right .add {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 body .background .content .right .statistics {
   width: 50%;
@@ -201,10 +240,6 @@ body .background .content .right .statistics {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 body .backet {
   height: 100%;
