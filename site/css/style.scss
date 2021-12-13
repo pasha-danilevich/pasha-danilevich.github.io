@@ -154,65 +154,97 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 36px 10px 36px;
     -webkit-box-shadow: 0px 5px 10px 0px #00000052;
     box-shadow: 0px 5px 10px 0px #00000052;
     display: flex;
     justify-content: space-between;
 		.logo {
-			
+			height: 30px;
 			i {
 				font-size: 25px;
-				
 			}
 			.fa-star-of-life:before {
-			    content: "\f621";
-					vertical-align: middle;
+			   content: "\f621";
+				vertical-align: middle;
 			}
 		}
 		.bars {
-			height: 29px;
-    	padding: 4px 0 0 0;
+			height: 30px;
+
+			button {
+				border: 0;
+				background-color: #0000;
+				outline: none;
+				cursor: pointer;
+			}
 			i {
-				padding: 8px 0px 0px 0px;
-		    font-size: 20px;
-		    display: -webkit-box;
-		    display: -ms-flexbox;
-		    display: flex;
-		    cursor: pointer;
-		    -webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		    justify-content: center;
+				font-size: 25px;
+			}
+			.fa-bars:before {
+				vertical-align: middle;
 			}
 		}
-		.search {
-			width: 165px;
-	    height: 48px;
-	    padding: 5px 0px 0px 0px;
-			
-			.search_line {
-				height: 30px;
+		.profil-icon {
+			height: 30px;
+			.avatar {
+				width: 100%;
 				display: flex;
-				justify-content: space-between;
-				position: relative;
-				input {
-				  padding-left: 10px;
-				  border: none;
-				  border-radius: 5px;
-				  outline: none;
-				  color: #9E9C9C;
-				  position: absolute;
-				  width: 100%;
+				justify-content: center;
+				.circle {
+					width: 30px;
+					height: 30px;
+					border-radius: 100%;
+					background-position: 0px 0px;
+				    background-image: url(../img/1.jpg);
+				    background-size: 110% auto;
+					background-repeat: no-repeat;
+					transition: 0.5s;
 				}
-				button {
-				  width: 42px;
-			    border: none;
-			    cursor: pointer;
-			    right: 0;
-			    position: absolute;
-			    background-color: #fff;
+				.circle:hover{
+					border-radius: 20%;
+					transition: 0.5s;
 				}
 			}
+		}
+		.menu-bar {
+			position: absolute;
+			top: 50px;
+			left: -300px;
+			z-index: 1;
+			transition-duration: .2s;
+			.menu {
+				background-color: #fff;
+				width: 300px;
+		    height: 300px;
+		    box-shadow: 0px 5px 10px 0px #00000052;
+		    display: flex;
+		    justify-content: space-around;
+		    flex-direction: column;
+		    padding: 10px;
+				
+				li {
+					font-size: 20px;
+			    font-weight: bold;
+			    display: flex;
+			    justify-content: space-between;
+			    background-color: #0000000d;
+			    padding: 10px;
+			    border-radius: 10px;
+			    a {
+			    	width: 100%;
+			    }
+					i {
+						font-size: 20px;
+				    margin-left: 10px;
+				    margin-top: 5px;
+					}
+				}
+			}
+		}
+		.menu-bar-active {
+			left: 0px !important;
+			transition-duration: .2s;
 		}
 		.sing_up {
 			width: 50px;
@@ -438,7 +470,6 @@ header {
 							}
 						}
 				  }
-				}
 		.bascket {
 			width: 34px;
 	    height: 48px;
@@ -470,151 +501,6 @@ header {
 			}
 		}
 	}
-	.menu-bar{
-		position: relative;
-
-		.menu-void-back {
-			width: 0px;
-			height:0px;
-			position: absolute;
-			z-index: 1;
-
-		}
-		#menuToggle
-		{
-		  display: block;
-		  // position: relative;
-		  top: -32px;
-    	left: 70px;
-		  width: 30px;
-		  z-index: 1;
-		  
-		  -webkit-user-select: none;
-		  user-select: none;
-
-		}
-
-		#menuToggle a
-		{
-		  text-decoration: none;
-		  color: #232323;
-		  
-		  transition: color 0.3s ease;
-		}
-
-		#menuToggle a:hover
-		{
-		  color: tomato;
-		}
-
-
-		#menuToggle input
-		{
-		  display: block;
-		  width: 23px;
-    	height: 22px;
-		  position: absolute;
-			top: -4px;
-	    left: -3px;
-		  
-		  cursor: pointer;
-		  
-		  opacity: 0;
-		  z-index: 2; /* and place it over the hamburger */
-		  
-		  -webkit-touch-callout: none;
-		}
-
-		/*
-		 * Just a quick hamburger
-		 */
-		#menuToggle span
-		{
-		  display: block;
-		  width: 24px;
-	    height: 4px;
-	    margin-bottom: 4px;
-		  position: relative;
-		  
-		  background: #000;
-		  border-radius: 3px;
-		  
-		  z-index: 1;
-		  
-		  transform-origin: 4px 0px;
-		  
-		  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-		              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-		              opacity 0.55s ease;
-		}
-
-		#menuToggle span:first-child
-		{
-		  transform-origin: 0% 0%;
-		}
-
-		#menuToggle span:nth-last-child(2)
-		{
-		  transform-origin: 0% 100%;
-		}
-
-		/* 
-		 * Transform all the slices of hamburger
-		 * into a crossmark.
-		 */
-		#menuToggle input:checked ~ span
-		{
-		  opacity: 1;
-    -webkit-transform: rotate(
-45deg) translate(-2px, -1px);
-    transform: rotate(
-45deg) translate(1px, 2px);
-    background: #000;
-    width: 24px;
-		}
-		#menuToggle input:checked ~ span:nth-last-child(3)
-		{
-		  opacity: 0;
-		  transform: rotate(0deg) scale(0.2, 0.2);
-		}
-
-		/*
-		 * Ohyeah and the last one should go the other direction
-		 */
-		#menuToggle input:checked ~ span:nth-last-child(2)
-		{
-		  transform: rotate(-45deg) translate(0, -1px);
-		}
-		#menu
-		{
-		  position: fixed;
-		  width: 300px;
-		  z-index: 10;
-		  left: 0px;
-		  margin: 11px 0 0 -90px;
-	    padding: 50px;
-	    padding-top: 15px;
-		  
-		  background: #ffffff;
-    	box-shadow: 5px 5px 10px 0px #00000052;
-		  list-style-type: none;
-		  -webkit-font-smoothing: antialiased;
-		  /* to stop flickering of text in safari */
-		  
-		  transform-origin: 0% 0%;
-		  transform: translate(-100%, 0);
-		  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-		}
-
-		#menu li
-		{
-		  padding: 10px 0;
-		  font-size: 22px;
-		}
-		#menuToggle input:checked ~ ul
-		{
-		  transform: none;
-		}
 	}
 }
 

@@ -41,6 +41,18 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+  $('#bars_button').on('click',function(){
+  console.log("click");
+    if($('#menu_bar').hasClass('menu-bar-active')){
+      $('#menu_bar').removeClass('menu-bar-active');
+    }
+    else{
+      $('#menu_bar').addClass('menu-bar-active');
+    }
+  });
+});
+
 var checkbox =  $('#menu-checkbox');
 function checkboxClose() {
   document.querySelector('#menu-checkbox').checked = false;
@@ -95,34 +107,34 @@ window.onload = function(event) {
   console.log("web-load");
 }
 
-user_name.oninput = function() {
-    result_user_name.innerHTML = user_name.value;
-    console.log(result_user_name.innerHTML.length)
-    switch (result_user_name.innerHTML.length) {
-      case 0:
-        result_user_name.innerHTML ='Передумал?';
-        break;
-      case 1:
-      case 2:
-      case 3:
-        result_user_name.innerHTML = user_name.value + ', такое короткое имя)))';
-        break;
-      case 4:
-      case 5:
-      case 6:
-        result_user_name.innerHTML = user_name.value + ', довольно строго.';
-        break;
-      case 7:
-      case 8:
-      case 9:
-        result_user_name.innerHTML = user_name.value + ', что надо, хотя...';
-        break;
-      default:
-        result_user_name.innerHTML = user_name.value + ', ого o_O';
-    }
-  };
+// user_name.oninput = function() {
+//     result_user_name.innerHTML = user_name.value;
+//     console.log(result_user_name.innerHTML.length)
+//     switch (result_user_name.innerHTML.length) {
+//       case 0:
+//         result_user_name.innerHTML ='Передумал?';
+//         break;
+//       case 1:
+//       case 2:
+//       case 3:
+//         result_user_name.innerHTML = user_name.value + ', такое короткое имя)))';
+//         break;
+//       case 4:
+//       case 5:
+//       case 6:
+//         result_user_name.innerHTML = user_name.value + ', довольно строго.';
+//         break;
+//       case 7:
+//       case 8:
+//       case 9:
+//         result_user_name.innerHTML = user_name.value + ', что надо, хотя...';
+//         break;
+//       default:
+//         result_user_name.innerHTML = user_name.value + ', ого o_O';
+//     }
+//   };
 
-$(document).ready (function() {
-    var ishod = $('#view_ing_width').width();
-    console.log(ishod);
-});
+// $(document).ready (function() {
+//     var ishod = $('#view_ing_width').width();
+//     console.log(ishod);
+// });

@@ -146,13 +146,16 @@ header .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 36px 10px 36px;
   -webkit-box-shadow: 0px 5px 10px 0px #00000052;
   box-shadow: 0px 5px 10px 0px #00000052;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+header .top .logo {
+  height: 30px;
 }
 header .top .logo i {
   font-size: 25px;
@@ -162,51 +165,98 @@ header .top .logo .fa-star-of-life:before {
   vertical-align: middle;
 }
 header .top .bars {
-  height: 29px;
-  padding: 4px 0 0 0;
+  height: 30px;
+}
+header .top .bars button {
+  border: 0;
+  background-color: #0000;
+  outline: none;
+  cursor: pointer;
 }
 header .top .bars i {
-  padding: 8px 0px 0px 0px;
-  font-size: 20px;
+  font-size: 25px;
+}
+header .top .bars .fa-bars:before {
+  vertical-align: middle;
+}
+header .top .profil-icon {
+  height: 30px;
+}
+header .top .profil-icon .avatar {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  cursor: pointer;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-header .top .search {
-  width: 165px;
-  height: 48px;
-  padding: 5px 0px 0px 0px;
-}
-header .top .search .search_line {
+header .top .profil-icon .avatar .circle {
+  width: 30px;
   height: 30px;
+  border-radius: 100%;
+  background-position: 0px 0px;
+  background-image: url(../img/1.jpg);
+  background-size: 110% auto;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+header .top .profil-icon .avatar .circle:hover {
+  border-radius: 20%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+header .top .menu-bar {
+  position: absolute;
+  top: 50px;
+  left: -300px;
+  z-index: 1;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+header .top .menu-bar .menu {
+  background-color: #fff;
+  width: 300px;
+  height: 300px;
+  -webkit-box-shadow: 0px 5px 10px 0px #00000052;
+          box-shadow: 0px 5px 10px 0px #00000052;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+header .top .menu-bar .menu li {
+  font-size: 20px;
+  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
+  background-color: #0000000d;
+  padding: 10px;
+  border-radius: 10px;
 }
-header .top .search .search_line input {
-  padding-left: 10px;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  color: #9E9C9C;
-  position: absolute;
+header .top .menu-bar .menu li a {
   width: 100%;
 }
-header .top .search .search_line button {
-  width: 42px;
-  border: none;
-  cursor: pointer;
-  right: 0;
-  position: absolute;
-  background-color: #fff;
+header .top .menu-bar .menu li i {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+header .top .menu-bar-active {
+  left: 0px !important;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 header .top .sing_up {
   width: 50px;
@@ -446,155 +496,32 @@ header .top .sing_up_back .sing_up_modal .info p, header .top .sing_up_back .log
   font-weight: lighter;
   text-align: center;
 }
-header .top .bascket {
+header .top .sing_up_back .bascket, header .top .log_in_back .bascket {
   width: 34px;
   height: 48px;
   padding: 8px 27px 0px 0px;
 }
-header .top .bascket i {
+header .top .sing_up_back .bascket i, header .top .log_in_back .bascket i {
   font-size: 20px;
   cursor: pointer;
 }
-header .top .bascket .fa-shopping-basket {
+header .top .sing_up_back .bascket .fa-shopping-basket, header .top .log_in_back .bascket .fa-shopping-basket {
   float: right;
 }
-header .top .setting {
+header .top .sing_up_back .setting, header .top .log_in_back .setting {
   width: 24px;
   height: 48px;
   padding: 6px 0px 0px 0px;
   margin: 0 36px 0 0;
 }
-header .top .setting img {
+header .top .sing_up_back .setting img, header .top .log_in_back .setting img {
   width: 24px;
   height: 20px;
   cursor: pointer;
   border-radius: 6px;
 }
-header .top .setting .fa-cog {
+header .top .sing_up_back .setting .fa-cog, header .top .log_in_back .setting .fa-cog {
   float: right;
-}
-header .menu-bar {
-  position: relative;
-  /*
-   * Just a quick hamburger
-   */
-  /* 
-   * Transform all the slices of hamburger
-   * into a crossmark.
-   */
-  /*
-   * Ohyeah and the last one should go the other direction
-   */
-}
-header .menu-bar .menu-void-back {
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  z-index: 1;
-}
-header .menu-bar #menuToggle {
-  display: block;
-  top: -32px;
-  left: 70px;
-  width: 30px;
-  z-index: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
-}
-header .menu-bar #menuToggle a {
-  text-decoration: none;
-  color: #232323;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-}
-header .menu-bar #menuToggle a:hover {
-  color: tomato;
-}
-header .menu-bar #menuToggle input {
-  display: block;
-  width: 23px;
-  height: 22px;
-  position: absolute;
-  top: -4px;
-  left: -3px;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 2;
-  /* and place it over the hamburger */
-  -webkit-touch-callout: none;
-}
-header .menu-bar #menuToggle span {
-  display: block;
-  width: 24px;
-  height: 4px;
-  margin-bottom: 4px;
-  position: relative;
-  background: #000;
-  border-radius: 3px;
-  z-index: 1;
-  -webkit-transform-origin: 4px 0px;
-          transform-origin: 4px 0px;
-  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
-header .menu-bar #menuToggle span:first-child {
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-header .menu-bar #menuToggle span:nth-last-child(2) {
-  -webkit-transform-origin: 0% 100%;
-          transform-origin: 0% 100%;
-}
-header .menu-bar #menuToggle input:checked ~ span {
-  opacity: 1;
-  -webkit-transform: rotate(45deg) translate(-2px, -1px);
-  transform: rotate(45deg) translate(1px, 2px);
-  background: #000;
-  width: 24px;
-}
-header .menu-bar #menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-          transform: rotate(0deg) scale(0.2, 0.2);
-}
-header .menu-bar #menuToggle input:checked ~ span:nth-last-child(2) {
-  -webkit-transform: rotate(-45deg) translate(0, -1px);
-          transform: rotate(-45deg) translate(0, -1px);
-}
-header .menu-bar #menu {
-  position: fixed;
-  width: 300px;
-  z-index: 10;
-  left: 0px;
-  margin: 11px 0 0 -90px;
-  padding: 50px;
-  padding-top: 15px;
-  background: #ffffff;
-  -webkit-box-shadow: 5px 5px 10px 0px #00000052;
-          box-shadow: 5px 5px 10px 0px #00000052;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-  -webkit-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
-header .menu-bar #menu li {
-  padding: 10px 0;
-  font-size: 22px;
-}
-header .menu-bar #menuToggle input:checked ~ ul {
-  -webkit-transform: none;
-          transform: none;
 }
 
 body {
