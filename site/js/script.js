@@ -1,3 +1,14 @@
+//my function ---------------------------
+function splitClass(argument) {
+  let str = argument;
+  let arr = str.split('-');
+  return arr
+}
+function removeActiveClass(father, class_activator) {
+  //let father = "'" + father + "'"
+  $(father).removeClass(class_activator)
+}
+//----------------------------------------
 $(function (){
   $('#sing_up_button').click(function (){
     $('#sing_up_back_show').show();
@@ -41,57 +52,42 @@ $(document).ready(function(){
 });
 
 
+
+
 $(document).ready(function(){
   $('#bars_button').on('click',function(){
-  console.log("click");
     if($('#menu_bar').hasClass('menu-bar-active')){
-      $('#menu_bar').removeClass('menu-bar-active');
+      removeActiveClass('#menu_bar','menu-bar-active')
+      document.getElementById('bars_button_i').style.display = 'block';
+      document.getElementById('times_button_i').style.display = 'none';
     }
     else{
       $('#menu_bar').addClass('menu-bar-active');
+      document.getElementById('bars_button_i').style.display = 'none';
+      document.getElementById('times_button_i').style.display = 'block';
     }
   });
 });
 
-var checkbox =  $('#menu-checkbox');
-function checkboxClose() {
-  document.querySelector('#menu-checkbox').checked = false;
-  menuVoidBack.css({"width": 0 + 'px'})
-  menuVoidBack.css({"height": 0 + 'px'})
-}
-
-const pageWidth = document.documentElement.scrollWidth
-const windowInnerHeight = window.innerHeight
-var menuVoidBack = $('.menu-void-back')
-
-
-$(function () {
-  checkbox.click(function () {
-    if (this.checked) {
-      
-      menuVoidBack.css({"width": pageWidth})
-      menuVoidBack.css({"height": windowInnerHeight})
-      
-      $(function () {
-        menuVoidBack.click(function () {
-          checkboxClose()
-        })
-      });
+$(document).click(function (e) {
+  if($('#menu_bar').hasClass('menu-bar-active')){
+    if (splitClass(event.target.className)[0] != 'menu'){
+      removeActiveClass('#menu_bar','menu-bar-active')
+      document.getElementById('bars_button_i').style.display = 'block';
+      document.getElementById('times_button_i').style.display = 'none';
 
     }
-    else {
-      checkboxClose()
-    }
-  })
+  } 
 });
-if(pageWidth < 500){
-  $('#menu').css({"width": pageWidth + 70})
-}
+
 $(window).scroll(function(e) {      
     if (window.pageYOffset > 200){
-  checkboxClose()
-}
+      removeActiveClass('#menu_bar','menu-bar-active')
+    }
 });
+
+
+
 
 $(document).ready(function(){
     $("#menu").on("click","a", function (event) {

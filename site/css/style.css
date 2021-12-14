@@ -176,8 +176,18 @@ header .top .bars button {
 header .top .bars i {
   font-size: 25px;
 }
+header .top .bars #bars_button_i {
+  display: block;
+}
+header .top .bars #times_button_i {
+  display: none;
+}
 header .top .bars .fa-bars:before {
   vertical-align: middle;
+  display: block;
+}
+header .top .bars .fa-times:before {
+  font-size: 30px;
 }
 header .top .profil-icon {
   height: 30px;
@@ -214,8 +224,11 @@ header .top .menu-bar {
   z-index: 1;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-header .top .menu-bar .menu {
+header .top .menu-bar .menu-main {
   background-color: #fff;
   width: 300px;
   height: 300px;
@@ -232,7 +245,22 @@ header .top .menu-bar .menu {
           flex-direction: column;
   padding: 10px;
 }
-header .top .menu-bar .menu li {
+header .top .menu-bar .menu-main .menu-sub {
+  width: 0px;
+  height: 0px;
+  padding: 0px;
+  position: absolute;
+  left: 280px;
+  top: -20px;
+  z-index: 2;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  overflow: hidden;
+}
+header .top .menu-bar .menu-main .menu-sub .menu-li {
+  opacity: 0;
+}
+header .top .menu-bar .menu-main .menu-li {
   font-size: 20px;
   font-weight: bold;
   display: -webkit-box;
@@ -241,17 +269,38 @@ header .top .menu-bar .menu li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #0000000d;
-  padding: 10px;
-  border-radius: 10px;
+  position: relative;
 }
-header .top .menu-bar .menu li a {
+header .top .menu-bar .menu-main .menu-li .menu-a {
   width: 100%;
+  height: 100%;
+  padding: 10px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
-header .top .menu-bar .menu li i {
+header .top .menu-bar .menu-main .menu-li .menu-a:hover {
+  padding-left: 20px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  width: 600px;
+}
+header .top .menu-bar .menu-main .menu-li .menu-i {
   font-size: 20px;
-  margin-left: 10px;
+  float: right;
   margin-top: 5px;
+}
+header .top .menu-bar .menu-main .menu-li:hover .menu-sub {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  opacity: 1;
+  -webkit-transition-duration: 0.2s else;
+          transition-duration: 0.2s else;
+}
+header .top .menu-bar .menu-main .menu-li:hover .menu-sub li {
+  opacity: 1;
+  -webkit-transition-duration: 0.4s else;
+          transition-duration: 0.4s else;
 }
 header .top .menu-bar-active {
   left: 0px !important;

@@ -181,8 +181,18 @@ header {
 			i {
 				font-size: 25px;
 			}
+			#bars_button_i{
+				display: block;
+			}
+			#times_button_i{
+				display: none;
+			}
 			.fa-bars:before {
 				vertical-align: middle;
+				display: block;
+			}
+			.fa-times:before{
+				font-size: 30px;
 			}
 		}
 		.profil-icon {
@@ -213,7 +223,9 @@ header {
 			left: -300px;
 			z-index: 1;
 			transition-duration: .2s;
-			.menu {
+			display: flex;
+			
+			.menu-main {
 				background-color: #fff;
 				width: 300px;
 		    height: 300px;
@@ -222,25 +234,60 @@ header {
 		    justify-content: space-around;
 		    flex-direction: column;
 		    padding: 10px;
+		    .menu-sub{
+					width: 0px;
+		    	height: 0px;
+		    	padding: 0px;
+		    	
+					position: absolute;
+					left: 280px;
+			    top: -20px;
+			    z-index: 2;
+			    transition-duration: .2s;
+			    overflow:hidden;
+			    .menu-li {
+			    	opacity: 0;
+			    }
+				}
 				
-				li {
+				.menu-li {
 					font-size: 20px;
 			    font-weight: bold;
 			    display: flex;
 			    justify-content: space-between;
-			    background-color: #0000000d;
-			    padding: 10px;
-			    border-radius: 10px;
-			    a {
+			    position: relative;
+
+			    .menu-a {
 			    	width: 100%;
+			    	height: 100%;
+			    	padding: 10px;
+			    	transition-duration: .2s ;
 			    }
-					i {
+			    .menu-a:hover {
+			    	padding-left: 20px;
+			    	transition-duration: .2s;
+			    	width: 600px;
+			    }
+			    
+					.menu-i {
 						font-size: 20px;
-				    margin-left: 10px;
+				    float: right;
 				    margin-top: 5px;
 					}
 				}
+				.menu-li:hover  .menu-sub{
+		    	width: 300px;
+		    	height: 300px;
+		    	padding: 10px;
+		    	opacity: 1;
+		    	transition-duration: .2s else;
+		    }
+		    .menu-li:hover  .menu-sub li{
+		    	opacity: 1;
+		    	transition-duration: .4s else;
+		    }
 			}
+			
 		}
 		.menu-bar-active {
 			left: 0px !important;
