@@ -99,7 +99,7 @@
     height: 525px !important;
     margin-top: -265px !important;
   }
-  header .top .sing_up_back .sing_up_modal{
+  header .top .sign_up_back .sign_up_modal{
     width: 100% !important;
     left: 0px !important;
     top: 0px !important;
@@ -108,39 +108,39 @@
     margin-top: 0px !important;
   }
 
-  .sing_up_back .sing_up_modal .wapper{
+  .sign_up_back .sign_up_modal .wapper{
     padding: 0px 20px !important;
     border-radius: 0px !important;
   }
-  .sing_up_back .sing_up_modal .main .icon{
+  .sign_up_back .sign_up_modal .main .icon{
     width: 50px !important;
   }
-  .sing_up_back .sing_up_modal .main .passwords .passwodr-one {
+  .sign_up_back .sign_up_modal .main .passwords .passwodr-one {
     width: 47% !important;
   }
-  .sing_up_back .sing_up_modal .main .passwords .password-two {
+  .sign_up_back .sign_up_modal .main .passwords .password-two {
     width: 47% !important;
   }
-  .sing_up_back .sing_up_modal .main .passwords .icon {
+  .sign_up_back .sign_up_modal .main .passwords .icon {
     width: 50px !important;
   }
-  .sing_up_back .sing_up_modal .main .input {
+  .sign_up_back .sign_up_modal .main .input {
     width: 100% !important;
     
   }
-  header .top .sing_up_back .sing_up_modal .steps {
+  header .top .sign_up_back .sign_up_modal .steps {
     
   }
-  header .top .sing_up_back .sing_up_modal .main .input input{
+  header .top .sign_up_back .sign_up_modal .main .input input{
     padding: 0 !important;
   }
-  .sing_up_back .sing_up_modal .buttons {
+  .sign_up_back .sign_up_modal .buttons {
     padding: 50px 0 0 0px !important;
   }
-  .sing_up_back .sing_up_modal .buttons #close_sing_up {
+  .sign_up_back .sign_up_modal .buttons #close_sign_up {
     width: 47% !important;
   }
-  .sing_up_back .sing_up_modal .buttons #continue_sing_up{
+  .sign_up_back .sign_up_modal .buttons #continue_sign_up{
     width: 47% !important;
   }
   footer .mobile {
@@ -185,34 +185,7 @@
     background-color: #fff;
     z-index: 1;
   }
-  header .top .bascket {
-    padding: 8px 14px 0px 0px !important;
-  }
-  header .top .logo {
-    width: 52px !important;
-  }
-  header .top .bars {
-    margin-right: 15px !important;
-  }
-  header .top .search {
-    padding: 5px 0px 0px 0px !important;
-  }
-  header .top .search .search_line button {
-    display: none;
-  }
-  header .top .sing_up {
-    width: 43px !important;
-    padding: 5px 0px 0px 0px !important;
-  }
-  header .top .bascket {
-    width: 34px !important;
-    padding: 8px 14px 0px 0px !important;
-  }
-  header .top .setting{
-    margin: 0 0px 0 0 !important;
-    width: 39px !important;
-    padding: 6px 0px 0px 0px !important
-  }
+
   header .menu-bar {
     
   }

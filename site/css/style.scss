@@ -7,27 +7,17 @@
 * {
   -webkit-tap-highlight-color: transparent;
 }
-@keyframes animation-linear-grdient {   
-						  0%{background-position:10% 0%}
-					    50%{background-position:91% 100%}
-					    100%{background-position:10% 0%}
-						}
-						@-webkit-keyframes animation-linear-grdient {
-						    0%{background-position:10% 0%}
-						    50%{background-position:91% 100%}
-						    100%{background-position:10% 0%}
-						}
-						@-moz-keyframes animation-linear-grdient {
-						    0%{background-position:10% 0%}
-						    50%{background-position:91% 100%}
-						    100%{background-position:10% 0%}
-						}
-						@-o-keyframes animation-linear-grdient {
-						    0%{background-position:10% 0%}
-						    50%{background-position:91% 100%}
-						    100%{background-position:10% 0%}
-						}
-
+body {
+  top: 0 !important;
+}
+.goog-text-highlight {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.skiptranslate {
+  display: none !important;
+  height: 0 !important;
+}
 
 // body::-webkit-scrollbar {
 //   width: 12px;               /* ширина scrollbar */
@@ -159,8 +149,50 @@ header {
     box-shadow: 0px 5px 10px 0px #00000052;
     display: flex;
     justify-content: space-between;
+    .top-left {
+    	width: 33%;
+    	height: 30px;
+    	display: flex;
+    	justify-content: flex-start;
+    }
+    .top-mid{
+    	width: 33%;
+    	height: 30px;
+    	display: flex;
+    	justify-content: center;
+    }
+    .top-right {
+    	width: 33%;
+    	height: 30px;
+    	display: flex;
+    	justify-content: flex-end;
+    	.conteiner {
+    		width: 100px;
+    		height: 30px;
+    		margin-right: 30px;
+    		display: flex;
+    		justify-content: space-between;
+    		font-size: 22px;
+    	}
+    	.setting {
+				width: 24px;
+		    height: 48px;
+		    padding: 6px 0px 0px 0px;
+	    	margin: 0 36px 0 0;
+				.country-flag {
+					width: 24px;
+	    		height: 20px;
+					cursor: pointer;
+					border-radius: 6px;
+				}
+			}
+    }
 		.logo {
 			height: 30px;
+			a{
+				font-size: 22px;
+				font-weight: 900;
+			}
 			i {
 				font-size: 25px;
 			}
@@ -194,6 +226,40 @@ header {
 			.fa-times:before{
 				font-size: 30px;
 			}
+		}
+		.search {
+			width: 300px;
+			height: 30px;
+			display: flex;
+			justify-content: space-between;
+			margin-left: 30px;
+			.search-line{
+				position: relative;
+				input,  button {
+				  border: none;
+				  outline: none;
+				  border-radius: 3px;
+				}
+				input {
+				  width: 100%;
+				  height: 30px;
+				  background-color: #0000;
+				  font-size: 20px;
+				}
+				button {
+				  position: absolute;
+				  right: 0;
+				  top: -2px;
+				  cursor: pointer;
+				  background-color: #0000;
+				}
+				button:before {
+				  content: "\f002";
+				  font-family: FontAwesome;
+				  font-size: 20px;
+				  color: #000;
+				}
+			}			
 		}
 		.profil-icon {
 			height: 30px;
@@ -234,6 +300,7 @@ header {
 		    justify-content: space-around;
 		    flex-direction: column;
 		    padding: 10px;
+		    border-bottom-right-radius: 10px;
 		    .menu-sub{
 					width: 0px;
 		    	height: 0px;
@@ -293,39 +360,29 @@ header {
 			left: 0px !important;
 			transition-duration: .2s;
 		}
-		.sing_up {
-			width: 50px;
-	    height: 48px;
-	    margin-left: auto;
-	    padding: 5px 0px 0px 0px;
-	    font-size: 18px;
+		.sign_up {
+			height: 30px;
 			div {
-				width: 22px;
-				height: 22px;
+
 			}
 			i {
 				cursor: pointer;
 			}
 		}
 		.or {
-			line-height: 36px;
-	    width: 40px;
+			height: 30px;
 	    font-weight: 900;
 		}
 		.log_in {
-			width: 64px;
-	    height: 48px;
-	    padding: 5px 0px 0px 0px;
-	    font-size: 18px;
+			height: 30px;
 			div {
-				width: 22px;
-				height: 22px;
+
 			}
 			i {
 				cursor: pointer;
 			}
 		}
-		.sing_up_back, .log_in_back  {
+		.sign_up_back, .log_in_back  {
 					position: fixed;
 			    top: 0;
 			    left: 0;
@@ -336,7 +393,7 @@ header {
 			    z-index: 10;
 					display: none;
 					transition: .30s , .10s ;
-					.sing_up_modal, .log_in_modal {
+					.sign_up_modal, .log_in_modal {
 				    width: 600px;
 				    height: 600px;
 				    position: fixed;
@@ -353,16 +410,7 @@ header {
 							padding: 0px 50px;
 					    height: 100%;
 					    border-radius: 10px;
-
-					    background: linear-gradient(135deg, #00c7e1, #ff8398);
-					    background-color: #4158D0;
-							background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-
-					    animation: animation-linear-grdient 30s ease infinite;
-					    -webkit-animation: animation-linear-grdient 30s ease infinite;
-					    -moz-animation: animation-linear-grdient 30s ease infinite;
-					    -o-animation: animation-linear-grdient 30s ease infinite;
-				    }
+					  }
 						
 				    .hello {
 				    	height: 100px;
@@ -487,7 +535,7 @@ header {
 							display: flex;
 							justify-content: space-between;
 
-							#close_sing_up,#close_log_in{
+							#close_sign_up,#close_log_in{
 								height: 50px;
 								width: 47%;
 								background-color: #000000b5;
@@ -496,7 +544,7 @@ header {
 								color: white;
 								cursor: pointer;
 							}
-							#continue_sing_up {
+							#continue_sign_up {
 								height: 50px;
 								width: 47%;
 								background-color: #000000b5;
@@ -529,24 +577,7 @@ header {
 				float: right;
 			}
 		}
-		.setting {
-			width: 24px;
-	    height: 48px;
-	    padding: 6px 0px 0px 0px;
-    	margin: 0 36px 0 0;
-    	div {
-
-    	}
-			img {
-				width: 24px;
-    		height: 20px;
-				cursor: pointer;
-				border-radius: 6px;
-			}
-			.fa-cog {
-				float: right;
-			}
-		}
+		
 	}
 	}
 }
@@ -1092,14 +1123,7 @@ body {
 					    z-index: 11;
 					    color: #fff;
 
-					    background: linear-gradient(135deg, #00c7e1, #ff8398);
-						    
-						    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-
-						    animation: animation-linear-grdient 30s ease infinite;
-						    -webkit-animation: animation-linear-grdient 30s ease infinite;
-						    -moz-animation: animation-linear-grdient 30s ease infinite;
-						    -o-animation: animation-linear-grdient 30s ease infinite;
+					    
 					    i {
 					    	position: absolute;
 					    	top: 74px;
@@ -1154,6 +1178,10 @@ body {
 								height: 400px;
 								width: 100%;
 								position: relative;
+								img {
+									width: 30px;
+									height: 30px;
+								}
 								p {
 									font-size: 18px;
 									padding: 34px 0 0 20px;
@@ -1208,4 +1236,56 @@ body {
 // --------------------------------------------------------------
 
 }
+#options_frame .modal {
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
 
+@-webkit-keyframes AnimationName {
+    0%{background-position:37% 0%}
+    50%{background-position:64% 100%}
+    100%{background-position:37% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:37% 0%}
+    50%{background-position:64% 100%}
+    100%{background-position:37% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:37% 0%}
+    50%{background-position:64% 100%}
+    100%{background-position:37% 0%}
+}
+
+
+.linear-gradient-animation{
+    background: linear-gradient(153deg, #ff7c7c, #9ea4ff, #9295f9, #ff3e80);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationSignUp 18s ease infinite;
+    -moz-animation: AnimationSignUp 18s ease infinite;
+    -o-animation: AnimationSignUp 18s ease infinite;
+    animation: AnimationSignUp 18s ease infinite;
+}
+
+@-webkit-keyframes AnimationSignUp {
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
+}
+@-moz-keyframes AnimationSignUp {
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
+}
+@-o-keyframes AnimationSignUp {
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
+}
+@keyframes AnimationSignUp {
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
+}

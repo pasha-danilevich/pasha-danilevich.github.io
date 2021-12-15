@@ -10,11 +10,11 @@ function removeActiveClass(father, class_activator) {
 }
 //----------------------------------------
 $(function (){
-  $('#sing_up_button').click(function (){
-    $('#sing_up_back_show').show();
+  $('#sign_up_button').click(function (){
+    $('#sign_up_back_show').show();
   })
-  $('#close_sing_up').click(function(){
-    $('#sing_up_back_show').hide();
+  $('#close_sign_up').click(function(){
+    $('#sign_up_back_show').hide();
   })
 });
 
@@ -34,9 +34,6 @@ $(function () {
   $('#close').click(function () {
     $('#options_frame').hide();
   })
-  $('#h2_button').click(function () {
-    $('#list').show();
-  });
 });
 
 $(document).ready(function(){

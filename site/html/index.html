@@ -6,96 +6,136 @@
 	<title>Art store ZZZ</title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../css/style.css">
-	<script src="../js/set_lng.js"></script>
-	<script async src="../js/lang.js"></script>
 	
 	<script async src="https://kit.fontawesome.com/b5aefe840c.js" crossorigin="anonymous"></script>
 
-	<title>Document</title>
+
 </head>
 <header>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
 
 
 	<nav class="nav">
     	<div id="bar"></div>
   	</nav>
 	<div  class="top">
-		<div class="logo">
-			<a href=""><i class="fas fa-star-of-life"></i></a>
-
-		</div>
-		<div  class="bars">
-			<!-- <i id="menu_bar_open" class="fas fa-bars"></i> -->
-		</div>
-		<div class="search">
-			<div class="search_line">
-			  <form>
-			  <input class="lng-input-search"type="text" placeholder="Search...">
-			  <button type="submit"><i class="fas fa-search"></i></button>
-			  </form>
+		<div class="top-left">
+			<div  class="bars" >
+				<button id="bars_button">
+					<i id="bars_button_i" class="menu-i fas fa-bars"></i>
+					<i id="times_button_i" class="fas fa-times"></i>
+				</button>
+			</div>
+			<div class="search">
+				<div class="search-line">
+				    <form>
+					    <input type="text" placeholder="Искать здесь...">
+					    <button type="submit"></button>
+					</form>
+				</div>
 			</div>
 		</div>
-		<div class="sing_up">
-			<div id="sing_up_button"><i class="fas fa-user-plus"></i></div>
-		</div>
-
-		<div id="sing_up_back_show" onclick="
-		if(event.target.className == 'sing_up_back'){
-      		$('#sing_up_back_show').hide();
-    	}" 
-    	class="sing_up_back">
-			<div class="sing_up_modal">
-				<div class="wapper">
-					<div class="hello">Hello it is <span>ZZZ</span>  ^_^</div>
-					<div id="result_user_name" class="comment">Как же тебя зовут??</div>
-					<div class="steps">Жду пароль.</div>
-					<div class="main">
-						<div class="name">
-							<div class="icon"><i class="fas fa-user-edit"></i></div>
-							<div class="input">
-								<input id="user_name" type="text" placeholder="Nickname">
-							</div>
-						</div>
-						<div class="email">
-							<div class="icon"><i class="fas fa-at"></i></div>
-							<div class="input">
-								<input type="text" placeholder="Your email">
-							</div>
-						</div>
-						<div class="passwords">
-							<div class="passwodr-one">
-								<div class="icon"><i class="fas fa-key"></i></div>
-							<div class="input">
-								<input type="password" placeholder="Password">
-							</div>
-							</div>
-							<div class="password-two">
-								<div class="icon"><i class="fas fa-lock"></i></div>
-							<div class="input">
-								<input type="password" placeholder="Yet again">
-							</div>
-							</div>
-						</div>
-					</div>
-					<div class="buttons">
-						<button id="close_sing_up">Close</button>
-						<button id="continue_sing_up">Continue</button>
-					</div>
-					<div class="info">
-						<p>Мега супер</p>
-						<p>Дупер</p>
-					</div>
-				</div>	
+		<div class="top-mid">
+			<div class="logo">
+				<a href="index.html"><i class="fas fa-star-of-life"></i> Art store ZZZ</a>
 			</div>
 		</div>
-		<div class="bascket">
-			<div ><i class="fas fa-shopping-basket"></i></div>
+		<div class="top-right">
+			<div class="conteiner">
+				<div class="sing_up">
+					<div id="sing_up_button"><i class="fas fa-user-plus"></i></div>
+				</div>
+				<div class="or unselectable">or</div>					
+				<div class="log_in">
+					<div id="log_in_button"><i class="fas fa-sign-in-alt"></i></div>
+				</div>
+			</div>	
+			<div class="setting">
+				<div><img class="country-flag" id="options_frame_" src="../img/country/en.svg" alt=""></div>
+			</div>
+			<div class="profil-icon">
+				<div class="avatar">
+					<div class="center">
+						<a href="home-page.html">
+							<div class="circle"></div>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 		
-		<div class="setting">
-			<div><img class="country-flag" id="options_frame_" src="../img/country/ru.svg" alt=""></div>
+		
+		
+		
+		
+	    <div class="menu-bar" id="menu_bar">
+		    <ul class="menu-main">
+		        <li class="menu-li">
+	        		<a class="menu-a" href="#">Home
+		        		<i class="menu-i fas fa-chevron-right"></i>
+		        	</a>
+		        	<ul class="menu-sub menu-main">
+		        		<li class="menu-li">
+				        	<a class="menu-a" href="#">Home
+				        		<i class="menu-i fas fa-chevron-right"></i>
+				        	</a>
+				        </li>
+				        <li class="menu-li">
+				        	<a class="menu-a" href="#">Pictures 
+				        		<i class="menu-i fas fa-chevron-right"></i>
+				        	</a>
+				        </li>
+				        <li class="menu-li">
+				        	<a class="menu-a" href="#">Abuot
+				        		<!-- <i class="menu-i fas fa-chevron-right"></i> -->
+				        	</a>
+				        </li>
+				        <li class="menu-li">
+				        	<a class="menu-a" href="#">End
+				        		<!-- <i class="menu-i fas fa-chevron-right"></i> -->
+				        	</a>
+				        </li>
+		    		</ul>
+		        	
+		        </li>
+		        <li class="menu-li">
+		        	<a class="menu-a" href="#">Pictures 
+		        		<i class="menu-i fas fa-chevron-right"></i>
+		        	</a>
+		        	<ul class="menu-sub menu-main">
+		        		<li class="menu-li">
+				        	<a class="menu-a" href="#">Home
+				        		<i class="menu-i fas fa-chevron-right"></i>
+				        	</a>
+				        </li>
+				        <li class="menu-li">
+				        	<a class="menu-a" href="#">Pictures 
+				        		<i class="menu-i fas fa-chevron-right"></i>
+				        	</a>
+				        </li>
+				        <li class="menu-li">
+				        	<a class="menu-a" href="#">Abuot
+				        		<!-- <i class="menu-i fas fa-chevron-right"></i> -->
+				        	</a>
+				        </li>
+				        <li class="menu-li">
+				        	<a class="menu-a" href="#">End
+				        		<!-- <i class="menu-i fas fa-chevron-right"></i> -->
+				        	</a>
+				        </li>
+		    		</ul>
+		        </li>
+		        <li class="menu-li">
+		        	<a class="menu-a" href="#">Abuot
+		        		<!-- <i class="menu-i fas fa-chevron-right"></i> -->
+		        	</a>
+		        </li>
+		        <li class="menu-li">
+		        	<a class="menu-a" href="#">End
+		        		<!-- <i class="menu-i fas fa-chevron-right"></i> -->
+		        	</a>
+		        </li>
+		    </ul>
 		</div>
 		<div class="options">
 				<div class="options_frame" id="options_frame" 
@@ -143,34 +183,99 @@
 								<button id="close">Close</button>
 								<button id="save">Save</button>
 							</div>
-							
+							<script src="../js/change_lng.js"></script>
 						</div>
 					</div>
 				</div>
 				
 			</div>
+		<div id="log_in_back_show" onclick="
+		if(event.target.className == 'sing_up_back log_in_back'){
+      		$('#log_in_back_show').hide();
+      		
+    	}" 
+    	class="sing_up_back log_in_back">
+			<div class="log_in_modal sing_up_modal">
+				<div class="wapper">
+					<div class="hello hello-log">Hello it is <span>ZZZ</span>  ^_^</div>
+					<div class="center"><i class="fas fa-user"></i></div>
+					<div class="main main-log">
+						<div class="email">
+							<div class="icon icon-log"><i class="fas fa-at"></i></div>
+							<div class="input">
+								<input type="text" placeholder="Your email">
+							</div>
+						</div>
+						<div class="passwords">
+							<div class="passwodr-one passwodr-one-log">
+								<div class="icon icon-log"><i class="fas fa-key"></i></div>
+							<div class="input">
+								<input type="password" placeholder="Password">
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="buttons">
+						<button id="close_log_in">Close</button>
+						<button id="continue_sing_up">Continue</button>
+					</div>
+					<div class="info">
+					
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div id="sing_up_back_show" onclick="
+		if(event.target.className == 'sing_up_back'){
+      		$('#sing_up_back_show').hide();
+
+    	}" 
+    	class="sing_up_back">
+			<div class="sing_up_modal">
+				<div class="wapper">
+					<div class="hello">Hello it is <span>ZZZ</span>  ^_^</div>
+					<div id="result_user_name" class="comment">Как же тебя зовут??</div>
+					<div class="steps">Жду пароль.</div>
+					<div class="main">
+						<div class="name">
+							<div class="icon"><i class="fas fa-user-edit"></i></div>
+							<div class="input">
+								<input id="user_name" type="text" placeholder="Nickname">
+							</div>
+						</div>
+						<div class="email">
+							<div class="icon"><i class="fas fa-at"></i></div>
+							<div class="input">
+								<input type="text" placeholder="Your email">
+							</div>
+						</div>
+						<div class="passwords">
+							<div class="passwodr-one">
+								<div class="icon"><i class="fas fa-key"></i></div>
+							<div class="input">
+								<input type="password" placeholder="Password">
+							</div>
+							</div>
+							<div class="password-two">
+								<div class="icon"><i class="fas fa-lock"></i></div>
+							<div class="input">
+								<input type="password" placeholder="Yet again">
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="buttons">
+						<button id="close_sing_up">Close</button>
+						<button id="continue_sing_up">Continue</button>
+					</div>
+					<div class="info">
+						
+					</div>
+				</div>	
+			</div>
+		</div>
 	</div>
-	<div class="menu-bar">
-		<div class="menu-void-back"></div>
-		 <nav role="navigation">
-			  <div id="menuToggle">
-			    <input id="menu-checkbox" type="checkbox" />
-			    
-			    <span></span>
-			    <span></span>
-			    <span></span>
 
-			    <ul id="menu">
-			      <a href="#home_anchor"><li>Home</li></a>
-			      <a href="#about_anchor"><li>About</li></a>
-			      <a href="#best-for-you_anchor"><li class="lng-best-fot-you">Best for you</li></a>
-			      <a href="#contact_anchor"><li>Contact</li></a>
-
-			    </ul>
-			  </div>
-
-		</nav>
-	</div>
 </header>
 <body>
 	<section id="home_anchor" class="hello norm_padding lng-hello">
@@ -517,11 +622,16 @@
 		<div class="bottom">
 			
 		</div>
-	</section>		
+	</section>	
+	<div class="language">
+				   <b data-google-lang="ru">ru</b>
+				   <b data-google-lang="uk">ua</b>
+				   <b data-google-lang="en">en</b>
+				</div>	
 </body>
 
-<footer>
-	<div id="contact_anchor" class="desktop">
+<footer id="contact_anchor" >
+	<div  class="desktop">
 		<div class="info">
 			<div class="form">
 				<h1>Picture store ZZZ</h1>
@@ -590,7 +700,7 @@
 		</div>
 	</div>
 	<div class="mobile">
-		<div id="contact_anchor" class="info">
+		<div class="info">
 		<div class="menu-mobile lng-shop">Shop</div>
 	    <div class="menu_item">
 	    	<div class="menu-flex">
@@ -645,7 +755,9 @@
 </footer>
 <link rel="stylesheet" href="../css/media.css">
 <script src="../js/script_scroll.js"></script>
-<script async src="../js/change_lng.js"></script>
 <script src="../js/script.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="../js/google-translate.js"></script>
+<script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
 </html>
