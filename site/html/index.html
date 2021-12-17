@@ -28,37 +28,37 @@
 			</div>
 			<div class="search">
 				<div class="search-line">
-				    <form>
-					    <input type="text" placeholder="Искать здесь...">
 					    <button type="submit"></button>
-					</form>
 				</div>
 			</div>
 		</div>
 		<div class="top-mid">
 			<div class="logo">
-				<a href="index.html"><i class="fas fa-star-of-life"></i> Art store ZZZ</a>
+				<a href="index.html"><i class="fas fa-star-of-life"></i></a>
 			</div>
 		</div>
 		<div class="top-right">
-			<div class="conteiner">
-				<div class="sing_up">
-					<div id="sing_up_button"><i class="fas fa-user-plus"></i></div>
-				</div>
-				<div class="or unselectable">or</div>					
-				<div class="log_in">
-					<div id="log_in_button"><i class="fas fa-sign-in-alt"></i></div>
-				</div>
-			</div>	
+			
+			<div class="cart">
+				<a href="shopping-cart.html">
+					<div class="wrapper">
+						<i class="fas fa-shopping-cart"></i>
+					</div>
+					
+				</a>
+			</div>
 			<div class="setting">
-				<div><img class="country-flag" id="options_frame_" src="../img/country/en.svg" alt=""></div>
+				<div><img class="country-flag" id="options_frame_" src="../img/country/gb.svg" alt=""></div>
 			</div>
 			<div class="profil-icon">
 				<div class="avatar">
 					<div class="center">
-						<a href="home-page.html">
-							<div class="circle"></div>
+						<a href="my-account.html">
+							<div class="circle">
+							
+							</div>
 						</a>
+						
 					</div>
 				</div>
 			</div>
@@ -142,17 +142,16 @@
 				onclick="if(event.target.className == 'options_frame'){
 					$('#options_frame').hide();
 				}" >
-					<div class="modal">
+					<div class="modal linear-gradient-animation">
 						<div class="title">
 							<p>Update your settings</p>
 						</div>
 						<div class="main_options">
 							<p>Language</p>
 							<div class="wapper">
-								<select class="change-lang">
-									<option value = "ru">Руский</option>
-									<option value = "en" selected>English</option>
-								</select>
+								<img src="../img/country/ru.svg" alt="Руский" data-google-lang="ru">
+								<img src="../img/country/en.svg" alt="English" data-google-lang="en">
+								<img src="../img/country/ar.svg" alt="English" data-google-lang="ar">
 							</div>
 							
 							<i class="fas fa-sort-down"></i>
@@ -190,13 +189,13 @@
 				
 			</div>
 		<div id="log_in_back_show" onclick="
-		if(event.target.className == 'sing_up_back log_in_back'){
+		if(event.target.className == 'sign_up_back log_in_back'){
       		$('#log_in_back_show').hide();
       		
     	}" 
-    	class="sing_up_back log_in_back">
-			<div class="log_in_modal sing_up_modal">
-				<div class="wapper">
+    	class="sign_up_back log_in_back">
+			<div class="log_in_modal sign_up_modal">
+				<div class="wapper linear-gradient-animation">
 					<div class="hello hello-log">Hello it is <span>ZZZ</span>  ^_^</div>
 					<div class="center"><i class="fas fa-user"></i></div>
 					<div class="main main-log">
@@ -217,7 +216,7 @@
 					</div>
 					<div class="buttons">
 						<button id="close_log_in">Close</button>
-						<button id="continue_sing_up">Continue</button>
+						<button id="continue_sign_up">Continue</button>
 					</div>
 					<div class="info">
 					
@@ -225,14 +224,14 @@
 				</div>	
 			</div>
 		</div>
-		<div id="sing_up_back_show" onclick="
-		if(event.target.className == 'sing_up_back'){
-      		$('#sing_up_back_show').hide();
+		<div id="sign_up_back_show" onclick="
+		if(event.target.className == 'sign_up_back'){
+      		$('#sign_up_back_show').hide();
 
     	}" 
-    	class="sing_up_back">
-			<div class="sing_up_modal">
-				<div class="wapper">
+    	class="sign_up_back">
+			<div class="sign_up_modal ">
+				<div class="wapper linear-gradient-animation">
 					<div class="hello">Hello it is <span>ZZZ</span>  ^_^</div>
 					<div id="result_user_name" class="comment">Как же тебя зовут??</div>
 					<div class="steps">Жду пароль.</div>
@@ -265,8 +264,8 @@
 						</div>
 					</div>
 					<div class="buttons">
-						<button id="close_sing_up">Close</button>
-						<button id="continue_sing_up">Continue</button>
+						<button id="close_sign_up">Close</button>
+						<button id="continue_sign_up">Continue</button>
 					</div>
 					<div class="info">
 						
@@ -290,184 +289,52 @@
 		</h2>
 	</section>
 	<section class="blocks norm_padding">
-		<div class="box_line">
-			<div class="box">
+		<div class="main-content">
+			<div id="table" class="conteiner">
 
-			    <div class="content">
-			    	<!-- <img src="../img/1.jpg" alt=""> -->
-			    	<div class="wapper">
-			    		<div class="like">
-				    		<i class="far fa-heart"></i>
-				    	</div>
-				    	<div class="price">
-				    		300$
-				    	</div>
-			    	</div>
-			    	
-
-			    </div>
-			    
-		  	</div>
-		  	<div class="box">
-			    <div class="content">
-			    	<!-- <img src="../img/2.jpg" alt=""> -->
-			    	<div class="wapper">
-			    		<div class="like">
-				    		<i class="far fa-heart"></i>
-				    	</div>
-				    	<div class="price">
-				    		330$
-				    	</div>
-			    	</div>
-				    	
-			    </div>
-		  	</div>
-		  	<div class="box">
-			    <div class="content">
-			    	<!-- <img src="../img/3.webp" alt=""> -->
-			    	<div class="wapper">
-			    		<div class="like">
-				    		<i class="far fa-heart"></i>
-				    	</div>
-				    	<div class="price">
-				    		400$
-				    	</div>
-			    	</div>
-				    	
-			    </div>
-		  	</div>
-		  	<div class="box">
-			    <div class="content">
-			    	
-			    	<div class="wapper">
-			    		<div class="like">
-				    		<i class="far fa-heart"></i>
-				    	</div>
-				    	<div class="price">
-				    		3030$
-				    	</div>
-			    	</div>
-				    		
-			    </div>
-		  	</div>
-		  	<div class="box">
-			    <div class="content">
-			    	<div class="like">
-			    		<i class="far fa-heart"></i>
-			    	</div>
-			    	<div class="price">
-			    		11110$
-			    	</div>
-			    </div>
-		  	</div>
-		</div>
-		<div class="box_line">
-			<div class="box">
-			    <div class="content">
-			    	<!-- <img src="../img/4.jpg" alt=""> -->
-			    	<div class="wapper">
-			    		<div class="like">
-				    		<i class="far fa-heart"></i>
-				    	</div>
-				    	<div class="price">
-				    		300$
-				    	</div>
-			    	</div>
-				    	
-			    </div>
-		  	</div>
-		  	<div class="box">
-			    <div class="content">
-			    	<div class="like">
-			    		<i class="far fa-heart"></i>
-			    	</div>
-			    	<div class="price">
-			    		3600$
-			    	</div>
-			    </div>
-		  	</div>
-		  	<div class="box">
-			    <div class="content">
-			    	<div class="like">
-			    		<i class="far fa-heart"></i>
-			    	</div>
-			    	<div class="price">
-			    		360$
-			    	</div>
-			    </div>
-		  	</div>
-		  	<div class="box">
-			    <div class="content">
-			    	<div class="like">
-			    		<i class="far fa-heart"></i>
-			    	</div>
-			    	<div class="price">
-			    		333$
-			    	</div>
-			    </div>
-		  	</div>
-		  	<div class="box">
-			    <div class="content">
-			    	<div class="like">
-			    		<i class="far fa-heart"></i>
-			    	</div>
-			    	<div class="price">
-			    		100$
-			    	</div>
-			    </div>
-		  	</div>
-		</div>
-		<div class="box_line">
-			<div class="box">
-			    <div class="content">
-			    	<div class="like">
-			    		<i class="far fa-heart"></i>
-			    	</div>
-			    	<div class="price">
-			    		300$
-			    	</div>
-			    </div>
-		  	</div>
-		  	<div class="box">
-			    <div class="content">
-			    	<div class="like">
-			    		<i class="far fa-heart"></i>
-			    	</div>
-			    	<div class="price">
-			    		3600$
-			    	</div>
-			    </div>
-		  	</div>
-		  	<div class="box">
-			    <div class="content">
-			    	<div class="like">
-			    		<i class="far fa-heart"></i>
-			    	</div>
-			    	<div class="price">
-			    		360$
-			    	</div>
-			    </div>
-		  	</div>
-		  	<div class="box">
-			    <div class="content">
-			    	<div class="like">
-			    		<i class="far fa-heart"></i>
-			    	</div>
-			    	<div class="price">
-			    		333$
-			    	</div>
-			    </div>
-		  	</div>
-		  	<div class="box">
-			    <div class="content">
-			    	<div class="like">
-			    		<i class="far fa-heart"></i>
-			    	</div>
-			    	<div class="price">
-			    		100$
-			    	</div>
-			    </div>
-		  	</div>
+				<div  class="block ">
+					<img  class="ver-img" src="../img/1.jpg" alt="">
+					<div class="info">
+						
+					</div>
+				</div>
+				<div class="block ">
+					<img  class="horiz-img" src="../img/2.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="horiz-img" src="../img/3.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="ver-img" src="../img/4.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="ver-img" src="../img/5.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="horiz-img" src="../img/6.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="ver-img" src="../img/8.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="ver-img" src="../img/9.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="ver-img" src="../img/10.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="ver-img" src="../img/11.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="ver-img" src="../img/12.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="ver-img" src="../img/13.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="ver-img" src="../img/14.jpg" alt="">
+				</div>
+			</div>
 		</div>
 
 	</section>
