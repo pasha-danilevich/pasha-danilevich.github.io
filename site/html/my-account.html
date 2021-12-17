@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style_home_page.css">
+	<script async src="https://kit.fontawesome.com/b5aefe840c.js" crossorigin="anonymous"></script>
+	
+	<title>My account</title>
+</head>
+<header>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+	<nav class="nav">
+    	<div id="bar"></div>
+  	</nav>
+	<div  class="top">
+		<div class="top-left">
+			<div  class="bars" >
+				<button id="bars_button">
+					<i id="bars_button_i" class="menu-i fas fa-bars"></i>
+					<i id="times_button_i" class="fas fa-times"></i>
+				</button>
+			</div>
+			<div class="search">
+				<div class="search-line">
+				    <form>
+					    <input type="text" placeholder="Искать здесь...">
+					    <button type="submit"></button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="top-mid">
+			<div class="logo">
+				<a href="index.html"><i class="fas fa-star-of-life"></i> Art store ZZZ</a>
+			</div>
+		</div>
+		<div class="top-right">
+			<div class="conteiner">
+				<div class="sign_up">
+					<div id="sign_up_button"><i class="fas fa-user-plus"></i></div>
+				</div>
+				<div class="or unselectable">or</div>					
+				<div class="log_in">
+					<div id="log_in_button"><i class="fas fa-sign-in-alt"></i></div>
+				</div>
+			</div>	
+			<div class="setting">
+				<div><img class="country-flag" id="options_frame_" src="../img/country/en.svg" alt=""></div>
+			</div>
+			<div class="profil-icon">
+				<div class="avatar">
+					<div class="center">
+						<div class="circle">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+	    <div class="menu-bar" id="menu_bar">
+		    <ul class="menu-main">
+		        <li class="menu-li">
+	        		<a class="menu-a" href="#">Home
+		        		<i class="menu-i fas fa-chevron-right"></i>
+		        	</a>
+		        	<ul class="menu-sub menu-main">
+		        		<li class="menu-li">
+				        	<a class="menu-a" href="#">Home
+				        		<i class="menu-i fas fa-chevron-right"></i>
+				        	</a>
+				        </li>
+				        <li class="menu-li">
+				        	<a class="menu-a" href="#">Pictures 
+				        		<i class="menu-i fas fa-chevron-right"></i>
+				        	</a>
+				        </li>
+				        <li class="menu-li">
+				        	<a class="menu-a" href="#">Abuot
+				        		<!-- <i class="menu-i fas fa-chevron-right"></i> -->
+				        	</a>
+				        </li>
+				        <li class="menu-li">
+				        	<a class="menu-a" href="#">End
+				        		<!-- <i class="menu-i fas fa-chevron-right"></i> -->
+				        	</a>
+				        </li>
+		    		</ul>
+		        	
+		        </li>
+		        <li class="menu-li">
+		        	<a class="menu-a" href="#">Pictures 
+		        		<i class="menu-i fas fa-chevron-right"></i>
+		        	</a>
+		        	<ul class="menu-sub menu-main">
+		        		<li class="menu-li">
+				        	<a class="menu-a" href="#">Home
+				        		<i class="menu-i fas fa-chevron-right"></i>
+				        	</a>
+				        </li>
+				        <li class="menu-li">
+				        	<a class="menu-a" href="#">Pictures 
+				        		<i class="menu-i fas fa-chevron-right"></i>
+				        	</a>
+				        </li>
+				        <li class="menu-li">
+				        	<a class="menu-a" href="#">Abuot
+				        		<!-- <i class="menu-i fas fa-chevron-right"></i> -->
+				        	</a>
+				        </li>
+				        <li class="menu-li">
+				        	<a class="menu-a" href="#">End
+				        		<!-- <i class="menu-i fas fa-chevron-right"></i> -->
+				        	</a>
+				        </li>
+		    		</ul>
+		        </li>
+		        <li class="menu-li">
+		        	<a class="menu-a" href="#">Abuot
+		        		<!-- <i class="menu-i fas fa-chevron-right"></i> -->
+		        	</a>
+		        </li>
+		        <li class="menu-li">
+		        	<a class="menu-a" href="#">End
+		        		<!-- <i class="menu-i fas fa-chevron-right"></i> -->
+		        	</a>
+		        </li>
+		    </ul>
+		</div>
+		<div class="options">
+				<div class="options_frame" id="options_frame" 
+				onclick="if(event.target.className == 'options_frame'){
+					$('#options_frame').hide();
+				}" >
+					<div class="modal linear-gradient-animation">
+						<div class="title">
+							<p>Update your settings</p>
+						</div>
+						<div class="main_options">
+							<p>Language</p>
+							<div class="wapper">
+								<img src="../img/country/ru.svg" alt="Руский" data-google-lang="ru">
+								<img src="../img/country/en.svg" alt="English" data-google-lang="en">
+								<img src="../img/country/ar.svg" alt="English" data-google-lang="ar">
+							</div>
+							
+							<i class="fas fa-sort-down"></i>
+							<i class="fas fa-sort-down"></i>
+							<i class="fas fa-sort-down"></i>
+							<p>Currency</p>
+							<div class="wapper">
+								<select>
+									<option value = "A">Option A</option>
+									<option value = "B">Option B</option>
+									<option value = "C" disabled>Option C</option>
+								</select>
+							</div>
+								
+							<p>Region</p>
+							<div class="wapper">
+								<select>
+									<option value = "A">Option A</option>
+									<option value = "B">Option B</option>
+									<option value = "C" disabled>Option C</option>
+								</select>
+							</div>
+								
+						</div>
+						
+						<div class="buttons">
+							<div>
+								<button id="close">Close</button>
+								<button id="save">Save</button>
+							</div>
+							<script src="../js/change_lng.js"></script>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		<div id="log_in_back_show" onclick="
+		if(event.target.className == 'sign_up_back log_in_back'){
+      		$('#log_in_back_show').hide();
+      		
+    	}" 
+    	class="sign_up_back log_in_back">
+			<div class="log_in_modal sign_up_modal">
+				<div class="wapper linear-gradient-animation">
+					<div class="hello hello-log">Hello it is <span>ZZZ</span>  ^_^</div>
+					<div class="center"><i class="fas fa-user"></i></div>
+					<div class="main main-log">
+						<div class="email">
+							<div class="icon icon-log"><i class="fas fa-at"></i></div>
+							<div class="input">
+								<input type="text" placeholder="Your email">
+							</div>
+						</div>
+						<div class="passwords">
+							<div class="passwodr-one passwodr-one-log">
+								<div class="icon icon-log"><i class="fas fa-key"></i></div>
+							<div class="input">
+								<input type="password" placeholder="Password">
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="buttons">
+						<button id="close_log_in">Close</button>
+						<button id="continue_sign_up">Continue</button>
+					</div>
+					<div class="info">
+					
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div id="sign_up_back_show" onclick="
+		if(event.target.className == 'sign_up_back'){
+      		$('#sign_up_back_show').hide();
+
+    	}" 
+    	class="sign_up_back">
+			<div class="sign_up_modal ">
+				<div class="wapper linear-gradient-animation">
+					<div class="hello">Hello it is <span>ZZZ</span>  ^_^</div>
+					<div id="result_user_name" class="comment">Как же тебя зовут??</div>
+					<div class="steps">Жду пароль.</div>
+					<div class="main">
+						<div class="name">
+							<div class="icon"><i class="fas fa-user-edit"></i></div>
+							<div class="input">
+								<input id="user_name" type="text" placeholder="Nickname">
+							</div>
+						</div>
+						<div class="email">
+							<div class="icon"><i class="fas fa-at"></i></div>
+							<div class="input">
+								<input type="text" placeholder="Your email">
+							</div>
+						</div>
+						<div class="passwords">
+							<div class="passwodr-one">
+								<div class="icon"><i class="fas fa-key"></i></div>
+							<div class="input">
+								<input type="password" placeholder="Password">
+							</div>
+							</div>
+							<div class="password-two">
+								<div class="icon"><i class="fas fa-lock"></i></div>
+							<div class="input">
+								<input type="password" placeholder="Yet again">
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="buttons">
+						<button id="close_sign_up">Close</button>
+						<button id="continue_sign_up">Continue</button>
+					</div>
+					<div class="info">
+						
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+</header>
+
+<body>
+	<div class="background ">
+		<img src="../img/home_page/back-1.jpg" alt="">
+		<div class="content">
+			<div class="main-profil">
+				<div class="setting-bar">
+					<div class="cell"><i class="fas fa-share"></i></div>
+					<div class="cell"><i class="fas fa-user-cog"></i></div>
+					<div class="cell"><i class="fas fa-info"></i></div>
+					<div class="cell"><i class="fas fa-plus"></i></div>
+					
+					
+				</div>
+				<div class="avatar">
+					<div class="center">
+						<div class="circle">
+							
+						</div>
+					</div>
+				</div>
+				<div class="name">
+					<div class="center">
+						<p >Mona Lisa</p>
+					</div>
+				</div>
+				<div class="adout">
+					<div class="center">
+						<p>La Gioconda</p>
+					</div>
+				</div>
+				<div class="info">
+					<div class="center">
+						<div class="cell">
+							<i class="fas fa-star"></i>
+							<p>150</p>
+						</div>
+						<div class="cell">
+							<i class="fas fa-heart"></i>
+							<p>1,234</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				
+				<div class="add">
+					<div class="wrapper">
+						<i class="fas fa-plus"></i>
+						<p>add a picture</p>
+					</div>
+					
+				</div>
+				<div class="statistics">
+					<div class="wrapper">
+						<i class="fas fa-info"></i>
+						<p>view statistics</p>
+					</div>
+						
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="backet">
+		<div class="top">
+			<div class="refresh">
+				<div class="cell">
+					<i class="fas fa-sync-alt"></i>
+				</div>
+				
+				<div class="cell">
+					<p>1,234 likes</p>
+				</div>
+			</div>
+			
+		</div>
+		<div class="main-content">
+			<div id="table" class="conteiner">
+
+				<div  class="block ">
+					<img  class="ver-img" src="../img/1.jpg" alt="">
+					<div class="info">
+						
+					</div>
+				</div>
+				<div class="block ">
+					<img  class="horiz-img" src="../img/2.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="horiz-img" src="../img/3.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="ver-img" src="../img/4.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="ver-img" src="../img/5.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="horiz-img" src="../img/6.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="ver-img" src="../img/8.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="ver-img" src="../img/9.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="ver-img" src="../img/10.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="ver-img" src="../img/11.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="ver-img" src="../img/12.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="ver-img" src="../img/13.jpg" alt="">
+				</div>
+				<div class="block">
+					<img class="ver-img" src="../img/14.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<link rel="stylesheet" href="../css/media_home_page.css">
+<link rel="stylesheet" href="../css/media.css">
+<script src="../js/script_scroll.js"></script>
+<script src="../js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="../js/google-translate.js"></script>
+<script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+</html>

@@ -1,0 +1,84 @@
+body {
+  padding: 36px 10%;
+  background-color: #a0b2bc;
+  width: 100%;
+  height: 100%;
+}
+body .main {
+  background-color: #e8e9ee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 20px 40px 20px 20px;
+  -webkit-box-shadow: 5px 0 20px -14px black;
+          box-shadow: 5px 0 20px -14px black;
+}
+body .main .cart {
+  height: 100%;
+  width: 100%;
+  padding: 0 40px 0 0;
+}
+body .main .cart .title p {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+body .main .cart .list {
+  width: 100%;
+  height: 500px;
+}
+body .main .cart .price-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  height: 100px;
+}
+body .main .cart .price-box .price {
+  height: 100%;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .main .contact-detatls {
+  color: #e8e9ee;
+  width: 500px;
+  padding: 10px 20px 10px 0px;
+}
+body .main .contact-detatls .conteiner {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(90deg, #4ecdc4, #86aed9);
+}
+body .main .contact-detatls .conteiner p {
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+body .main .contact-detatls .conteiner p i {
+  float: right;
+}
+body .main .contact-detatls .conteiner .card {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1d1f2b;
+  -webkit-box-shadow: 5px 0 20px -14px black;
+          box-shadow: 5px 0 20px -14px black;
+  position: absolute;
+  top: 75px;
+  left: 90px;
+}
