@@ -620,7 +620,7 @@ body {
 				border-radius: 10px;
   				border: 0px solid;
   				overflow: hidden;
-  				transition-duration: .5s;
+  				transition-duration: .3s;
   				position: relative;
   				img {
   					max-height: 300px;
@@ -630,13 +630,75 @@ body {
   					top:0px;
   					height: 100%;
   					width: 100%;
-  					background-color: #ffffff80;
   					opacity: 0;
+  					transition-duration: .5s;
+  					display: flex;
+  					flex-direction: column;
+    				justify-content: space-between;
+  					.top{
+  						display: flex;
+					    justify-content: space-between;
+    					align-items: center;		
+  						height: 40px;
+  						padding: 10px 10px 0 10px;
+  						width: 100%;
+  						.wrapper {
+	  						background-color: #fff;
+	  						padding: 5px;
+	  						display: flex;
+						    justify-content: center;
+	    					align-items: center;	
+	    					border-radius: 7px;
+	    					height: 35px;
+	    					width: 35px;
+	    					opacity: 0.7;
+	  						i {
+		  						font-size: 15px;
+		  						color: #333;
+		  					}
+		  					.fa-eye {
+	  							font-size: 18px;
+	  						}
+	  					}
+  					}
+  					.bottom {
+  						min-height: 80px;
+  						padding: 10px;
+  						background-color: #fff;
+							display: flex;
+							border-radius: 7px;
+							opacity: 0.8;
+
+  						.meta{
+  							color: #333;
+  							width: 100%;
+  							line-height: 20px;
+  							font-size: 15px;
+  							.name {
+
+  							}
+  							.autor {
+  								font-weight: 300;
+  							}
+  							.size-and-price {
+  								display: flex;
+  								justify-content: space-between;
+  								align-items: center;
+  								.size {
+  								}
+  								.price {
+  									font-weight: 900;
+  									font-size: 25px;
+  								}
+  							}
+  						}
+  					}
+  					
+  					
   				}	
 			}
 			.block:hover  > .info{
 				opacity: 1;
-				transition-duration: .5s;
 			}
 		}
 
@@ -666,7 +728,6 @@ body {
 				}
 			}
 			.block:hover {
-				border: 30px solid #333;
 				transition: 0.4s;
 				transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
 			}
@@ -720,6 +781,10 @@ body {
 					}
 				}
 			}
+			.block:nth-child(2):hover{
+				border: 20px solid #333;
+				transition: 0.4s;
+			}
 			.block:nth-child(3){
 				width: 25%;
 				height: 50%;
@@ -738,8 +803,9 @@ body {
 				}
 
 			}
-			.block:nth-child(3):hover{
-				border: 20px solid #333;
+			.block:nth-child(3):hover > i{
+				transform: rotate(360deg);
+				transition: 0.4s;
 			}
 			.block:nth-child(4){
 				width: 25%;
@@ -761,8 +827,9 @@ body {
 					font-size: 15px;
 				}
 			}
-			.block:nth-child(4):hover{
-				border: 20px solid #333;
+			.block:nth-child(4):hover > i{
+				transform: rotate(360deg);
+				transition: 0.4s;
 			}
 		}
 
