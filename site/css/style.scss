@@ -33,6 +33,8 @@ body {
 
 * {
 	font-family: 'Roboto', sans-serif;
+	font-family: 'Baloo Bhaijaan 2', cursive;
+	font-family: 'Raleway', sans-serif;
 }
 /* Remove default padding */
 ul[class],
@@ -707,6 +709,7 @@ body {
 		width: 100%;
 		height: 500px;
 		.premier {
+
 			width: 100%;
 			height: 500px;
 			background-color: #333;
@@ -722,7 +725,6 @@ body {
 		    flex-direction: column;
 		    justify-content: center;
 		    align-items: center;
-		    line-height: 20px;
 				i {
 					font-size: 40px;
 				}
@@ -750,7 +752,6 @@ body {
 			    align-items: center;
 					span:nth-child(1){
 						font-size: 71px;
-    				line-height: 71px;
 					}
 					span:nth-child(2){
 						font-size: 30px;
@@ -761,7 +762,7 @@ body {
 				}
 			}
 			.block:nth-child(1):hover {
-				line-height: 60px;
+				box-shadow: rgb(255 255 255 / 10%) 0px 1px 1px 0px inset, inset rgb(0 0 0 / 30%) 0px 30px 60px -30px;
 			}
 			.block:nth-child(2){
 				width: 50%;
@@ -949,125 +950,10 @@ body {
 			margin-left: 4%;
 		}
 	}
-	.blocks_size {
-		
-	}
+
 /*----------------------------------------------*/
 	section.blocks_size {
-		.content {
-		  /* Positioning */
-		  position: absolute;
-		  top: 0;
-		  left: 0;
-		  bottom: 0;
-		  right: 0;
-		  color: #fff;
 
-		  /* Styling */
-		  background: black;
-		  text-align: center;
-		  vertical-align: center;
-		  text-transform: uppercase; 
-		  border-radius: 10px; 
-		  overflow: hidden;
-		  .wapper {
-			  	width: 100%;
-			  	height: 100%;
-			  	position: absolute;
-			  }
-			  img {
-					background-color: #fff;
-					position: absolute;
-					pointer-events: none;
-					transform: scale(2);
-				}
-		}
-
-			  
-			  
-		.content:hover .like {
-			opacity: 1;
-    	visibility: visible;
-		}
-		.like {
-		  margin: 10px;
-	    height: 30px;
-	    width: 30px;
-	    border-radius: 100%;
-	    background-color: white;
-	    float: right;
-	    color: black;
-	    font-size: 18px;
-	    padding: 3px 0 0 1px;
-	    opacity: 0;
-	    visibility: hidden;
-	    -webkit-transition: 0.3s opacity, 0.1s visibility;
-	    transition: 0.3s opacity, 0.1s visibility;
-		}
-		.price {
-			margin-left: 10px;
-	    height: 20px;
-	    width: 35%;
-	    position: absolute;
-	    bottom: 10px;
-	    background-color: white;
-	    color: gray;
-	    font-weight: bold;
-	    padding: 2px;
-	    border-radius: 5px;
-		}
-		
-
-
-		.box_line {
-	  	display: flex;
-	    justify-content: space-between;
-    }
-    .left {
-    	display: flex;
-	    justify-content: space-between;
-	    width: 50%;
-	    flex-direction: row;
-	    margin-right: 10px;
-    }
-    .right {
-    	display: flex;
-	    justify-content: space-between;
-	    width: 50%;
-	    flex-direction: row;
-    }
-    .box_big:before {
-			  content: "";
-			  display: block;
-			  margin-top: 100%; /* initial ratio of 1:1*/
-			}
-		.box_big {
-			position: relative;
-		  width: 59%;
-		  margin: 0;
-		  float: left;
-		  font-size: 12px;
-		}
-
-		.box_smalls {
-			display: flex;
-			flex-direction: column;
-	    justify-content: space-between;
-	    width: 39%;
-	    margin-top: 0;
-		  .box_small:before {
-				  content: "";
-				  display: block;
-				  margin-top: 75%; /* initial ratio of 1:1*/
-				}
-			.box_small {
-				position: relative;
-			  height: 48%;
-			  margin: 0;
-			  float: left;
-			  font-size: 12px;	
-			}
-		}
 	}
 	section.about_us {
 		margin-top: 50px;

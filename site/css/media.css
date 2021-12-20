@@ -58,7 +58,32 @@
     
     margin: auto !important;
   }
-
+  body section.hello .premier {
+    height: 800px;
+  }
+  body section.hello .premier .block:nth-child(1) {
+    width: 100% !important;
+    height: 33% !important;
+  }
+  body section.hello .premier .block:nth-child(2) {
+    width: 100% !important;
+    height: 33% !important;
+  }
+  body section.hello .premier .block:nth-child(3) {
+    width: 50% !important;
+    height: 34% !important;
+  }
+  body section.hello .premier .block:nth-child(4) {
+    width: 50% !important;
+    height: 34% !important;
+  }
+  body section.hello .premier .block:nth-child(1) h1 {
+    font-size: 70px !important;
+    line-height:50px !important;
+  }
+  body section.hello .premier .block:nth-child(1) h2 {
+    line-height:50px !important;
+  }
   footer .info {
     flex-direction: row !important;
   }
@@ -185,44 +210,12 @@
     background-color: #fff;
     z-index: 1;
   }
-  header .top .bascket {
-    padding: 8px 14px 0px 0px !important;
+  body section.hello .premier .block:nth-child(1) h2 span:nth-child(1) {
+    font-size: 40px !important;
   }
-  header .top .logo {
-    width: 52px !important;
-  }
-  header .top .bars {
-    
-  }
-  header .top .search {
-    padding: 5px 0px 0px 0px !important;
-  }
-  header .top .search .search_line button {
-    display: none;
-  }
-  header .top .sing_up {
-    width: 43px !important;
-    padding: 5px 0px 0px 0px !important;
-  }
-  header .top .bascket {
-    width: 34px !important;
-    padding: 8px 14px 0px 0px !important;
-  }
-  header .top .setting{
-    margin: 0 0px 0 0 !important;
-    width: 39px !important;
-    padding: 6px 0px 0px 0px !important
-  }
-  header .menu-bar {
-    
-  }
-  header .menu-bar #menu li {
-    text-align: center !important;
-  }
-  section.hello {
-    height: 350px !important;
-    font-size: 80px !important;
-  }
+
+
+  
   .blocks .box_line {
     margin: 0 0 10px 0 !important;
   }
@@ -279,8 +272,7 @@
   }
 }
 @media (max-width: 350px) {
-  section.hello {
-    font-size:75px !important;
-    font-size: 80px !important;
+  body section.hello .premier .block:nth-child(1) h2 span:nth-child(1) {
+    font-size: 40px !important;
   }
 }

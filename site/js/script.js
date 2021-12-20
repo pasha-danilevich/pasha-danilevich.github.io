@@ -80,6 +80,8 @@ $(document).click(function (e) {
 $(window).scroll(function(e) {      
     if (window.pageYOffset > 200){
       removeActiveClass('#menu_bar','menu-bar-active')
+      document.getElementById('bars_button_i').style.display = 'block';
+      document.getElementById('times_button_i').style.display = 'none';
     }
 });
 
