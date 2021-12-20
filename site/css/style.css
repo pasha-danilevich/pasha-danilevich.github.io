@@ -27,8 +27,6 @@ body {
 
 * {
   font-family: "Roboto", sans-serif;
-  font-family: "Baloo Bhaijaan 2", cursive;
-  font-family: "Raleway", sans-serif;
 }
 
 /* Remove default padding */
@@ -148,6 +146,7 @@ header .top {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #fff;
 }
 header .top .top-left {
   width: 33%;
@@ -1448,7 +1447,7 @@ body #options_frame .modal .main_options {
   position: relative;
 }
 body #options_frame .modal .main_options img {
-  width: 30px;
+  width: 150px;
   height: 30px;
 }
 body #options_frame .modal .main_options p {

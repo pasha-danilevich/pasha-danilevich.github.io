@@ -33,8 +33,6 @@ body {
 
 * {
 	font-family: 'Roboto', sans-serif;
-	font-family: 'Baloo Bhaijaan 2', cursive;
-	font-family: 'Raleway', sans-serif;
 }
 /* Remove default padding */
 ul[class],
@@ -151,6 +149,7 @@ header {
     box-shadow: 0px 5px 10px 0px #00000052;
     display: flex;
     justify-content: space-between;
+    background-color: #fff;
     .top-left {
     	width: 33%;
     	height: 30px;
@@ -1305,7 +1304,7 @@ body {
 								width: 100%;
 								position: relative;
 								img {
-									width: 30px;
+									width: 150px;
 									height: 30px;
 								}
 								p {
