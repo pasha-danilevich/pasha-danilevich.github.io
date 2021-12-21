@@ -1,0 +1,25 @@
+@media (max-width: 500px) {
+	html {
+		padding: 0px 0px !important;
+	}
+	body .main .contact-detatls {
+		width: 100% !important;
+	}
+	body .main .cart .list .picture .info {
+		width: 100% !important;
+	}
+}
+@media (max-width: 800px) {
+
+}
+@media (max-width: 1000px) {
+	body .main {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	body .main .cart .list .picture {
+		justify-content: space-around !important;
+	}
+	
+	
+}

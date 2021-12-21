@@ -4,26 +4,30 @@ header {
 		border-radius: 10px;
 	}
 }
-
+html {
+	padding:20px 50px;
+	display: flex;
+    justify-content: center;
+	background: rgb(81,255,250);
+	background: radial-gradient(circle, rgba(81,255,250,1) 0%, rgba(40,178,255,1) 100%);
+}
 body {
-	padding:36px 10%;
-	
-	background-color: #a0b2bc;
+	max-width: 1500px;
 	width: 100%;
-	height: 100%;
+
 	.main {
 		background-color: #e8e9ee;
 		display:flex;
 		justify-content: space-between;
+		
 		width: 100%;
 		height: 100%;
 		border-radius: 10px;
-		padding: 20px 40px 20px 20px;
+		padding: 20px 20px 20px 20px;
 		box-shadow: 5px 0 20px -14px black;
 		.cart {
 			height: 100%;
 			width: 100%;
-			padding: 0 40px 0 0;
 			.title {
 				p {
 					font-size: 30px;
@@ -33,7 +37,50 @@ body {
 			}
 			.list {
 				width: 100%;
-				height: 500px;
+				.picture {
+					width: 100%;
+					display: flex;
+					flex-wrap: wrap;
+					margin-bottom: 20px;
+					.block {
+						margin-bottom: 20px;
+						width: 300px;
+						height: 300px;
+					    border-radius: 10px;
+					    overflow: hidden;
+					    img {
+						   object-fit: cover;
+						    width: 100%;
+						    height: 100%;
+					    }
+					}
+					.info {
+						margin: 0 10px ;
+						height: 300px;
+					    display: flex;
+					    flex-direction: column;
+					    justify-content: space-between;
+					    .cell {
+					    	display: flex;
+					    	p {
+					    		padding: 0 10px;
+					    		font-size: 25px;
+					    	}
+					    }
+					    p:nth-child(1n){
+					    	color: #5a5a5a;
+
+					    }
+					    p:nth-child(2n){
+					    	color: #333;
+					    	font-weight: 900;
+					    }
+					    p.last {
+					    	font-weight: 300;
+					    	color: #5a5a5a;
+					    }
+					}
+				}
 			}
 			.price-box {
 				display: flex;
@@ -48,8 +95,8 @@ body {
 		}
 		.contact-detatls {
 			color: #e8e9ee;
-			width: 500px;
-			padding: 10px 20px 10px 0px;
+			width: 600px;
+			
 			.conteiner {
 				position: relative;
 				padding: 20px;
@@ -74,7 +121,6 @@ body {
 					box-shadow: 5px 0 20px -14px black;
 					position: absolute;
 					top:75px;
-					left:90px;
 
 				}
 			}

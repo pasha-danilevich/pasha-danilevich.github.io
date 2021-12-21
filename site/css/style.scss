@@ -144,7 +144,7 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 10px 36px 10px 36px;
+    padding: 15px 36px 15px 36px;
     -webkit-box-shadow: 0px 5px 10px 0px #00000052;
     box-shadow: 0px 5px 10px 0px #00000052;
     display: flex;
@@ -152,24 +152,20 @@ header {
     background-color: #fff;
     .top-left {
     	width: 33%;
-    	height: 30px;
     	display: flex;
     	justify-content: flex-start;
     }
     .top-mid{
     	width: 33%;
-    	height: 30px;
     	display: flex;
     	justify-content: center;
     }
     .top-right {
     	width: 33%;
-    	height: 30px;
     	display: flex;
     	justify-content: flex-end;
     	.conteiner {
-    		width: 100px;
-    		height: 30px;
+    		min-width: 100px;
     		margin-right: 15px;
     		display: flex;
     		justify-content: space-between;
