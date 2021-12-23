@@ -602,6 +602,12 @@ header {
 body {
 	width: 100%;
 	height: 100%;
+	.name-blocks {
+		font-size: 40px;
+		text-align: center;
+		margin-top: 20px;
+		font-weight: 600;
+	}
 	.main-content {
 		width: 100%;
 		display: flex;
@@ -613,14 +619,14 @@ body {
 			.block {
 				margin: 10px 10px;
 				width: auto;
-				background-color: #000;
-				border-radius: 10px;
+				
   				border: 0px solid;
   				overflow: hidden;
   				transition-duration: .3s;
   				position: relative;
   				img {
   					max-height: 300px;
+  					border-radius: 10px;
   				}
   				.info {
   					position: absolute;
@@ -629,9 +635,6 @@ body {
   					width: 100%;
   					opacity: 0;
   					transition-duration: .5s;
-  					display: flex;
-  					flex-direction: column;
-    				justify-content: space-between;
   					.top{
   						display: flex;
 					    justify-content: space-between;
@@ -658,41 +661,50 @@ body {
 	  						}
 	  					}
   					}
-  					.bottom {
-  						min-height: 80px;
-  						padding: 10px;
-  						background-color: #fff;
-							display: flex;
-							border-radius: 7px;
-							opacity: 0.8;
-
-  						.meta{
-  							color: #333;
-  							width: 100%;
-  							line-height: 20px;
-  							font-size: 15px;
-  							.name {
-
-  							}
-  							.autor {
-  								font-weight: 300;
-  							}
-  							.size-and-price {
-  								display: flex;
-  								justify-content: space-between;
-  								align-items: center;
-  								.size {
-  								}
-  								.price {
-  									font-weight: 900;
-  									font-size: 25px;
-  								}
-  							}
-  						}
-  					}
-  					
-  					
   				}	
+  				.bottom {
+						padding: 10px;
+						
+
+						.meta{
+							color: #333;
+							font-size: 15px;
+							position: relative;
+							.name {
+								display: flex;
+								flex-direction: column;
+								.pic-name {
+									font-weight: 500;
+									white-space: nowrap;
+							    text-overflow: ellipsis;
+							    max-width: 200px;
+							    overflow: hidden;
+								}
+								.autor {
+									font-weight: 300;
+								}
+								.size {
+									font-size: 12px;
+								}
+								
+							}
+								
+								
+							.size-and-price {
+								margin-top: 5px;
+								display: flex;
+								justify-content: space-between;
+								align-items: center;
+								.price {
+									font-weight: 900;
+									font-size: 25px;
+								}
+								i {
+									font-size: 25px;
+								}
+							}
+						}
+					}
 			}
 			.block:hover  > .info{
 				opacity: 1;
@@ -702,7 +714,6 @@ body {
 	}
 	section.hello {
 		width: 100%;
-		height: 500px;
 		.premier {
 
 			width: 100%;

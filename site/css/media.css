@@ -47,7 +47,7 @@
   }
   .about_us .mid {
     flex-direction: column !important;
-    padding: 0px 10px 0 10px !important;
+    padding: 0px 20px 0 20px !important;
   }
   .about_us .mid .block {
     margin-bottom: 40px !important;
@@ -212,6 +212,9 @@
   }
   body section.hello .premier .block:nth-child(1) h2 span:nth-child(1) {
     font-size: 40px !important;
+  }
+  body .main-content .conteiner .block img {
+    max-height: none !important;
   }
 
 

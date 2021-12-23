@@ -646,6 +646,12 @@ body {
   height: 100%;
   /*----------------------------------------------*/
 }
+body .name-blocks {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+}
 body .main-content {
   width: 100%;
   display: -webkit-box;
@@ -668,8 +674,6 @@ body .main-content .conteiner {
 body .main-content .conteiner .block {
   margin: 10px 10px;
   width: auto;
-  background-color: #000;
-  border-radius: 10px;
   border: 0px solid;
   overflow: hidden;
   -webkit-transition-duration: 0.3s;
@@ -678,6 +682,7 @@ body .main-content .conteiner .block {
 }
 body .main-content .conteiner .block img {
   max-height: 300px;
+  border-radius: 10px;
 }
 body .main-content .conteiner .block .info {
   position: absolute;
@@ -687,16 +692,6 @@ body .main-content .conteiner .block .info {
   opacity: 0;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 body .main-content .conteiner .block .info .top {
   display: -webkit-box;
@@ -736,26 +731,38 @@ body .main-content .conteiner .block .info .top .wrapper i {
 body .main-content .conteiner .block .info .top .wrapper .fa-eye {
   font-size: 18px;
 }
-body .main-content .conteiner .block .info .bottom {
-  min-height: 80px;
+body .main-content .conteiner .block .bottom {
   padding: 10px;
-  background-color: #fff;
+}
+body .main-content .conteiner .block .bottom .meta {
+  color: #333;
+  font-size: 15px;
+  position: relative;
+}
+body .main-content .conteiner .block .bottom .meta .name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 7px;
-  opacity: 0.8;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-body .main-content .conteiner .block .info .bottom .meta {
-  color: #333;
-  width: 100%;
-  line-height: 20px;
-  font-size: 15px;
+body .main-content .conteiner .block .bottom .meta .name .pic-name {
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  overflow: hidden;
 }
-body .main-content .conteiner .block .info .bottom .meta .autor {
+body .main-content .conteiner .block .bottom .meta .name .autor {
   font-weight: 300;
 }
-body .main-content .conteiner .block .info .bottom .meta .size-and-price {
+body .main-content .conteiner .block .bottom .meta .name .size {
+  font-size: 12px;
+}
+body .main-content .conteiner .block .bottom .meta .size-and-price {
+  margin-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -766,8 +773,11 @@ body .main-content .conteiner .block .info .bottom .meta .size-and-price {
       -ms-flex-align: center;
           align-items: center;
 }
-body .main-content .conteiner .block .info .bottom .meta .size-and-price .price {
+body .main-content .conteiner .block .bottom .meta .size-and-price .price {
   font-weight: 900;
+  font-size: 25px;
+}
+body .main-content .conteiner .block .bottom .meta .size-and-price i {
   font-size: 25px;
 }
 body .main-content .conteiner .block:hover > .info {
@@ -775,7 +785,6 @@ body .main-content .conteiner .block:hover > .info {
 }
 body section.hello {
   width: 100%;
-  height: 500px;
 }
 body section.hello .premier {
   width: 100%;
