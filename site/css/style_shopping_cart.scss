@@ -41,11 +41,11 @@ body {
 					width: 100%;
 					display: flex;
 					flex-wrap: wrap;
-					margin-bottom: 20px;
+					margin-bottom: 30px;
 					.block {
-						margin-bottom: 20px;
-						width: 300px;
-						height: 300px;
+						
+						width: 200px;
+						height: 200px;
 					    border-radius: 10px;
 					    overflow: hidden;
 					    img {
@@ -56,7 +56,7 @@ body {
 					}
 					.info {
 						margin: 0 10px ;
-						height: 300px;
+						height: 200px;
 					    display: flex;
 					    flex-direction: column;
 					    justify-content: space-between;
@@ -64,7 +64,7 @@ body {
 					    	display: flex;
 					    	p {
 					    		padding: 0 10px;
-					    		font-size: 25px;
+					    		font-size: 20px;
 					    	}
 					    }
 					    p:nth-child(1n){
@@ -80,6 +80,9 @@ body {
 					    	color: #5a5a5a;
 					    }
 					}
+				}
+				.picture:last-child{
+					margin-bottom: 0px;
 				}
 			}
 			.price-box {
@@ -115,14 +118,50 @@ body {
 				.card{
 					width: 300px;
 					height: 200px;
-					padding: 20px;
+					padding: 0 15px;
 					border-radius: 10px;
 					background-color: #1d1f2b;
 					box-shadow: 5px 0 20px -14px black;
-					position: absolute;
-					top:75px;
+					margin: auto;
+					position: relative;
+					.payment-system {
+						position: absolute;
+						font-size: 40px;
+						right: 20px;
+						top:10px;
+					}
+					.card-number {
+						position: absolute;
+						display: flex;
+						justify-content: space-between;
+						width: 260px;
+					    top: 110px;
+					    left: 20px;
+					    font-size: 20px;
+					}
+					.card-name {
+						position: absolute;
+						top: 150px;
+						left: 20px;
+						font-size: 20px;
+					}
+					.valid-period {
+						position: absolute;
+						top: 150px;
+						right: 20px;
+						font-size: 20px;
+					}
 
 				}
+			}
+			.price-box {
+				  height: 100%;
+				  .price {
+				  	position: sticky;
+				  	bottom: 0;
+				  	min-height: 2em;
+				  	background: lightpink;
+				  }
 			}
 		}
 	}

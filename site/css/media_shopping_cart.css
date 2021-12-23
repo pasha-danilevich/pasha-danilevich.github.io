@@ -8,6 +8,18 @@
 	body .main .cart .list .picture .info {
 		width: 100% !important;
 	}
+	body .main .cart .list .picture .block {
+		width: 100%;
+		height: 100%;
+		margin-bottom: 30px;
+
+	}
+	body .main .cart .list .picture .info {
+		margin: 0;
+	}
+	body .main .cart .list .picture .info .cell p {
+		padding: 0px 10px 0px 0px
+	}
 }
 @media (max-width: 800px) {
 
@@ -17,9 +29,10 @@
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-	body .main .cart .list .picture {
-		justify-content: space-around !important;
+	body .main .cart .list .picture:last-child{
+		margin-bottom: 30px;
 	}
+
 	
 	
 }

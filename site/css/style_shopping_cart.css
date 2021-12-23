@@ -53,12 +53,11 @@ body .main .cart .list .picture {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 body .main .cart .list .picture .block {
-  margin-bottom: 20px;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -70,7 +69,7 @@ body .main .cart .list .picture .block img {
 }
 body .main .cart .list .picture .info {
   margin: 0 10px;
-  height: 300px;
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,7 +88,7 @@ body .main .cart .list .picture .info .cell {
 }
 body .main .cart .list .picture .info .cell p {
   padding: 0 10px;
-  font-size: 25px;
+  font-size: 20px;
 }
 body .main .cart .list .picture .info p:nth-child(1n) {
   color: #5a5a5a;
@@ -101,6 +100,9 @@ body .main .cart .list .picture .info p:nth-child(2n) {
 body .main .cart .list .picture .info p.last {
   font-weight: 300;
   color: #5a5a5a;
+}
+body .main .cart .list .picture:last-child {
+  margin-bottom: 0px;
 }
 body .main .cart .price-box {
   display: -webkit-box;
@@ -141,13 +143,53 @@ body .main .contact-detatls .conteiner p i {
 body .main .contact-detatls .conteiner .card {
   width: 300px;
   height: 200px;
-  padding: 20px;
+  padding: 0 15px;
   border-radius: 10px;
   background-color: #1d1f2b;
   -webkit-box-shadow: 5px 0 20px -14px black;
           box-shadow: 5px 0 20px -14px black;
+  margin: auto;
+  position: relative;
+}
+body .main .contact-detatls .conteiner .card .payment-system {
   position: absolute;
-  top: 75px;
+  font-size: 40px;
+  right: 20px;
+  top: 10px;
+}
+body .main .contact-detatls .conteiner .card .card-number {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 260px;
+  top: 110px;
+  left: 20px;
+  font-size: 20px;
+}
+body .main .contact-detatls .conteiner .card .card-name {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  font-size: 20px;
+}
+body .main .contact-detatls .conteiner .card .valid-period {
+  position: absolute;
+  top: 150px;
+  right: 20px;
+  font-size: 20px;
+}
+body .main .contact-detatls .price-box {
+  height: 100%;
+}
+body .main .contact-detatls .price-box .price {
+  position: sticky;
+  bottom: 0;
+  min-height: 2em;
+  background: lightpink;
 }
 
 footer {
