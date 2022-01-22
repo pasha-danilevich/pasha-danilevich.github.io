@@ -64,15 +64,60 @@ $(document).ready(function(){
       document.getElementById('times_button_i').style.display = 'block';
     }
   });
+
+  $('#search_button').on('click',function(){
+    if($('#search_bar').hasClass('search-bar-active')){
+      removeActiveClass('#search_bar','search-bar-active')
+      removeActiveClass('#search','search-active')
+    }
+    else{
+      $('#search_bar').addClass('search-bar-active');
+      $('#search').addClass('search-active');
+    }
+  });
+
+  $('#profile_icon').on('click',function(){
+
+    if($('#dropdown_menu').hasClass('dropdown-menu-active')){
+      removeActiveClass('#dropdown_menu','dropdown-menu-active')
+    }
+    else{
+      $('#dropdown_menu').addClass('dropdown-menu-active');
+    }
+  });
+  $('#filter_button').on('click',function(){
+    $('#filter').addClass('filter-active');
+  });
+  $('#close_filter_button').on('click',function(){
+    removeActiveClass('#filter','filter-active')
+  });
 });
 
 $(document).click(function (e) {
   if($('#menu_bar').hasClass('menu-bar-active')){
+    console.log(splitClass(event.target.className)[0])
     if (splitClass(event.target.className)[0] != 'menu'){
+      console.log(splitClass(event.target.className)[0])
       removeActiveClass('#menu_bar','menu-bar-active')
       document.getElementById('bars_button_i').style.display = 'block';
       document.getElementById('times_button_i').style.display = 'none';
-
+    }
+  } 
+});
+$(document).click(function (e) {
+  if($('#search_bar').hasClass('search-bar-active')){
+    if (splitClass(event.target.className)[0] != 'search'){
+      removeActiveClass('#search_bar','search-bar-active')
+      removeActiveClass('#search','search-active')
+    }
+  } 
+});
+$(document).click(function (e) {
+  if($('#dropdown_menu').hasClass('dropdown-menu-active')){
+    console.log(splitClass(event.target.className)[0])
+    if (splitClass(event.target.className)[0] != 'dropdown'){
+      console.log(splitClass(event.target.className)[0])
+      removeActiveClass('#dropdown_menu','dropdown-menu-active')
     }
   } 
 });
@@ -80,6 +125,9 @@ $(document).click(function (e) {
 $(window).scroll(function(e) {      
     if (window.pageYOffset > 200){
       removeActiveClass('#menu_bar','menu-bar-active')
+      removeActiveClass('#dropdown_menu','dropdown-menu-active')
+      removeActiveClass('#search_bar','search-bar-active')
+      removeActiveClass('#search','search-active')
       document.getElementById('bars_button_i').style.display = 'block';
       document.getElementById('times_button_i').style.display = 'none';
     }

@@ -1,8 +1,48 @@
 
 @media (max-width: 850px) {
+  
+  header .top {
+    position: fixed !important;
+    left: 0px !important;
+    top: 0px !important;
+    background-color: #fff;
+    z-index: 1;
+  }
+  header .top .top-left .search {
+    display: none !important;
+  }
+  header .top .top-right .cart {
+    display: none !important;
+  }
+  header .top .top-right .setting {
+    display: none !important;
+  }
+  header .top .menu-bar {
+    width: 100% !important;
+  }
+  header .top .menu-bar .menu-main {
+    width: 100% !important;
+    border-bottom-right-radius: 0px !important;
+  }
+  header .top .menu-bar .menu-main .menu-li .menu-search {
+    display: block !important;
+  }
+  body section.blocks .filter {
+    display: none;
+    position: fixed;
+    
+  }
+  body section.blocks .filter .filter-sticky > *{
+    max-height: 320px !important;
+    
+  }
+  body section.blocks .filter-button {
+    display: flex;
+  }
   .norm_padding {
     padding: 12px 36px 12px 36px !important;
   }
+
   .box:last-child {
     display: none;
   }
@@ -204,19 +244,18 @@
     padding: 12px 10px 12px 10px !important;
   }
   header .top {
-    position: fixed !important;
-    left: 0px !important;
-    top: 0px !important;
-    background-color: #fff;
-    z-index: 1;
+    padding: 15px 10px;
   }
+  
   body section.hello .premier .block:nth-child(1) h2 span:nth-child(1) {
     font-size: 40px !important;
   }
   body .main-content .conteiner .block img {
     max-height: none !important;
   }
-
+  body .conteiner-of-pic .block img {
+    max-height: 100% !important;
+  }
 
   
   .blocks .box_line {
@@ -277,5 +316,106 @@
 @media (max-width: 350px) {
   body section.hello .premier .block:nth-child(1) h2 span:nth-child(1) {
     font-size: 40px !important;
+  }
+}
+
+
+
+
+@media (min-width: 400px) {
+  body section.blocks .filter .filter-sticky  .wrapper {
+    border-right: 0px solid #cdcdcd !important;
+  }
+}
+@media (min-width: 500px) {
+  body section.blocks .filter .filter-sticky .price .wrapper {
+    border-right: 1px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .category .wrapper {
+    border-right: 0px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .tech .wrapper {
+    border-right: 1px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .size .wrapper {
+    border-right: 0px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .themes .wrapper {
+    border-right: 1px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .color .wrapper {
+    border-right: 0px solid #cdcdcd !important;
+  }
+  
+  
+}
+@media (min-width: 730px) {
+  body section.blocks .filter .filter-sticky .price .wrapper {
+    border-right: 1px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .category .wrapper {
+    border-right: 1px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .tech .wrapper {
+    border-right: 0px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .size .wrapper {
+    border-right: 1px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .themes .wrapper {
+    border-right: 1px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .color .wrapper {
+    border-right: 0px solid #cdcdcd !important;
+  }
+}
+@media (min-width: 1000px) {
+  body section.blocks .filter .filter-sticky .price .wrapper {
+    border-right: 1px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .category .wrapper {
+    border-right: 1px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .tech .wrapper {
+    border-right: 1px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .size .wrapper {
+    border-right: 0px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .themes .wrapper {
+    border-right: 1px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .color .wrapper {
+    border-right: 0px solid #cdcdcd !important;
+  }
+}
+@media (min-width: 1220px) {
+  body section.blocks .filter .filter-sticky .price .wrapper {
+    border-right: 1px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .category .wrapper {
+    border-right: 1px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .tech .wrapper {
+    border-right: 1px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .size .wrapper {
+    border-right: 1px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .themes .wrapper {
+    border-right: 0px solid #cdcdcd;
+  }
+  body section.blocks .filter .filter-sticky .color .wrapper {
+    border-right: 0px solid #cdcdcd !important;
+  }
+  }
+}
+@media (max-width: 1440px) {
+  body section.blocks .filter .filter-sticky .wrapper {
+    border-right: 1px solid #cdcdcd !important;
+  }
+  body section.blocks .filter .filter-sticky .color .wrapper {
+    border-right: 0px solid #cdcdcd !important;
+  }
   }
 }
