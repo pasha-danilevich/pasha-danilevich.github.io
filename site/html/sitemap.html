@@ -5,6 +5,336 @@
     <title>Карта сайта</title>
     <link rel="stylesheet" href="../css/style_sitemap.css">
 </head>
+<header>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+	<nav class="nav">
+    	<div id="bar"></div>
+  	</nav>
+  	<div class="filter-button" id="filter_button">
+			<span><i class="fas fa-filter"></i></span>
+			<span class="text">3</span>
+		</div>
+	<div  class="top">
+		<div class="top-left">
+			<div  class="bars" >
+				<button id="bars_button" class="popup-link menu_bar">
+					<i id="bars_button_i" class="menu-i fas fa-bars"></i>
+					<i id="times_button_i" class="fas fa-times"></i>
+				</button>
+			</div>
+			<div class="search" id="search">
+				<div class="search-line">
+					    <button class="search-button" id="search_button"></button>
+					    <input class="search-input" id="search_input" type="search" name="" placeholder="Search on ZZZ">
+				</div>
+			</div>
+		</div>
+		<div class="top-mid">
+			<div class="logo">
+				<a href="index.html"><i class="fas fa-star-of-life"></i></a>
+			</div>
+		</div>
+		<div class="top-right">
+			
+			<div class="cart">
+				<a href="shopping-cart.html">
+					<div class="wrapper">
+						<i class="fas fa-shopping-cart"></i>
+					</div>
+				</a>
+					
+			</div>
+			<div  class="popup-link dropdown_menu" id="profile_icon">
+				<div class="profil-icon" >
+					<i class="dropdown-far far fa-user-circle"></i>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		<div class="dropdown-menu " id="dropdown_menu">
+			<ul class="dropdown-main">
+				<li class="dropdown-li">
+					<a href="my-account.html">
+						<div class="dropdown-name">My profile</div>
+						<div class="dropdown-icon"><i class="dropdown-fas fas fa-user-circle"></i></div>
+					</a>	
+				</li>
+				<li class="dropdown-li">
+					<a href="shopping-cart.html">
+						<div class="dropdown-name">Cart</div>
+						<div class="dropdown-icon"><i class="dropdown-fas fas fa-shopping-cart"></i></div>
+					</a>
+				</li>
+				<li class="dropdown-li">
+					<a href="#" id="options_frame_">
+						<div class="dropdown-name">Setting</div>
+						<div class="dropdown-icon"><i class="dropdown-fas fas fa-cog"></i></div>
+					</a>
+				</li>
+				<li class="dropdown-li">
+					<a href="#">
+						<div class="dropdown-name">Language</div>
+						<div class="dropdown-icon"><i class="dropdown-fas fas fa-language"></i></div>
+					</a>
+				</li>
+				<li class="dropdown-li">
+					<a href="#">
+						<div class="dropdown-name">FAQ</div>
+						<div class="dropdown-icon"><i class="dropdown-fas fas fa-question-circle"></i></div>
+					</a>
+				</li>
+				<li class="dropdown-li">
+					<a href="#">
+						<div class="dropdown-name">Logout</div>
+						<div class="dropdown-icon"><i class="dropdown-fas fas fa-times-circle"></i></div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	    <div class="menu-bar" id="menu_bar">
+		    <ul class="menu-main">
+		    	<li class="menu-li">
+		    		<div class="menu-search search" id="search_inner">
+						<div class="menu-search-line search-line">
+							<button class="menu-search-button search-button" id="search_button_inner"></button>
+							<input class="menu-search-input search-input" id="search_input" type="search" name="" placeholder="Search on ZZZ">
+						</div>
+					</div>
+		    	</li>	
+		        <li class="menu-li">
+	        		<a class="menu-a" >Works by artists +
+		        	
+		        	</a>
+		        	<ul class="menu-sub menu-main">
+		        		<li class="menu-li">
+				        	<a class="menu-a" >Home
+				        	</a>
+				        </li>
+				        <li class="menu-li">
+				        	<a class="menu-a" href="#">Pictures 
+				        	</a>
+				        </li>
+				        <li class="menu-li">
+				        	<a class="menu-a" href="#">Abuot
+				
+				        	</a>
+				        </li>
+				        <li class="menu-li">
+				        	<a class="menu-a" href="#">End
+				        	</a>
+				        </li>
+		    		</ul>
+		        	
+		        </li>
+		        <li class="menu-li">
+		        	<a class="menu-a" href="#">Pictures +
+		        		
+		        	</a>
+		        	<ul class="menu-sub menu-main">
+		        		<li class="menu-li">
+				        	<a class="menu-a" href="#">Home
+				        		
+				        	</a>
+				        </li>
+				        <li class="menu-li">
+				        	<a class="menu-a" href="#">Pictures 
+				        		
+				        	</a>
+				        </li>
+				        <li class="menu-li">
+				        	<a class="menu-a" href="#">Abuot
+				        		
+				        	</a>
+				        </li>
+				        <li class="menu-li">
+				        	<a class="menu-a" href="#">End
+				        		
+				        	</a>
+				        </li>
+		    		</ul>
+		        </li>
+		        <li class="menu-li">
+		        	<a class="menu-a" href="#">Abuot
+		        		<!-- <i class="menu-i fas fa-chevron-right"></i> -->
+		        	</a>
+		        </li>
+		        <li class="menu-li">
+		        	<a class="menu-a" href="#">End
+		        		<!-- <i class="menu-i fas fa-chevron-right"></i> -->
+		        	</a>
+		        </li>
+		    </ul>
+		</div>
+		<div class="search-bar" id="search_bar">
+			<ul class="search-main">
+				<li class="search-li">
+					Quick links
+				</li>
+				<li class="search-li">
+					<a href="#" class="search-a">
+						...
+					</a>
+				</li>
+				<li class="search-li">
+					<a href="#" class="search-a">
+						...
+					</a>
+				</li>
+				<li class="search-li">
+					<a href="#" class="search-a">
+						...
+					</a>
+				</li>
+				<li class="search-li">
+					<a href="#" class="search-a">
+						...
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="options">
+				<div class="options_frame" id="options_frame" 
+				onclick="if(event.target.className == 'options_frame'){
+					$('#options_frame').hide();
+				}" >
+					<div class="modal linear-gradient-animation">
+						<div class="title">
+							<p>Update your settings</p>
+						</div>
+						<div class="main_options">
+							<p>Language</p>
+							<div class="wapper">
+								<div class="select">
+									<img class="flag-icon" src="../img/country/ru.svg" alt="Руский" data-google-lang="ru">
+									<img class="flag-icon" src="../img/country/en.svg" alt="English" data-google-lang="en">
+									<img class="flag-icon" src="../img/country/ar.svg" alt="English" data-google-lang="ar">
+								</div>
+							</div>
+							<p>Currency</p>
+							<div class="wapper">
+								<select>
+									<option value = "A">Ru</option>
+									<option value = "B">Us</option>
+									<option value = "C" disabled>Eu</option>
+								</select>
+							</div>
+								
+							<p>Region</p>
+							<div class="wapper">
+								<select>
+									<option value = "A">Russia</option>
+									<option value = "B">Usa</option>
+									<option value = "C" disabled>Iraq</option>
+								</select>
+							</div>
+								
+						</div>
+						
+						<div class="buttons">
+							<div>
+								<button id="close"><i class="fas fa-times"></i></button>
+								<button id="save"><i class="fas fa-check"></i></button>
+							</div>
+							<script src="../js/change_lng.js"></script>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		<div id="log_in_back_show" onclick="
+		if(event.target.className == 'sign_up_back log_in_back'){
+      		$('#log_in_back_show').hide();
+      		
+    	}" 
+    	class="sign_up_back log_in_back">
+			<div class="log_in_modal sign_up_modal">
+				<div class="wapper linear-gradient-animation">
+					<div class="hello hello-log">Hello it is <span>ZZZ</span>  ^_^</div>
+					<div class="center"><i class="fas fa-user"></i></div>
+					<div class="main main-log">
+						<div class="email">
+							<div class="icon icon-log"><i class="fas fa-at"></i></div>
+							<div class="input">
+								<input type="text" placeholder="Your email">
+							</div>
+						</div>
+						<div class="passwords">
+							<div class="passwodr-one passwodr-one-log">
+								<div class="icon icon-log"><i class="fas fa-key"></i></div>
+							<div class="input">
+								<!-- <input type="password" placeholder="Password"> -->
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="buttons">
+						<button id="close_log_in"><i class="fas fa-times"></i></button>
+						<button id="continue_sign_up"><i class="fas fa-check"></i></button>
+					</div>
+					<div class="info">
+					
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div id="sign_up_back_show" onclick="
+		if(event.target.className == 'sign_up_back'){
+      		$('#sign_up_back_show').hide();
+
+    	}" 
+    	class="sign_up_back">
+			<div class="sign_up_modal ">
+				<div class="wapper linear-gradient-animation">
+					<div class="hello">Hello it is <span>ZZZ</span>  ^_^</div>
+					<div id="result_user_name" class="comment">Как же тебя зовут??</div>
+					<div class="steps">Жду пароль.</div>
+					<div class="main">
+						<div class="name">
+							<div class="icon"><i class="fas fa-user-edit"></i></div>
+							<div class="input">
+								<input id="user_name" type="text" placeholder="Nickname">
+							</div>
+						</div>
+						<div class="email">
+							<div class="icon"><i class="fas fa-at"></i></div>
+							<div class="input">
+								<input type="text" placeholder="Your email">
+							</div>
+						</div>
+						<div class="passwords">
+							<div class="passwodr-one">
+								<div class="icon"><i class="fas fa-key"></i></div>
+							<div class="input">
+								<!-- <input type="password" placeholder="Password"> -->
+							</div>
+							</div>
+							<div class="password-two">
+								<div class="icon"><i class="fas fa-lock"></i></div>
+							<div class="input">
+								<!-- <input type="password" placeholder="Yet again"> -->
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="buttons">
+						<button id="close_sign_up"><i class="fas fa-times"></i></button>
+						<button id="continue_sign_up"><i class="fas fa-check"></i></button>
+					</div>
+					<div class="info">
+						
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+</header>
 <body>
     <div class="main">
         <div class="a_s_m"><a href="index.html" style="text-decoration: none;color: black;font: 40px">Back</a></div>
@@ -287,4 +617,11 @@
 		</div>	
 	</div>
 </footer>
+<link rel="stylesheet" href="../css/media.css">
+<script src="../js/script_scroll.js"></script>
+<script src="../js/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="../js/google-translate.js"></script>
+<script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
 </html>

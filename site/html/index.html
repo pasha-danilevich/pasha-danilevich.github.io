@@ -19,10 +19,14 @@
 	<nav class="nav">
     	<div id="bar"></div>
   	</nav>
+  	<div class="filter-button" id="filter_button">
+			<span><i class="fas fa-filter"></i></span>
+			<span class="text">3</span>
+		</div>
 	<div  class="top">
 		<div class="top-left">
 			<div  class="bars" >
-				<button id="bars_button">
+				<button id="bars_button" class="popup-link menu_bar">
 					<i id="bars_button_i" class="menu-i fas fa-bars"></i>
 					<i id="times_button_i" class="fas fa-times"></i>
 				</button>
@@ -49,47 +53,47 @@
 				</a>
 					
 			</div>
-			<a href="#" class="dropdown" id="profile_icon">
+			<div  class="popup-link dropdown_menu" id="profile_icon">
 				<div class="profil-icon" >
 					<i class="dropdown-far far fa-user-circle"></i>
 				</div>
-			</a>
+			</div>
 			
 		</div>
 		
 		
 		
 		
-		<div class="dropdown-menu" id="dropdown_menu">
+		<div class="dropdown-menu " id="dropdown_menu">
 			<ul class="dropdown-main">
 				<li class="dropdown-li">
 					<a href="my-account.html">
 						<div class="dropdown-name">My profile</div>
-						<div class="dropdown-icon"><i class="fas fa-user-circle"></i></div>
+						<div class="dropdown-icon"><i class="dropdown-fas fas fa-user-circle"></i></div>
 					</a>	
 				</li>
 				<li class="dropdown-li">
 					<a href="shopping-cart.html">
 						<div class="dropdown-name">Cart</div>
-						<div class="dropdown-icon"><i class="fas fa-shopping-cart"></i></div>
+						<div class="dropdown-icon"><i class="dropdown-fas fas fa-shopping-cart"></i></div>
 					</a>
 				</li>
 				<li class="dropdown-li">
 					<a href="#" id="options_frame_">
 						<div class="dropdown-name">Setting</div>
-						<div class="dropdown-icon"><i class="fas fa-cog"></i></div>
+						<div class="dropdown-icon"><i class="dropdown-fas fas fa-cog"></i></div>
 					</a>
 				</li>
 				<li class="dropdown-li">
 					<a href="#">
 						<div class="dropdown-name">Language</div>
-						<div class="dropdown-icon"><i class="fas fa-language"></i></div>
+						<div class="dropdown-icon"><i class="dropdown-fas fas fa-language"></i></div>
 					</a>
 				</li>
 				<li class="dropdown-li">
 					<a href="#">
 						<div class="dropdown-name">FAQ</div>
-						<div class="dropdown-icon"><i class="fas fa-question-circle"></i></div>
+						<div class="dropdown-icon"><i class="dropdown-fas fas fa-question-circle"></i></div>
 					</a>
 				</li>
 				<li class="dropdown-li">
@@ -111,12 +115,12 @@
 					</div>
 		    	</li>	
 		        <li class="menu-li">
-	        		<a class="menu-a" href="#">Home +
+	        		<a class="menu-a" >Works by artists +
 		        	
 		        	</a>
 		        	<ul class="menu-sub menu-main">
 		        		<li class="menu-li">
-				        	<a class="menu-a" href="#">Home
+				        	<a class="menu-a" >Home
 				        	</a>
 				        </li>
 				        <li class="menu-li">
@@ -213,9 +217,11 @@
 						<div class="main_options">
 							<p>Language</p>
 							<div class="wapper">
-								<img src="../img/country/ru.svg" alt="Руский" data-google-lang="ru">
-								<img src="../img/country/en.svg" alt="English" data-google-lang="en">
-								<img src="../img/country/ar.svg" alt="English" data-google-lang="ar">
+								<div class="select">
+									<img class="flag-icon" src="../img/country/ru.svg" alt="Руский" data-google-lang="ru">
+									<img class="flag-icon" src="../img/country/en.svg" alt="English" data-google-lang="en">
+									<img class="flag-icon" src="../img/country/ar.svg" alt="English" data-google-lang="ar">
+								</div>
 							</div>
 							<p>Currency</p>
 							<div class="wapper">
@@ -239,8 +245,8 @@
 						
 						<div class="buttons">
 							<div>
-								<button id="close">Close</button>
-								<button id="save">Save</button>
+								<button id="close"><i class="fas fa-times"></i></button>
+								<button id="save"><i class="fas fa-check"></i></button>
 							</div>
 							<script src="../js/change_lng.js"></script>
 						</div>
@@ -269,14 +275,14 @@
 							<div class="passwodr-one passwodr-one-log">
 								<div class="icon icon-log"><i class="fas fa-key"></i></div>
 							<div class="input">
-								<input type="password" placeholder="Password">
+								<!-- <input type="password" placeholder="Password"> -->
 							</div>
 							</div>
 						</div>
 					</div>
 					<div class="buttons">
-						<button id="close_log_in">Close</button>
-						<button id="continue_sign_up">Continue</button>
+						<button id="close_log_in"><i class="fas fa-times"></i></button>
+						<button id="continue_sign_up"><i class="fas fa-check"></i></button>
 					</div>
 					<div class="info">
 					
@@ -312,20 +318,20 @@
 							<div class="passwodr-one">
 								<div class="icon"><i class="fas fa-key"></i></div>
 							<div class="input">
-								<input type="password" placeholder="Password">
+								<!-- <input type="password" placeholder="Password"> -->
 							</div>
 							</div>
 							<div class="password-two">
 								<div class="icon"><i class="fas fa-lock"></i></div>
 							<div class="input">
-								<input type="password" placeholder="Yet again">
+								<!-- <input type="password" placeholder="Yet again"> -->
 							</div>
 							</div>
 						</div>
 					</div>
 					<div class="buttons">
-						<button id="close_sign_up">Close</button>
-						<button id="continue_sign_up">Continue</button>
+						<button id="close_sign_up"><i class="fas fa-times"></i></button>
+						<button id="continue_sign_up"><i class="fas fa-check"></i></button>
 					</div>
 					<div class="info">
 						
@@ -336,8 +342,8 @@
 	</div>
 
 </header>
-<body>
-	<!-- <section id="home_anchor" class="hello">
+<body id="body" class="body">
+	 <section id="home_anchor" class="hello">
 		<div class="premier unselectable">
 			<div class="block">
 				<h2>
@@ -381,289 +387,302 @@
 		</div>
 
 		
-	</section> -->
+	</section>
 
 	<section class="name-blocks norm_padding">
 		Top today!
 	</section>
 	<section class="blocks">
-		<div class="filter" id="filter">
-			<div class="filter-sticky" id="filter_sticky">
-				<div class="price">
-					<div class="category-name">price</div>
-					<div class="wrapper">
-						<ul>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">< 1000 $</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">< 1500 $</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">< 2000 $</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">< 10000 $</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-						</ul>
+			<div class="filter" id="filter">
+				<div class="filter-sticky" id="filter_sticky">
+					<div class="price">
+						<div class="category-name">price</div>
+						<div class="wrapper">
+							<ul>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">< 1000 $</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">< 1500 $</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">< 2000 $</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">< 10000 $</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+							</ul>
+						</div>
+								
 					</div>
-							
-				</div>
-				<div class="category">
-					<div class="category-name">category</div>
-					<div class="wrapper">
-						<ul>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Graphics originals</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Painting</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Objects</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Photo</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-						</ul>
+					<div class="category">
+						<div class="category-name">category</div>
+						<div class="wrapper">
+							<ul>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Graphics originals</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Painting</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Objects</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Photo</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tech">
+						<div class="category-name">tech</div>
+						<div class="wrapper">
+							<ul>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Graphics originals</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Painting</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Objects</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Photo</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Graphics originals</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Painting</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Objects</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Photo</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="size">
+						<div class="category-name">size</div>
+						<div class="wrapper">
+							<ul>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Small (up to 20sm)</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Middle (up to 50sm)</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Big (up to 100sm)</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Large (up to 200sm)</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="themes">
+						<div class="category-name">themes</div>
+						<div class="wrapper">
+							<ul>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Graphics originals</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Painting</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Objects</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Photo</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="color">
+						<div class="category-name">color</div>
+						<div class="wrapper">
+							<ul>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Red</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Blue</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Green</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Gray</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">Black</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+								<li>
+									<label>
+										<input class="checkbox" id="checkbox" type="checkbox"/>
+										<span class="custom-checkbox"></span>
+										<span class="text">White</span>
+									</label>
+									<label for="checkbox"></label>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div class="tech">
-					<div class="category-name">tech</div>
-					<div class="wrapper">
-						<ul>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Graphics originals</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Painting</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Objects</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Photo</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Graphics originals</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Painting</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Objects</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Photo</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="size">
-					<div class="category-name">size</div>
-					<div class="wrapper">
-						<ul>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Small (up to 20sm)</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Middle (up to 50sm)</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Big (up to 100sm)</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Large (up to 200sm)</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="themes">
-					<div class="category-name">themes</div>
-					<div class="wrapper">
-						<ul>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Graphics originals</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Painting</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Objects</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Photo</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="color">
-					<div class="category-name">color</div>
-					<div class="wrapper">
-						<ul>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Red</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Blue</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Green</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-							<li>
-								<label>
-									<input class="checkbox" id="checkbox" type="checkbox"/>
-									<span class="custom-checkbox"></span>
-									<span class="text">Gray</span>
-								</label>
-								<label for="checkbox"></label>
-							</li>
-						</ul>
-					</div>
-				</div>
+				<button class="close-filter-button button" id="close_filter_button">Close</button>
+				<button class="apply-filter-button button" id="apply_filter_button">Apply a filter</button>	
 			</div>
-			<button class="close-filter-button" id="close_filter_button">Close</button>
-			<button class="apply-filter-button" id="apply_filter_button">Apply a filter</button>	
-		</div>
-		<div class="filter-button" id="filter_button">
-			<span><i class="fas fa-filter"></i></span>
-			<span class="text">3</span>
-		</div>
+		
 		<div class="main-content">
 			<div class="conteiner-of-pic">
 

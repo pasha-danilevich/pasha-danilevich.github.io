@@ -9,6 +9,10 @@ function removeActiveClass(father, class_activator) {
   $(father).removeClass(class_activator)
 }
 //----------------------------------------
+
+
+
+
 $(function (){
   $('#sign_up_button').click(function (){
     $('#sign_up_back_show').show();
@@ -55,11 +59,13 @@ $(document).ready(function(){
   $('#bars_button').on('click',function(){
     if($('#menu_bar').hasClass('menu-bar-active')){
       removeActiveClass('#menu_bar','menu-bar-active')
+      $('#filter_button').addClass('filter-button-active');
       document.getElementById('bars_button_i').style.display = 'block';
       document.getElementById('times_button_i').style.display = 'none';
     }
     else{
       $('#menu_bar').addClass('menu-bar-active');
+      removeActiveClass('#filter_button','filter-button-active')
       document.getElementById('bars_button_i').style.display = 'none';
       document.getElementById('times_button_i').style.display = 'block';
     }
@@ -77,27 +83,29 @@ $(document).ready(function(){
   });
 
   $('#profile_icon').on('click',function(){
-
     if($('#dropdown_menu').hasClass('dropdown-menu-active')){
       removeActiveClass('#dropdown_menu','dropdown-menu-active')
+      $('#filter_button').addClass('filter-button-active');
     }
     else{
+      removeActiveClass('#filter_button','filter-button-active')
       $('#dropdown_menu').addClass('dropdown-menu-active');
     }
   });
   $('#filter_button').on('click',function(){
     $('#filter').addClass('filter-active');
+    document.getElementById('body').style.overflow = 'hidden';
   });
   $('#close_filter_button').on('click',function(){
     removeActiveClass('#filter','filter-active')
+    document.getElementById('body').style.overflow = 'auto';
   });
 });
 
 $(document).click(function (e) {
   if($('#menu_bar').hasClass('menu-bar-active')){
-    console.log(splitClass(event.target.className)[0])
     if (splitClass(event.target.className)[0] != 'menu'){
-      console.log(splitClass(event.target.className)[0])
+      
       removeActiveClass('#menu_bar','menu-bar-active')
       document.getElementById('bars_button_i').style.display = 'block';
       document.getElementById('times_button_i').style.display = 'none';
@@ -114,7 +122,6 @@ $(document).click(function (e) {
 });
 $(document).click(function (e) {
   if($('#dropdown_menu').hasClass('dropdown-menu-active')){
-    console.log(splitClass(event.target.className)[0])
     if (splitClass(event.target.className)[0] != 'dropdown'){
       console.log(splitClass(event.target.className)[0])
       removeActiveClass('#dropdown_menu','dropdown-menu-active')
@@ -123,11 +130,12 @@ $(document).click(function (e) {
 });
 
 $(window).scroll(function(e) {      
-    if (window.pageYOffset > 200){
+    if (window.pageYOffset > 50){
       removeActiveClass('#menu_bar','menu-bar-active')
       removeActiveClass('#dropdown_menu','dropdown-menu-active')
       removeActiveClass('#search_bar','search-bar-active')
       removeActiveClass('#search','search-active')
+      $('#filter_button').addClass('filter-button-active');
       document.getElementById('bars_button_i').style.display = 'block';
       document.getElementById('times_button_i').style.display = 'none';
     }
@@ -152,7 +160,6 @@ window.onload = function(event) {
 
 user_name.oninput = function() {
     result_user_name.innerHTML = user_name.value;
-    console.log(result_user_name.innerHTML.length)
     switch (result_user_name.innerHTML.length) {
       case 0:
         result_user_name.innerHTML ='Передумал?';
