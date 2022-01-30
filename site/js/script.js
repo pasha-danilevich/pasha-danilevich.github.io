@@ -5,7 +5,6 @@ function splitClass(argument) {
   return arr
 }
 function removeActiveClass(father, class_activator) {
-  //let father = "'" + father + "'"
   $(father).removeClass(class_activator)
 }
 //----------------------------------------
@@ -135,7 +134,6 @@ $(window).scroll(function(e) {
       removeActiveClass('#dropdown_menu','dropdown-menu-active')
       removeActiveClass('#search_bar','search-bar-active')
       removeActiveClass('#search','search-active')
-      $('#filter_button').addClass('filter-button-active');
       document.getElementById('bars_button_i').style.display = 'block';
       document.getElementById('times_button_i').style.display = 'none';
     }
@@ -167,7 +165,7 @@ user_name.oninput = function() {
       case 1:
       case 2:
       case 3:
-        result_user_name.innerHTML = user_name.value + ', такое короткое имя)))';
+        result_user_name.innerHTML = user_name.value + ', такое ккутое имя)))';
         break;
       case 4:
       case 5:
@@ -177,12 +175,53 @@ user_name.oninput = function() {
       case 7:
       case 8:
       case 9:
-        result_user_name.innerHTML = user_name.value + ', что надо, хотя...';
+        result_user_name.innerHTML = user_name.value + ', супер!!!';
         break;
       default:
         result_user_name.innerHTML = user_name.value + ', ого o_O';
     }
   };
+
+
+// Получаем нужный элемент
+var conteinerOfPic = document.querySelector('.conteiner-of-pic');
+const halfScreenHeight = window.screen.height/2
+var Visible = function (target) {
+  // Все позиции элемента
+  var targetPosition = {
+      top: window.pageYOffset + target.getBoundingClientRect().top + halfScreenHeight,
+      left: window.pageXOffset + target.getBoundingClientRect().left,
+      right: window.pageXOffset + target.getBoundingClientRect().right,
+      bottom: window.pageYOffset + target.getBoundingClientRect().bottom - halfScreenHeight
+    },
+    // Получаем позиции окна
+    windowPosition = {
+      top: window.pageYOffset,
+      left: window.pageXOffset,
+      right: window.pageXOffset + document.documentElement.clientWidth,
+      bottom: window.pageYOffset + document.documentElement.clientHeight
+    };
+
+  if (targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
+    targetPosition.top < windowPosition.bottom && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
+    targetPosition.right > windowPosition.left && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
+    targetPosition.left < windowPosition.right) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
+    // Если элемент полностью видно, то запускаем следующий код
+    $('#filter_button').addClass('filter-button-active');
+  } else {
+    // Если элемент не видно, то запускаем этот код
+    removeActiveClass('#filter','filter-active')
+    $('#filter_button').removeClass('filter-button-active')
+  };
+};
+
+// Запускаем функцию при прокрутке страницы
+window.addEventListener('scroll', function() {
+  if (conteinerOfPic){
+    Visible (conteinerOfPic);
+  }
+  
+});
 
 
 

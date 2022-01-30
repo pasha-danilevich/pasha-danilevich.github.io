@@ -1541,7 +1541,7 @@ body footer .desktop .bottom .right ul li:last-child {
   border: none;
 }
 body footer .mobile {
-  padding: 0 20px;
+  padding: 0 20px 30px 20px;
   background-color: #262626;
   display: none;
 }
