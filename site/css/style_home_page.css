@@ -22,22 +22,17 @@ body .background .content {
   overflow: hidden;
 }
 body .background .content .main-profil {
-  width: 30%;
+  min-width: 400px;
   height: 100%;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  background-color: #ff00002e;
   -webkit-box-shadow: 5px 0 20px -14px black;
           box-shadow: 5px 0 20px -14px black;
 }
 body .background .content .main-profil i {
   color: #fffff7;
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 30px;
   cursor: pointer;
-}
-body .background .content .main-profil i:hover {
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
 }
 body .background .content .main-profil .setting-bar {
   height: 50px;
@@ -47,7 +42,7 @@ body .background .content .main-profil .setting-bar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 body .background .content .main-profil .setting-bar .cell {
   width: 20%;
@@ -75,7 +70,7 @@ body .background .content .main-profil .center {
           justify-content: center;
 }
 body .background .content .main-profil .avatar {
-  height: 300px;
+  height: 250px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,7 +83,7 @@ body .background .content .main-profil .avatar .circle {
   width: 200px;
   height: 200px;
   border-radius: 100%;
-  margin-top: 50%;
+  margin-top: 40px;
   background-position: 0px 0px;
   background-image: url(../img/1.jpg);
   background-size: 110% auto;
@@ -140,7 +135,7 @@ body .background .content .main-profil .info {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px 0 20px 0;
+  padding: 50px 0 20px 0;
 }
 body .background .content .main-profil .info .cell {
   width: 50%;
@@ -180,6 +175,7 @@ body .background .content .right {
   display: -ms-flexbox;
   display: flex;
   color: white;
+  background: #0418ff2b;
 }
 body .background .content .right p {
   width: 100%;
@@ -242,6 +238,7 @@ body .background .content .right .statistics {
           justify-content: center;
 }
 body .backet {
+  height: auto;
   width: 100%;
   border-color: #f0f0f0;
   padding: 0 36px 0 36px;
@@ -279,4 +276,26 @@ body .backet .top .refresh i {
 }
 body .backet .top .refresh p {
   font-size: 22px;
+}
+body .backet .main-content {
+  height: auto;
+  width: 100%;
+}
+body .backet .main-content .conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .backet .main-content .conteiner .block {
+  margin: 10px 10px;
+  width: auto;
+}
+body .backet .main-content .conteiner .block img {
+  max-height: 300px;
+  border-radius: 10px;
 }

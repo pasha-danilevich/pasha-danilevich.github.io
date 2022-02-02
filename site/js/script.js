@@ -58,7 +58,6 @@ $(document).ready(function(){
   $('#bars_button').on('click',function(){
     if($('#menu_bar').hasClass('menu-bar-active')){
       removeActiveClass('#menu_bar','menu-bar-active')
-      $('#filter_button').addClass('filter-button-active');
       document.getElementById('bars_button_i').style.display = 'block';
       document.getElementById('times_button_i').style.display = 'none';
     }
@@ -84,7 +83,6 @@ $(document).ready(function(){
   $('#profile_icon').on('click',function(){
     if($('#dropdown_menu').hasClass('dropdown-menu-active')){
       removeActiveClass('#dropdown_menu','dropdown-menu-active')
-      $('#filter_button').addClass('filter-button-active');
     }
     else{
       removeActiveClass('#filter_button','filter-button-active')

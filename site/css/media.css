@@ -271,9 +271,6 @@
   header .nav {
     left: 0 !important;
   }
-  header {
-    padding: 12px 10px 12px 10px !important;
-  }
   
   body section.hello .premier .block:nth-child(1) h2 span:nth-child(1) {
     font-size: 40px !important;

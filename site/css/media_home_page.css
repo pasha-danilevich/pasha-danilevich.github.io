@@ -1,49 +1,29 @@
-/*@media (min-width: 2640px) {
-	body .backet .content .conteiner {
-		width: 2560px !important;
-	}			
-}
-@media (max-width: 2640px) {
-	body .backet .content .conteiner {
-		width: 2240px !important;
-	}			
-}
-@media (max-width: 2260px) {
-	body .backet .content .conteiner {
-		width: 1940px !important;
-	}			
-}
-@media (max-width: 1440px) {
-	body .backet .content .conteiner {
-		width: 1340px !important;
-	}			
-}
-@media (max-width: 1040px) {
-	body .backet .content .conteiner {
-		width: 640px !important;
-	}			
-}*/
-
-
-
-
-
-
 @media (max-width: 500px) {
-	body .background .content .main-profil{
-		width: 100%
-	}
+
+}
+@media (max-width: 800px) {
+
+}
+@media (max-width: 1000px) {
 	body .background .content .right {
-		display: none !important;
+		display: none;
 	}
-	body .background .content .main-profil .setting-bar .cell {
-		width: 25% !important;
+	body .background .content .main-profil {
+		width: 100%;
+		min-width: 300px;
 	}
-	body .background .content .main-profil .setting-bar .cell:nth-child(3) {
+	body .background .content .main-profil .setting-bar{
+		margin-bottom: 10px;
+	}
+	body .background .content .main-profil .setting-bar .cell:nth-child(3){
 		display: flex;
 	}
-	body .background .content .main-profil .setting-bar .cell:nth-child(4) {
+	body .background .content .main-profil .setting-bar .cell:nth-child(4){
 		display: flex;
 	}
 	
+	
 }
+
+
+
