@@ -6,6 +6,7 @@
 }
 * {
   -webkit-tap-highlight-color: transparent;
+  transition-timing-function: cubic-bezier(1, 0, 0, 0.95);
 }
 body {
   top: 0 !important;
@@ -122,6 +123,15 @@ button{
 }
 button:hover {
 	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+input {
+ 	border: none;
+  border-bottom: 1px solid #e3e3e3;
+    color: #000;
+    border-radius: 0;
+    padding-left: 0;
+    outline: none;
+    width: 100%;
 }
 i {
 	vertical-align: middle;
@@ -403,8 +413,9 @@ header {
 			position: absolute;
 			top: 60px;
 			left: -100%;
-			z-index: 1;
+			z-index: 3;
 			transition: 0.2s all;
+			transition-timing-function: cubic-bezier(1, 0, 0, 0.95);
 			
 			
 			.menu-main {
@@ -508,229 +519,7 @@ header {
 			width: 300px;
 			transition-duration: .4s;
 		}
-		.sign_up {
-			height: 30px;
-			div {
-
-			}
-			i {
-				cursor: pointer;
-			}
-		}
-		.or {
-			height: 30px;
-	    font-weight: 900;
-		}
-		.log_in {
-			height: 30px;
-			div {
-
-			}
-			i {
-				cursor: pointer;
-			}
-		}
-		.sign_up_back, .log_in_back  {
-					position: fixed;
-			    top: 0;
-			    left: 0;
-			    height: 100%;
-			    width: 100%;
-			    background-color: #000000ab;
-			    z-index: 10;
-					display: none;
-					transition: .30s , .10s ;
-					.sign_up_modal, .log_in_modal {
-				    width: 600px;
-				    height: 600px;
-				    position: fixed;
-				    top: 50%; 
-				    left: 50%;
-				    margin-top: -300px;
-				    margin-left: -300px;
-				    background-color: #fff;
-				    border-radius: 10px;
-				    z-index: 11;
-				    color: #000;
-				    
-				    .wapper {
-							padding: 0px 50px;
-					    height: 100%;
-					    border-radius: 10px;
-					  }
-						
-				    .hello {
-				    	height: 100px;
-					    font-size: 30px;
-					    font-weight: bold;
-					    text-align: center;
-					    padding: 25px 0 0 0;
-					    text-transform: uppercase;
-					    color: white;
-				    	span {
-				    		font-size: 35px;
-				    	}
-						}
-						.hello-log {
-							height: 150px;
-							padding: 50px 0 0 0;
-						}
-						.comment{
-							height: 50px;
-							text-align: center;
-							color:white;
-							font-size: 20px;
-						}
-						.steps {
-							height: 50px;
-							text-align: center;
-							color:white;
-							font-size: 20px;
-						}
-						.center {
-							height: 100px;
-							width: 100%;
-							display: flex;
-							justify-content: center;
-							i {
-								font-size: 100px;
-    						color: #3e1f33;
-							}
-						}
-
-						.main {
-							margin-top: 20px;
-							.icon{
-								height: 50px;
-								width: 10%;
-								background-color: #000000b5;
-								border-radius: 10px;
-								border-top-right-radius: 0;
-								border-bottom-right-radius: 0;
-								i {
-									color: white;
-									font-size: 22px;
-									margin: 15px;
-								}
-
-							}
-
-							.input{
-								height: 50px;
-								width: 90%;
-								background-color: #000000b5 !important;
-								background-color: -internal-light-dark(rgb(0, 0, 0)) !important;
-    						border-radius: 10px;
-								border-top-left-radius: 0;
-								border-bottom-left-radius: 0;
-								input {
-									background-color: #fff0 !important;
-							    border: none;
-							    height: 100%;
-							    width: 100%;
-							    color: white;
-							    outline: none;
-							    padding: 0 0 0 15px;
-								}
-							}
-							.name {
-								height: 50px;
-								display: flex;
-								margin-bottom: 20px;
-							}
-							.email {
-								height: 50px;
-								display: flex;
-								margin-bottom: 20px;
-							}
-							.passwords {
-								height: 50px;
-								display: flex;
-								justify-content: space-between;
-								.icon{
-									height: 50px;
-									width: 22.5%;
-									background-color: #000000b5;
-								}
-								.icon-log {
-									width: 10%;
-								}
-								input {
-									width: 93%;
-								}
-								.passwodr-one {
-									width: 47%;
-									height: 50px;
-									display: flex;
-								}
-								.passwodr-one-log {
-									width: 100%;
-								}
-								.password-two {
-									width: 47%;
-									height: 50px;
-									display: flex;
-								}
-							}
-						}
-						.main-log {
-							margin-top: 50px;
-						}
-						.buttons {
-							height: 100px;
-							padding: 50px 0 0 200px;
-							display: flex;
-							justify-content: flex-end;
-
-							#close_sign_up,#close_log_in{
-								height: 50px;
-								width: 60px;
-								background-color: #000000b5;
-								border-radius: 10px;
-								border: 0;
-								margin-right: 20px;
-								color: white;
-								cursor: pointer;
-								font-size: 30px;
-								padding: 0;
-							}
-							#continue_sign_up {
-								height: 50px;
-								width: 60px;
-								background-color: #000000b5;
-								border-radius: 10px;
-								border: 0;
-								color: white;
-								cursor: pointer;
-								font-size: 30px;
-								padding: 0;
-							}
-						}
-						.info {
-							
-							padding: 20px 0 0 0;
-							p {
-								color: white;
-								font-size: 18px;
-								font-weight: lighter;
-								text-align: center;
-							}
-						}
-				  }
-		.bascket {
-			width: 34px;
-	    height: 48px;
-	    padding: 8px 27px 0px 0px;
-			i {
-				font-size: 20px;
-				cursor: pointer;
-			}
-			.fa-shopping-basket {
-				float: right;
-			}
-		}
 		
-	}
 	}
 }
 
@@ -1530,6 +1319,194 @@ body {
 }
 
 // --------------------------------------------------------------
+.sign_up_back, .log_in_back  {
+					position: fixed;
+			    top: 0;
+			    left: 0;
+			    height: 100%;
+			    width: 100%;
+			    background-color: #000000ab;
+			    z-index: 10;
+					display: none;
+					transition: .30s , .10s ;
+					.sign_up_modal, .log_in_modal {
+				    width: 600px;
+				    height: 600px;
+				    position: fixed;
+				    top: 50%; 
+				    left: 50%;
+				    margin-top: -300px;
+				    margin-left: -300px;
+				    background-color: #fff;
+				    border-radius: 10px;
+				    z-index: 11;
+				    color: #000;
+				    
+				    .wapper {
+							padding: 0px 50px;
+					    height: 100%;
+					    border-radius: 10px;
+					  }
+						
+				    .hello {
+				    	height: 100px;
+					    font-size: 30px;
+					    font-weight: bold;
+					    text-align: center;
+					    padding: 25px 0 0 0;
+					    text-transform: uppercase;
+					    color: white;
+				    	span {
+				    		font-size: 35px;
+				    	}
+						}
+						.hello-log {
+							height: 150px;
+							padding: 50px 0 0 0;
+						}
+						.comment{
+							height: 50px;
+							text-align: center;
+							color:white;
+							font-size: 20px;
+						}
+						.steps {
+							height: 50px;
+							text-align: center;
+							color:white;
+							font-size: 20px;
+						}
+						.center {
+							height: 100px;
+							width: 100%;
+							display: flex;
+							justify-content: center;
+							i {
+								font-size: 100px;
+    						color: #3e1f33;
+							}
+						}
+
+						.main {
+							margin-top: 20px;
+							.icon{
+								height: 50px;
+								width: 10%;
+								background-color: #000000b5;
+								border-radius: 10px;
+								border-top-right-radius: 0;
+								border-bottom-right-radius: 0;
+								i {
+									color: white;
+									font-size: 22px;
+									margin: 15px;
+								}
+
+							}
+
+							.input{
+								height: 50px;
+								width: 90%;
+								background-color: #000000b5 !important;
+								background-color: -internal-light-dark(rgb(0, 0, 0)) !important;
+    						border-radius: 10px;
+								border-top-left-radius: 0;
+								border-bottom-left-radius: 0;
+								input {
+									background-color: #fff0 !important;
+							    border: none;
+							    height: 100%;
+							    width: 100%;
+							    color: white;
+							    outline: none;
+							    padding: 0 0 0 15px;
+								}
+							}
+							.name {
+								height: 50px;
+								display: flex;
+								margin-bottom: 20px;
+							}
+							.email {
+								height: 50px;
+								display: flex;
+								margin-bottom: 20px;
+							}
+							.passwords {
+								height: 50px;
+								display: flex;
+								justify-content: space-between;
+								.icon{
+									height: 50px;
+									width: 22.5%;
+									background-color: #000000b5;
+								}
+								.icon-log {
+									width: 10%;
+								}
+								input {
+									width: 93%;
+								}
+								.passwodr-one {
+									width: 47%;
+									height: 50px;
+									display: flex;
+								}
+								.passwodr-one-log {
+									width: 100%;
+								}
+								.password-two {
+									width: 47%;
+									height: 50px;
+									display: flex;
+								}
+							}
+						}
+						.main-log {
+							margin-top: 50px;
+						}
+						.buttons {
+							height: 100px;
+							padding: 50px 0 0 200px;
+							display: flex;
+							justify-content: flex-end;
+
+							#close_sign_up,#close_log_in{
+								height: 50px;
+								width: 60px;
+								background-color: #000000b5;
+								border-radius: 10px;
+								border: 0;
+								margin-right: 20px;
+								color: white;
+								cursor: pointer;
+								font-size: 30px;
+								padding: 0;
+							}
+							#continue_sign_up {
+								height: 50px;
+								width: 60px;
+								background-color: #000000b5;
+								border-radius: 10px;
+								border: 0;
+								color: white;
+								cursor: pointer;
+								font-size: 30px;
+								padding: 0;
+							}
+						}
+						.info {
+							
+							padding: 20px 0 0 0;
+							p {
+								color: white;
+								font-size: 18px;
+								font-weight: lighter;
+								text-align: center;
+							}
+						}
+				  }		
+		}
 
 }
 #options_frame .modal {

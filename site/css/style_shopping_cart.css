@@ -46,7 +46,6 @@ body .main .cart .list .picture {
   display: -ms-flexbox;
   display: flex;
   padding: 15px 0 15px 0;
-  border-bottom: 1px solid #ccc;
   margin-right: 20px;
 }
 body .main .cart .list .picture .block {
@@ -128,9 +127,8 @@ body .main .cart .price-box .price {
   display: flex;
 }
 body .main .contact-detatls {
-  color: #e8e9ee;
   width: 600px;
-  min-height: 700px;
+  min-height: 500px;
 }
 body .main .contact-detatls .conteiner {
   position: relative;
@@ -138,62 +136,35 @@ body .main .contact-detatls .conteiner {
   border-radius: 10px;
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(90deg, #4ecdc4, #86aed9);
+}
+body .main .contact-detatls .conteiner .cell {
+  height: 100px;
+  width: 100%;
 }
 body .main .contact-detatls .conteiner p {
   font-size: 25px;
   margin-bottom: 20px;
-  font-weight: bold;
+  font-weight: 400;
 }
 body .main .contact-detatls .conteiner p i {
   float: right;
 }
-body .main .contact-detatls .conteiner .card {
-  width: 300px;
-  height: 200px;
-  padding: 0 15px;
-  border-radius: 10px;
-  background-color: #1d1f2b;
-  -webkit-box-shadow: 5px 0 20px -14px black;
-          box-shadow: 5px 0 20px -14px black;
-  margin: auto;
-  position: relative;
+body .main .contact-detatls .conteiner input {
+  border: none;
+  border-bottom: 1px solid #e3e3e3;
+  color: #000;
+  border-radius: 0;
+  padding-left: 0;
+  outline: none;
+  width: 100%;
 }
-body .main .contact-detatls .conteiner .card .payment-system {
-  position: absolute;
-  font-size: 40px;
-  right: 20px;
-  top: 10px;
+body .main .contact-detatls .conteiner input:focus {
+  border: 0;
 }
-body .main .contact-detatls .conteiner .card .card-number {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 260px;
-  top: 110px;
-  left: 20px;
-  font-size: 20px;
+body .main .contact-detatls .conteiner button {
+  width: 100%;
 }
-body .main .contact-detatls .conteiner .card .card-name {
-  position: absolute;
-  top: 150px;
-  left: 20px;
-  font-size: 20px;
-}
-body .main .contact-detatls .conteiner .card .valid-period {
-  position: absolute;
-  top: 150px;
-  right: 20px;
-  font-size: 20px;
-}
-body .main .contact-detatls .price-box {
-  height: 100%;
-}
-body .main .contact-detatls .price-box .price {
+body .main .contact-detatls .conteiner .price-box .price {
   position: sticky;
   bottom: 0;
   min-height: 2em;

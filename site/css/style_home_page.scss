@@ -135,6 +135,7 @@ body {
 					font-size: 30px;
 					line-height: 70px;
 					text-transform: uppercase;
+					color:white;
 				}
 				i {
 					font-size: 100px;
@@ -152,6 +153,7 @@ body {
 					flex-direction: column;
 					border-radius: 30px;
 					cursor: pointer;
+					color:white;
 				}
 				.wrapper:hover {
 					backdrop-filter: blur(5px);
@@ -162,6 +164,7 @@ body {
 					height: inherit;
 					display: flex;
 					justify-content: center;
+					color:white;
 					
 				}
 				.statistics {

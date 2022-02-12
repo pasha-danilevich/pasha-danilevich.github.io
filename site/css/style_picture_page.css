@@ -192,12 +192,6 @@
   position: relative;
   font-size: 20px;
 }
-.other-works .artist-name {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
 .other-works .artist-works {
   margin: 0 10px;
   border-bottom: 2px solid black;

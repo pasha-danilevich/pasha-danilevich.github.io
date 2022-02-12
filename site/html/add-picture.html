@@ -3,13 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>picture-page</title>
+	<title>Art store ZZZ</title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="stylesheet" href="../css/style_picture_page.css">
 	<link rel="stylesheet" href="../css/style.css">
-
+	<link rel="stylesheet" href="../css/style_add_picture.css">
+	
 	<script async src="https://kit.fontawesome.com/b5aefe840c.js" crossorigin="anonymous"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<script src="../js/google-translate.js"></script>
+	<script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
 
 </head>
 <header>
@@ -19,10 +23,6 @@
 	<nav class="nav">
     	<div id="bar"></div>
   	</nav>
-  	<div class="filter-button" id="filter_button">
-			<span><i class="fas fa-filter"></i></span>
-			<span class="text">3</span>
-		</div>
 	<div  class="top">
 		<div class="top-left">
 			<div  class="bars" >
@@ -205,7 +205,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="options">
+			 	<div class="options">
 				<div class="options_frame" id="options_frame" 
 				onclick="if(event.target.className == 'options_frame'){
 					$('#options_frame').hide();
@@ -253,189 +253,278 @@
 					</div>
 				</div>
 				
-		</div>
-		</div>
-	</div>
-
-</header>
-<body>
-	<section class="picture-main">
-		<div class="picture-main-conteiner">
-			<div class="picture-body">
-				<div class="picture">
-					<div class="block">
-						<img  src="../img/2.jpg" alt="">
-					</div>
-					<div class="like"></div>
-				</div>
-				<div class="in-interier">Show in the interior <span><i class="far fa-eye"></i></span> </div>
-				<div class="hashtag">
-					<ul>
-						<li><span>#</span>осень</li>
-						<li><span>#</span>исаак</li>
-						<li><span>#</span>1895</li>
-						<li><span>#</span>большая картина</li>
-						<li><span>#</span>живопись</li>
-						<li><span>#</span>пейзаж</li>
-					</ul>
-				</div>
-				<div class=""></div>
 			</div>
-			<div class="order">
-				<div class="order-conteiner">
-					<div class="autor cell">
-						<p>Исаак Левитан </p>
-					</div>
-					<div class="pic-name cell">
-						<h1>Золотая осень <span class="date">1895</span></h1>
-					</div>
-					<div class="info cell">
-						Принадлежит Государственной Третьяковской галерее.
-						<ul>
-							<li><div class="size">82 × 126 см</div></li>
-							<li><div class="tech">Масляные краски</div></li>
-							<li><div class="frame">Без рамки</div></li>
-						</ul>
-					</div>
-					<button class="buy cell">
-						Купить сейчас <span class="price">20000$</span>
-					</button>
-					<button class="offer cell">
-						Предложить сделку
-					</button>
-					<div class="pay-wall cell">
-						<i class="fab fa-cc-mastercard"></i>
-						<i class="fab fa-cc-visa"></i>
-					</div>
-					<div class="links cell">
-						<div class="cell">
-							<div class="icon">
-								<img  class="icon-img" src="../img/1.jpg" alt="">
-							</div>
-							<div class="info">
-								<p>Artist</p>
-								<p>Исаак Левитан</p>
-							</div>
-							<div class="button">
-								<button class="follow">
-									Follow
-								</button>
+		<div id="log_in_back_show" onclick="
+		if(event.target.className == 'sign_up_back log_in_back'){
+      		$('#log_in_back_show').hide();
+      		
+    	}" 
+    	class="sign_up_back log_in_back">
+			<div class="log_in_modal sign_up_modal">
+				<div class="wapper linear-gradient-animation">
+					<div class="hello hello-log">Hello it is <span>ZZZ</span>  ^_^</div>
+					<div class="center"><i class="fas fa-user"></i></div>
+					<div class="main main-log">
+						<div class="email">
+							<div class="icon icon-log"><i class="fas fa-at"></i></div>
+							<div class="input">
+								<input type="text" placeholder="Your email">
 							</div>
 						</div>
-						<div class="cell">
-							<div class="icon">
-								<img  class="icon-img" src="../img/2.jpg" alt="">
+						<div class="passwords">
+							<div class="passwodr-one passwodr-one-log">
+								<div class="icon icon-log"><i class="fas fa-key"></i></div>
+							<div class="input">
+								<!-- <input type="password" placeholder="Password"> -->
 							</div>
-							<div class="info">
-								<p>Gallery</p>
-								<p>Левитанская</p>
-							</div>
-							<div class="button">
-								<button class="visit">
-									Visit
-								</button>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="secure"></div>
-			</div>
-		</div>
-	</section>
-	<section class="other-works">
-		<div class="artist-works">Работы Исаак Левитан (3)</div>
-		<div class="gallery-works">Левитановская галерея (10)</div>
-	</section>
-	<div class="main-content">
-		<div class="conteiner-of-pic">
-
-			<div  class="block ">
-				<img  class="ver-img" src="../img/1.jpg" alt="">
-				<div class="info">
-					<div class="top">
-						<div class="wrapper"><i class="fas fa-eye"></i></div>
-						<div class="wrapper"><i class="fas fa-bookmark"></i></i></div>
+					<div class="buttons">
+						<button id="close_log_in"><i class="fas fa-times"></i></button>
+						<button id="continue_sign_up"><i class="fas fa-check"></i></button>
 					</div>
+					<div class="info">
 					
-				</div>
-				<div class="bottom">
-					<div class="meta">
-						
-						<div class="name">
-							<h2 class="pic-name">Mona lisaMona lisaMona lisaMona lisa</h2>
-							<h3 class="autor">La Gioconda</h3>
-							<div class="size">70 x 50 sm</div>
-						</div>
-						
-						<div class="size-and-price">
-							<div class="price">15400$ </div>
-							<i class="fas fa-cart-plus"></i>
-						</div>
 					</div>
 				</div>	
 			</div>
-			<div class="block ">
-				<a href="picture-page.html">
-					<img  class="horiz-img" src="../img/2.jpg" alt="">
-				
-				
-					<div class="info">
-						<div class="top">
-							<div class="wrapper"><i class="fas fa-eye"></i></div>
-							<div class="wrapper"><i class="fas fa-bookmark"></i></i></div>
-						</div>	
-					</div>
-				</a>
-				<div class="bottom">
-					
-					<div class="meta">
-						
-						<div class="name">
-							<h2 class="pic-name">Mona lisa lisaMonalisaMonalisaMonalisaMonalisaMona</h2>
-							<h3 class="autor">La Gioconda</h3>
-							<div class="size">70 x 50 sm</div>
-						</div>
-						
-						<div class="size-and-price">
-							<div class="price">15400$ </div>
-							<i class="fas fa-cart-plus"></i>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-			<div class="block">
-				<img class="horiz-img" src="../img/3.jpg" alt="">
-				<div class="info">
-					<div class="top">
-						<div class="wrapper"><i class="fas fa-eye"></i></div>
-						<div class="wrapper"><i class="fas fa-bookmark"></i></i></div>
-					</div>
-					
-				</div>
-				<div class="bottom">
-					
-					<div class="meta">
-						
-						<div class="name">
-							<h2 class="pic-name">Mona lisaMona lisa</h2>
-							<h3 class="autor">La Gioconda</h3>
-							<div class="size">70 x 50 sm</div>
-						</div>
-						
-						<div class="size-and-price">
-							<div class="price">15400$ </div>
-							<i class="fas fa-cart-plus"></i>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-			
-			
 		</div>
-	</div>
-
+</header>
+<body>
+	<section class="create-artwork">
+		<div class="hat">
+			<div class="cell"><h1>Add work</h1></div>
+			<div class="cell">
+				<button class="add">Add</button>
+			</div>
+		</div>
+		<div class="content">
+			<div class="form">
+				<form action="post">
+					<div class="line">
+						<div class="title">
+							<div class="number">1</div>
+							<h2>Название картины</h2>
+						</div>
+						<input id="picture_name" type="text" placeholder="Как вы назвали картину">
+						<p>Имя - это главный атрибут картины</p>
+					</div>
+					<div class="line">
+						<div class="title">
+							<div class="number">2</div>
+							<h2>Главное изображение</h2>
+						</div>
+						
+						<input type="text" placeholder="">
+						<p></p>
+					</div>
+					<div class="line">
+						<div class="title">
+							<div class="number">3</div>
+							<h2>Дополнительные изображения</h2>
+						</div>
+						
+						<input type="text" placeholder="">
+						<p>Например: фото в близи или комплект, который педоставляется к этой картине</p>
+					</div>
+					<div class="line">
+						<div class="title">
+							<div class="number">4</div>
+							<h2>Год</h2>
+						</div>
+						<input id="picture_date" type="date">
+						<p>Год написания картины</p>
+					</div>
+					<div class="line">
+						<div class="title">
+							<div class="number">5</div>
+							<h2>Жанр</h2>
+						</div>
+						<div class="style form-item_checkbox">
+							<label class="unselectable">
+								<input name="Painting" class="checkbox" id="checkbox" type="checkbox"/>
+								<span class="custom-checkbox"></span>
+								<span id="usdsel" class="text" >Живопись</span>
+							</label>
+							<br>
+							<label class="unselectable">
+								<input class="checkbox" id="checkbox" type="checkbox"/>
+								<span class="custom-checkbox"></span>
+								<span class="text">Пейзаж</span>
+							</label>
+							<label class="unselectable">
+								<input class="checkbox" id="checkbox" type="checkbox"/>
+								<span class="custom-checkbox"></span>
+								<span class="text">Минимализм</span>
+							</label>
+							<br>
+							<label class="unselectable">
+								<input class="checkbox" id="checkbox" type="checkbox"/>
+								<span class="custom-checkbox"></span>
+								<span class="text">Стритарт</span>
+							</label>
+							<label class="unselectable">
+								<input class="checkbox" id="checkbox" type="checkbox"/>
+								<span class="custom-checkbox"></span>
+								<span class="text">Абстрикция</span>
+							</label>
+							<br>
+							<label class="unselectable">
+								<input class="checkbox" id="checkbox" type="checkbox"/>
+								<span class="custom-checkbox"></span>
+								<span class="text">Дизайн</span>
+							</label>
+						</div>
+					</div>
+					<div class="line">
+						<div class="title">
+							<div class="number">6</div>
+							<h2>Состояние картины</h2>
+						</div>
+						
+						<select>
+							<option value = "A">Несходительное</option>
+							<option value = "B">Хорошое</option>
+							<option value = "C">Отличное</option>
+						</select>
+						<p>Это поможет покупатель понять, в каком состоянии находится картины</p>
+					</div>
+					<div class="line">
+						<div class="title">
+							<div class="number">6</div>
+							<h2>Материал</h2>
+						</div>
+						
+						<div class="style">
+							<label class="unselectable">
+								<input class="checkbox" id="checkbox" type="checkbox"/>
+								<span class="custom-checkbox"></span>
+								<span class="text">Холст, акрил</span>
+							</label>
+							<br>
+							<label class="unselectable">
+								<input class="checkbox" id="checkbox" type="checkbox"/>
+								<span class="custom-checkbox"></span>
+								<span class="text">Холст, масло</span>
+							</label>
+							<label class="unselectable">
+								<input class="checkbox" id="checkbox" type="checkbox"/>
+								<span class="custom-checkbox"></span>
+								<span class="text">Фотобумага, цифровая печать</span>
+							</label>
+							<br>
+							<label class="unselectable">
+								<input class="checkbox" id="checkbox" type="checkbox"/>
+								<span class="custom-checkbox"></span>
+								<span class="text">Бумага, акварель</span>
+							</label>
+							<label class="unselectable">
+								<input class="checkbox" id="checkbox" type="checkbox"/>
+								<span class="custom-checkbox"></span>
+								<span class="text">Керамика, глазурь</span>
+							</label>
+							<br>
+							<label class="unselectable">
+								<input class="checkbox" id="checkbox" type="checkbox"/>
+								<span class="custom-checkbox"></span>
+								<span class="text">Шелкография</span>
+							</label>
+						</div>
+					</div>
+					<div class="line">
+						<div class="title">
+							<div class="number">7</div>
+							<h2>Размер (см)</h2>
+						</div>
+						<h3>Высота</h3>
+						<input id="picture_height" type="number" placeholder="0 см">
+						<h3>Ширина</h3>
+						<input id="picture_width" type="number" placeholder="0 см">
+						<p>Высота/ширина картины</p>
+					</div>
+					<div class="line">
+						<div class="title">
+							<div class="number">8</div>
+							<h2>Сертификат</h2>
+						</div>
+						<label class="unselectable">
+							<input class="checkbox" id="checkbox" type="checkbox"/>
+							<span class="custom-checkbox"></span>
+							<span class="text">Произведение искусства включает в себя сертификат подлинности</span>
+						</label>
+						<br>
+						<label class="unselectable">
+							<input class="checkbox" id="checkbox" type="checkbox"/>
+							<span class="custom-checkbox"></span>
+							<span class="text">Произведение искусства включает в себя роспись художника</span>
+						</label>
+						<label for="checkbox"></label>
+					</div>
+					<div class="line">
+						<div class="title">
+							<div class="number">9</div>
+							<h2>Цена</h2>
+						</div>
+						<input id="picture_price" type="number" placeholder="Введите стоимость">
+					</div>
+				</form>
+			</div>
+			<div class="preview">
+				<div class="title">
+					<h2>Так будет выглядить ваша картина на нашей площадке:</h2>
+				</div>
+				<div class="main-content">
+					<div class="conteiner-of-pic">
+						<div class="block">
+							<a href="picture-page.html">
+								<img  class="horiz-img" src="../img/2.jpg" alt="">
+							
+							
+								<div class="info">
+									<div class="top">
+										<div class="wrapper"><i class="fas fa-eye"></i></div>
+										<div class="wrapper"><i class="fas fa-bookmark"></i></i></div>
+									</div>	
+								</div>
+							</a>
+							<div class="bottom">
+								
+								<div class="meta">
+									
+									<div class="name">
+										<h2 id="result_picture_name" class="pic-name">*Имя картины*</h2>
+										<h3 class="autor">La Gioconda</h3>
+										<div id="result_picture_size" class="size">*Размер*</div>
+									</div>
+									
+									<div class="size-and-price">
+										<div id="result_picture_price" class="price">*Цена*</div>
+										<i class="fas fa-cart-plus"></i>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="title">
+					<h2>По следующим характеристикам покупатели смогут найти вашу картину:</h2>
+				</div>
+				<div class="hashtag">
+					<ul id="hashtag">
+						<li id="result_picture_tag"></li>
+						<li id="result_picture_"></li>
+						<li id="result_picture_tag"></li>
+						<li id="result_picture_size_tag"></li>
+						<li id="result_picture_"></li>
+						<li id="result_picture_"></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</section>
 </body>
 <footer id="contact_anchor" >
 	<div  class="desktop">
@@ -563,11 +652,11 @@
 		</div>	
 	</div>
 </footer>
+<link rel="stylesheet" href="../css/media_add_picture.css">
 <link rel="stylesheet" href="../css/media.css">
 <script src="../js/script_scroll.js"></script>
+<script src="../js/add-picture.js"></script>
 <script src="../js/script.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-<script src="../js/google-translate.js"></script>
-<script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+
 </html>

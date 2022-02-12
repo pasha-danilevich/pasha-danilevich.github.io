@@ -35,7 +35,6 @@ body {
 					width: 100%;
 					display: flex;
 					padding: 15px 0 15px 0;
-					border-bottom: 1px solid #ccc;
 					margin-right: 20px;
 					.block {
 						
@@ -103,71 +102,102 @@ body {
 			}
 		}
 		.contact-detatls {
-			color: #e8e9ee;
+			
 			width: 600px;
-			min-height: 700px;
+			min-height: 500px;
 			.conteiner {
 				position: relative;
 				padding: 20px;
 				border-radius: 10px;
 				width: 100%;
 				height: 100%;
-				background: -webkit-linear-gradient(90deg,#4ecdc4,#86aed9);
+				.cell {
+					height: 100px;
+					width: 100%;
+				}
 				p {
 					font-size: 25px;
 					margin-bottom: 20px;
-					font-weight: bold;
+					font-weight: 400;
 					i {
 						float: right;
 					}
 				}
-				.card{
-					width: 300px;
-					height: 200px;
-					padding: 0 15px;
-					border-radius: 10px;
-					background-color: #1d1f2b;
-					box-shadow: 5px 0 20px -14px black;
-					margin: auto;
-					position: relative;
-					.payment-system {
-						position: absolute;
-						font-size: 40px;
-						right: 20px;
-						top:10px;
-					}
-					.card-number {
-						position: absolute;
-						display: flex;
-						justify-content: space-between;
-						width: 260px;
-					    top: 110px;
-					    left: 20px;
-					    font-size: 20px;
-					}
-					.card-name {
-						position: absolute;
-						top: 150px;
-						left: 20px;
-						font-size: 20px;
-					}
-					.valid-period {
-						position: absolute;
-						top: 150px;
-						right: 20px;
-						font-size: 20px;
-					}
+				input {
+					border: none;
+				    border-bottom: 1px solid #e3e3e3;
+				    color: #000;
+				    border-radius: 0;
+				    padding-left: 0;
+				    outline: none;
+				    width: 100%;
+				}
+				input:focus {
+					border: 0;
 
 				}
+				.phone-number {
+				}
+				.e-mail {
+				}
+				.full-name {
+				}
+				.city {
+				}
+				.addres {
+				}
+				button {
+					width: 100%;
+				}
+				.price-box {
+				    .price {
+				  	    position: sticky;
+				  	    bottom: 0;
+				  	    min-height: 2em;
+				    }
+				}
+				// .card{
+				// 	width: 300px;
+				// 	height: 200px;
+				// 	padding: 0 15px;
+				// 	border-radius: 10px;
+				// 	color: #e8e9ee;
+				// 	background-color: #1d1f2b;
+				// 	box-shadow: 5px 0 20px -14px black;
+				// 	margin: auto;
+				// 	position: relative;
+				// 	.payment-system {
+				// 		position: absolute;
+				// 		font-size: 40px;
+				// 		right: 20px;
+				// 		top:10px;
+				// 	}
+				// 	.card-number {
+				// 		position: absolute;
+				// 		display: flex;
+				// 		justify-content: space-between;
+				// 		width: 260px;
+				// 	    top: 110px;
+				// 	    left: 20px;
+				// 	    font-size: 20px;
+				// 	}
+				// 	.card-name {
+				// 		position: absolute;
+				// 		top: 150px;
+				// 		left: 20px;
+				// 		font-size: 20px;
+				// 	}
+				// 	.valid-period {
+				// 		position: absolute;
+				// 		top: 150px;
+				// 		right: 20px;
+				// 		font-size: 20px;
+				// 	}
+
+				// }
+
 			}
-			.price-box {
-				  height: 100%;
-				  .price {
-				  	position: sticky;
-				  	bottom: 0;
-				  	min-height: 2em;
-				  }
-			}
+			
 		}
 	}
 		

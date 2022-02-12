@@ -183,6 +183,7 @@ body .background .content .right p {
   font-size: 30px;
   line-height: 70px;
   text-transform: uppercase;
+  color: white;
 }
 body .background .content .right i {
   font-size: 100px;
@@ -210,6 +211,7 @@ body .background .content .right .wrapper {
           flex-direction: column;
   border-radius: 30px;
   cursor: pointer;
+  color: white;
 }
 body .background .content .right .wrapper:hover {
   -webkit-backdrop-filter: blur(5px);
@@ -226,6 +228,7 @@ body .background .content .right .add {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: white;
 }
 body .background .content .right .statistics {
   width: 50%;

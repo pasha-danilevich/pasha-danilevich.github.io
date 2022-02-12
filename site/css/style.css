@@ -8,6 +8,8 @@
 
 * {
   -webkit-tap-highlight-color: transparent;
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 0, 0.95);
+          transition-timing-function: cubic-bezier(1, 0, 0, 0.95);
 }
 
 body {
@@ -124,6 +126,16 @@ button {
 button:hover {
   -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
           box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #e3e3e3;
+  color: #000;
+  border-radius: 0;
+  padding-left: 0;
+  outline: none;
+  width: 100%;
 }
 
 i {
@@ -458,9 +470,11 @@ header .top .menu-bar {
   position: absolute;
   top: 60px;
   left: -100%;
-  z-index: 1;
+  z-index: 3;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 0, 0.95);
+          transition-timing-function: cubic-bezier(1, 0, 0, 0.95);
 }
 header .top .menu-bar .menu-main {
   background-color: #fff;
@@ -579,236 +593,6 @@ header .top .search-active {
   width: 300px;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
-}
-header .top .sign_up {
-  height: 30px;
-}
-header .top .sign_up i {
-  cursor: pointer;
-}
-header .top .or {
-  height: 30px;
-  font-weight: 900;
-}
-header .top .log_in {
-  height: 30px;
-}
-header .top .log_in i {
-  cursor: pointer;
-}
-header .top .sign_up_back, header .top .log_in_back {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #000000ab;
-  z-index: 10;
-  display: none;
-  -webkit-transition: 0.3s, 0.1s;
-  transition: 0.3s, 0.1s;
-}
-header .top .sign_up_back .sign_up_modal, header .top .sign_up_back .log_in_modal, header .top .log_in_back .sign_up_modal, header .top .log_in_back .log_in_modal {
-  width: 600px;
-  height: 600px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -300px;
-  margin-left: -300px;
-  background-color: #fff;
-  border-radius: 10px;
-  z-index: 11;
-  color: #000;
-}
-header .top .sign_up_back .sign_up_modal .wapper, header .top .sign_up_back .log_in_modal .wapper, header .top .log_in_back .sign_up_modal .wapper, header .top .log_in_back .log_in_modal .wapper {
-  padding: 0px 50px;
-  height: 100%;
-  border-radius: 10px;
-}
-header .top .sign_up_back .sign_up_modal .hello, header .top .sign_up_back .log_in_modal .hello, header .top .log_in_back .sign_up_modal .hello, header .top .log_in_back .log_in_modal .hello {
-  height: 100px;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  padding: 25px 0 0 0;
-  text-transform: uppercase;
-  color: white;
-}
-header .top .sign_up_back .sign_up_modal .hello span, header .top .sign_up_back .log_in_modal .hello span, header .top .log_in_back .sign_up_modal .hello span, header .top .log_in_back .log_in_modal .hello span {
-  font-size: 35px;
-}
-header .top .sign_up_back .sign_up_modal .hello-log, header .top .sign_up_back .log_in_modal .hello-log, header .top .log_in_back .sign_up_modal .hello-log, header .top .log_in_back .log_in_modal .hello-log {
-  height: 150px;
-  padding: 50px 0 0 0;
-}
-header .top .sign_up_back .sign_up_modal .comment, header .top .sign_up_back .log_in_modal .comment, header .top .log_in_back .sign_up_modal .comment, header .top .log_in_back .log_in_modal .comment {
-  height: 50px;
-  text-align: center;
-  color: white;
-  font-size: 20px;
-}
-header .top .sign_up_back .sign_up_modal .steps, header .top .sign_up_back .log_in_modal .steps, header .top .log_in_back .sign_up_modal .steps, header .top .log_in_back .log_in_modal .steps {
-  height: 50px;
-  text-align: center;
-  color: white;
-  font-size: 20px;
-}
-header .top .sign_up_back .sign_up_modal .center, header .top .sign_up_back .log_in_modal .center, header .top .log_in_back .sign_up_modal .center, header .top .log_in_back .log_in_modal .center {
-  height: 100px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-header .top .sign_up_back .sign_up_modal .center i, header .top .sign_up_back .log_in_modal .center i, header .top .log_in_back .sign_up_modal .center i, header .top .log_in_back .log_in_modal .center i {
-  font-size: 100px;
-  color: #3e1f33;
-}
-header .top .sign_up_back .sign_up_modal .main, header .top .sign_up_back .log_in_modal .main, header .top .log_in_back .sign_up_modal .main, header .top .log_in_back .log_in_modal .main {
-  margin-top: 20px;
-}
-header .top .sign_up_back .sign_up_modal .main .icon, header .top .sign_up_back .log_in_modal .main .icon, header .top .log_in_back .sign_up_modal .main .icon, header .top .log_in_back .log_in_modal .main .icon {
-  height: 50px;
-  width: 10%;
-  background-color: #000000b5;
-  border-radius: 10px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-header .top .sign_up_back .sign_up_modal .main .icon i, header .top .sign_up_back .log_in_modal .main .icon i, header .top .log_in_back .sign_up_modal .main .icon i, header .top .log_in_back .log_in_modal .main .icon i {
-  color: white;
-  font-size: 22px;
-  margin: 15px;
-}
-header .top .sign_up_back .sign_up_modal .main .input, header .top .sign_up_back .log_in_modal .main .input, header .top .log_in_back .sign_up_modal .main .input, header .top .log_in_back .log_in_modal .main .input {
-  height: 50px;
-  width: 90%;
-  background-color: #000000b5 !important;
-  background-color: -internal-light-dark(black) !important;
-  border-radius: 10px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-header .top .sign_up_back .sign_up_modal .main .input input, header .top .sign_up_back .log_in_modal .main .input input, header .top .log_in_back .sign_up_modal .main .input input, header .top .log_in_back .log_in_modal .main .input input {
-  background-color: #fff0 !important;
-  border: none;
-  height: 100%;
-  width: 100%;
-  color: white;
-  outline: none;
-  padding: 0 0 0 15px;
-}
-header .top .sign_up_back .sign_up_modal .main .name, header .top .sign_up_back .log_in_modal .main .name, header .top .log_in_back .sign_up_modal .main .name, header .top .log_in_back .log_in_modal .main .name {
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 20px;
-}
-header .top .sign_up_back .sign_up_modal .main .email, header .top .sign_up_back .log_in_modal .main .email, header .top .log_in_back .sign_up_modal .main .email, header .top .log_in_back .log_in_modal .main .email {
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 20px;
-}
-header .top .sign_up_back .sign_up_modal .main .passwords, header .top .sign_up_back .log_in_modal .main .passwords, header .top .log_in_back .sign_up_modal .main .passwords, header .top .log_in_back .log_in_modal .main .passwords {
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-header .top .sign_up_back .sign_up_modal .main .passwords .icon, header .top .sign_up_back .log_in_modal .main .passwords .icon, header .top .log_in_back .sign_up_modal .main .passwords .icon, header .top .log_in_back .log_in_modal .main .passwords .icon {
-  height: 50px;
-  width: 22.5%;
-  background-color: #000000b5;
-}
-header .top .sign_up_back .sign_up_modal .main .passwords .icon-log, header .top .sign_up_back .log_in_modal .main .passwords .icon-log, header .top .log_in_back .sign_up_modal .main .passwords .icon-log, header .top .log_in_back .log_in_modal .main .passwords .icon-log {
-  width: 10%;
-}
-header .top .sign_up_back .sign_up_modal .main .passwords input, header .top .sign_up_back .log_in_modal .main .passwords input, header .top .log_in_back .sign_up_modal .main .passwords input, header .top .log_in_back .log_in_modal .main .passwords input {
-  width: 93%;
-}
-header .top .sign_up_back .sign_up_modal .main .passwords .passwodr-one, header .top .sign_up_back .log_in_modal .main .passwords .passwodr-one, header .top .log_in_back .sign_up_modal .main .passwords .passwodr-one, header .top .log_in_back .log_in_modal .main .passwords .passwodr-one {
-  width: 47%;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-header .top .sign_up_back .sign_up_modal .main .passwords .passwodr-one-log, header .top .sign_up_back .log_in_modal .main .passwords .passwodr-one-log, header .top .log_in_back .sign_up_modal .main .passwords .passwodr-one-log, header .top .log_in_back .log_in_modal .main .passwords .passwodr-one-log {
-  width: 100%;
-}
-header .top .sign_up_back .sign_up_modal .main .passwords .password-two, header .top .sign_up_back .log_in_modal .main .passwords .password-two, header .top .log_in_back .sign_up_modal .main .passwords .password-two, header .top .log_in_back .log_in_modal .main .passwords .password-two {
-  width: 47%;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-header .top .sign_up_back .sign_up_modal .main-log, header .top .sign_up_back .log_in_modal .main-log, header .top .log_in_back .sign_up_modal .main-log, header .top .log_in_back .log_in_modal .main-log {
-  margin-top: 50px;
-}
-header .top .sign_up_back .sign_up_modal .buttons, header .top .sign_up_back .log_in_modal .buttons, header .top .log_in_back .sign_up_modal .buttons, header .top .log_in_back .log_in_modal .buttons {
-  height: 100px;
-  padding: 50px 0 0 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-header .top .sign_up_back .sign_up_modal .buttons #close_sign_up, header .top .sign_up_back .sign_up_modal .buttons #close_log_in, header .top .sign_up_back .log_in_modal .buttons #close_sign_up, header .top .sign_up_back .log_in_modal .buttons #close_log_in, header .top .log_in_back .sign_up_modal .buttons #close_sign_up, header .top .log_in_back .sign_up_modal .buttons #close_log_in, header .top .log_in_back .log_in_modal .buttons #close_sign_up, header .top .log_in_back .log_in_modal .buttons #close_log_in {
-  height: 50px;
-  width: 60px;
-  background-color: #000000b5;
-  border-radius: 10px;
-  border: 0;
-  margin-right: 20px;
-  color: white;
-  cursor: pointer;
-  font-size: 30px;
-  padding: 0;
-}
-header .top .sign_up_back .sign_up_modal .buttons #continue_sign_up, header .top .sign_up_back .log_in_modal .buttons #continue_sign_up, header .top .log_in_back .sign_up_modal .buttons #continue_sign_up, header .top .log_in_back .log_in_modal .buttons #continue_sign_up {
-  height: 50px;
-  width: 60px;
-  background-color: #000000b5;
-  border-radius: 10px;
-  border: 0;
-  color: white;
-  cursor: pointer;
-  font-size: 30px;
-  padding: 0;
-}
-header .top .sign_up_back .sign_up_modal .info, header .top .sign_up_back .log_in_modal .info, header .top .log_in_back .sign_up_modal .info, header .top .log_in_back .log_in_modal .info {
-  padding: 20px 0 0 0;
-}
-header .top .sign_up_back .sign_up_modal .info p, header .top .sign_up_back .log_in_modal .info p, header .top .log_in_back .sign_up_modal .info p, header .top .log_in_back .log_in_modal .info p {
-  color: white;
-  font-size: 18px;
-  font-weight: lighter;
-  text-align: center;
-}
-header .top .sign_up_back .bascket, header .top .log_in_back .bascket {
-  width: 34px;
-  height: 48px;
-  padding: 8px 27px 0px 0px;
-}
-header .top .sign_up_back .bascket i, header .top .log_in_back .bascket i {
-  font-size: 20px;
-  cursor: pointer;
-}
-header .top .sign_up_back .bascket .fa-shopping-basket, header .top .log_in_back .bascket .fa-shopping-basket {
-  float: right;
 }
 
 body {
@@ -1699,6 +1483,208 @@ body .menu_item {
 }
 body .active {
   display: inline-block;
+}
+body .sign_up_back, body .log_in_back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000ab;
+  z-index: 10;
+  display: none;
+  -webkit-transition: 0.3s, 0.1s;
+  transition: 0.3s, 0.1s;
+}
+body .sign_up_back .sign_up_modal, body .sign_up_back .log_in_modal, body .log_in_back .sign_up_modal, body .log_in_back .log_in_modal {
+  width: 600px;
+  height: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -300px;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 11;
+  color: #000;
+}
+body .sign_up_back .sign_up_modal .wapper, body .sign_up_back .log_in_modal .wapper, body .log_in_back .sign_up_modal .wapper, body .log_in_back .log_in_modal .wapper {
+  padding: 0px 50px;
+  height: 100%;
+  border-radius: 10px;
+}
+body .sign_up_back .sign_up_modal .hello, body .sign_up_back .log_in_modal .hello, body .log_in_back .sign_up_modal .hello, body .log_in_back .log_in_modal .hello {
+  height: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 25px 0 0 0;
+  text-transform: uppercase;
+  color: white;
+}
+body .sign_up_back .sign_up_modal .hello span, body .sign_up_back .log_in_modal .hello span, body .log_in_back .sign_up_modal .hello span, body .log_in_back .log_in_modal .hello span {
+  font-size: 35px;
+}
+body .sign_up_back .sign_up_modal .hello-log, body .sign_up_back .log_in_modal .hello-log, body .log_in_back .sign_up_modal .hello-log, body .log_in_back .log_in_modal .hello-log {
+  height: 150px;
+  padding: 50px 0 0 0;
+}
+body .sign_up_back .sign_up_modal .comment, body .sign_up_back .log_in_modal .comment, body .log_in_back .sign_up_modal .comment, body .log_in_back .log_in_modal .comment {
+  height: 50px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+body .sign_up_back .sign_up_modal .steps, body .sign_up_back .log_in_modal .steps, body .log_in_back .sign_up_modal .steps, body .log_in_back .log_in_modal .steps {
+  height: 50px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+body .sign_up_back .sign_up_modal .center, body .sign_up_back .log_in_modal .center, body .log_in_back .sign_up_modal .center, body .log_in_back .log_in_modal .center {
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .sign_up_back .sign_up_modal .center i, body .sign_up_back .log_in_modal .center i, body .log_in_back .sign_up_modal .center i, body .log_in_back .log_in_modal .center i {
+  font-size: 100px;
+  color: #3e1f33;
+}
+body .sign_up_back .sign_up_modal .main, body .sign_up_back .log_in_modal .main, body .log_in_back .sign_up_modal .main, body .log_in_back .log_in_modal .main {
+  margin-top: 20px;
+}
+body .sign_up_back .sign_up_modal .main .icon, body .sign_up_back .log_in_modal .main .icon, body .log_in_back .sign_up_modal .main .icon, body .log_in_back .log_in_modal .main .icon {
+  height: 50px;
+  width: 10%;
+  background-color: #000000b5;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+body .sign_up_back .sign_up_modal .main .icon i, body .sign_up_back .log_in_modal .main .icon i, body .log_in_back .sign_up_modal .main .icon i, body .log_in_back .log_in_modal .main .icon i {
+  color: white;
+  font-size: 22px;
+  margin: 15px;
+}
+body .sign_up_back .sign_up_modal .main .input, body .sign_up_back .log_in_modal .main .input, body .log_in_back .sign_up_modal .main .input, body .log_in_back .log_in_modal .main .input {
+  height: 50px;
+  width: 90%;
+  background-color: #000000b5 !important;
+  background-color: -internal-light-dark(black) !important;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+body .sign_up_back .sign_up_modal .main .input input, body .sign_up_back .log_in_modal .main .input input, body .log_in_back .sign_up_modal .main .input input, body .log_in_back .log_in_modal .main .input input {
+  background-color: #fff0 !important;
+  border: none;
+  height: 100%;
+  width: 100%;
+  color: white;
+  outline: none;
+  padding: 0 0 0 15px;
+}
+body .sign_up_back .sign_up_modal .main .name, body .sign_up_back .log_in_modal .main .name, body .log_in_back .sign_up_modal .main .name, body .log_in_back .log_in_modal .main .name {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+body .sign_up_back .sign_up_modal .main .email, body .sign_up_back .log_in_modal .main .email, body .log_in_back .sign_up_modal .main .email, body .log_in_back .log_in_modal .main .email {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+body .sign_up_back .sign_up_modal .main .passwords, body .sign_up_back .log_in_modal .main .passwords, body .log_in_back .sign_up_modal .main .passwords, body .log_in_back .log_in_modal .main .passwords {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .sign_up_back .sign_up_modal .main .passwords .icon, body .sign_up_back .log_in_modal .main .passwords .icon, body .log_in_back .sign_up_modal .main .passwords .icon, body .log_in_back .log_in_modal .main .passwords .icon {
+  height: 50px;
+  width: 22.5%;
+  background-color: #000000b5;
+}
+body .sign_up_back .sign_up_modal .main .passwords .icon-log, body .sign_up_back .log_in_modal .main .passwords .icon-log, body .log_in_back .sign_up_modal .main .passwords .icon-log, body .log_in_back .log_in_modal .main .passwords .icon-log {
+  width: 10%;
+}
+body .sign_up_back .sign_up_modal .main .passwords input, body .sign_up_back .log_in_modal .main .passwords input, body .log_in_back .sign_up_modal .main .passwords input, body .log_in_back .log_in_modal .main .passwords input {
+  width: 93%;
+}
+body .sign_up_back .sign_up_modal .main .passwords .passwodr-one, body .sign_up_back .log_in_modal .main .passwords .passwodr-one, body .log_in_back .sign_up_modal .main .passwords .passwodr-one, body .log_in_back .log_in_modal .main .passwords .passwodr-one {
+  width: 47%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .sign_up_back .sign_up_modal .main .passwords .passwodr-one-log, body .sign_up_back .log_in_modal .main .passwords .passwodr-one-log, body .log_in_back .sign_up_modal .main .passwords .passwodr-one-log, body .log_in_back .log_in_modal .main .passwords .passwodr-one-log {
+  width: 100%;
+}
+body .sign_up_back .sign_up_modal .main .passwords .password-two, body .sign_up_back .log_in_modal .main .passwords .password-two, body .log_in_back .sign_up_modal .main .passwords .password-two, body .log_in_back .log_in_modal .main .passwords .password-two {
+  width: 47%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .sign_up_back .sign_up_modal .main-log, body .sign_up_back .log_in_modal .main-log, body .log_in_back .sign_up_modal .main-log, body .log_in_back .log_in_modal .main-log {
+  margin-top: 50px;
+}
+body .sign_up_back .sign_up_modal .buttons, body .sign_up_back .log_in_modal .buttons, body .log_in_back .sign_up_modal .buttons, body .log_in_back .log_in_modal .buttons {
+  height: 100px;
+  padding: 50px 0 0 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+body .sign_up_back .sign_up_modal .buttons #close_sign_up, body .sign_up_back .sign_up_modal .buttons #close_log_in, body .sign_up_back .log_in_modal .buttons #close_sign_up, body .sign_up_back .log_in_modal .buttons #close_log_in, body .log_in_back .sign_up_modal .buttons #close_sign_up, body .log_in_back .sign_up_modal .buttons #close_log_in, body .log_in_back .log_in_modal .buttons #close_sign_up, body .log_in_back .log_in_modal .buttons #close_log_in {
+  height: 50px;
+  width: 60px;
+  background-color: #000000b5;
+  border-radius: 10px;
+  border: 0;
+  margin-right: 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 0;
+}
+body .sign_up_back .sign_up_modal .buttons #continue_sign_up, body .sign_up_back .log_in_modal .buttons #continue_sign_up, body .log_in_back .sign_up_modal .buttons #continue_sign_up, body .log_in_back .log_in_modal .buttons #continue_sign_up {
+  height: 50px;
+  width: 60px;
+  background-color: #000000b5;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 0;
+}
+body .sign_up_back .sign_up_modal .info, body .sign_up_back .log_in_modal .info, body .log_in_back .sign_up_modal .info, body .log_in_back .log_in_modal .info {
+  padding: 20px 0 0 0;
+}
+body .sign_up_back .sign_up_modal .info p, body .sign_up_back .log_in_modal .info p, body .log_in_back .sign_up_modal .info p, body .log_in_back .log_in_modal .info p {
+  color: white;
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: center;
 }
 
 #options_frame .modal {
