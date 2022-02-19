@@ -72,16 +72,6 @@
   .norm_padding {
     padding: 12px 36px 12px 36px !important;
   }
-
-  .box:last-child {
-    display: none;
-  }
-  .box:before {
-    margin-top: 100% !important;
-  }
-  .box {
-    width: 24% !important;
-  }
   .blocks .box_line:nth-child(3) {
     display: none !important;
   }
@@ -295,16 +285,7 @@
   .blocks .box_line:nth-child(3) {
     display: flex !important;
   }
-  .box:nth-child(3) {
-    display: none !important;
-  }
-  .box:nth-child(4) {
-    display: none !important;
-  }
-  .box {
-    width: 49% !important;
-  }
-  
+
   
   .botton .options #options_frame .modal .wapper{
     padding: 0 !important;

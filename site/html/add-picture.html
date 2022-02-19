@@ -248,7 +248,6 @@
 								<button id="close"><i class="fas fa-times"></i></button>
 								<button id="save"><i class="fas fa-check"></i></button>
 							</div>
-							<script src="../js/change_lng.js"></script>
 						</div>
 					</div>
 				</div>
@@ -293,10 +292,66 @@
 </header>
 <body>
 	<section class="create-artwork">
-		<div class="hat">
-			<div class="cell"><h1>Add work</h1></div>
-			<div class="cell">
-				<button class="add">Add</button>
+		<div id="hat" class="hat">
+			<div class="visible">
+				<div class="cell">
+					<h1>Add work</h1>
+				</div>
+				<div class="cell">
+					<i class="fa-solid fa-image"></i>
+				</div>
+			</div>
+			<div class="unvisible">
+				<div class="preview">
+					<div class="title">
+						<h2>Так будет выглядить ваша картина на нашей площадке:</h2>
+					</div>
+					<div class="main-content">
+						<div class="conteiner-of-pic">
+							<div class="block">
+								<a href="picture-page.html">
+									<img  class="horiz-img" src="../img/2.jpg" alt="">
+								
+								
+									<div class="info">
+										<div class="top">
+											<div class="wrapper"><i class="fas fa-eye"></i></div>
+											<div class="wrapper"><i class="fas fa-bookmark"></i></i></div>
+										</div>	
+									</div>
+								</a>
+								<div class="bottom">
+									
+									<div class="meta">
+										
+										<div class="name">
+											<h2 id="result_picture_name" class="pic-name">*Имя картины*</h2>
+											<h3 class="autor">La Gioconda</h3>
+											<div id="result_picture_size" class="size">*Размер*</div>
+										</div>
+										
+										<div class="size-and-price">
+											<div id="result_picture_price" class="price">*Цена*</div>
+											<i class="fas fa-cart-plus"></i>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="title">
+						<h2>По следующим характеристикам покупатели смогут найти вашу картину:</h2>
+					</div>
+					<div class="hashtag">
+						<ul id="hashtag">
+						</ul>
+					</div>
+					<div class="buttoms">
+						<button class="close-hat-button button" id="close_hat_button">Сontinue changes</button>
+						<button class="apply-hat-button button" id="apply_hat_button">Add picture</button>	
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="content">
@@ -349,29 +404,29 @@
 							</label>
 							<br>
 							<label class="unselectable">
-								<input class="checkbox" id="checkbox" type="checkbox"/>
+								<input name="Landscape" class="checkbox" id="checkbox" type="checkbox"/>
 								<span class="custom-checkbox"></span>
 								<span class="text">Пейзаж</span>
 							</label>
 							<label class="unselectable">
-								<input class="checkbox" id="checkbox" type="checkbox"/>
+								<input name="Minimalism" class="checkbox" id="checkbox" type="checkbox"/>
 								<span class="custom-checkbox"></span>
 								<span class="text">Минимализм</span>
 							</label>
 							<br>
 							<label class="unselectable">
-								<input class="checkbox" id="checkbox" type="checkbox"/>
+								<input name="Streetart" class="checkbox" id="checkbox" type="checkbox"/>
 								<span class="custom-checkbox"></span>
 								<span class="text">Стритарт</span>
 							</label>
 							<label class="unselectable">
-								<input class="checkbox" id="checkbox" type="checkbox"/>
+								<input name="Abstraction" class="checkbox" id="checkbox" type="checkbox"/>
 								<span class="custom-checkbox"></span>
 								<span class="text">Абстрикция</span>
 							</label>
 							<br>
 							<label class="unselectable">
-								<input class="checkbox" id="checkbox" type="checkbox"/>
+								<input  name="Design" class="checkbox" id="checkbox" type="checkbox"/>
 								<span class="custom-checkbox"></span>
 								<span class="text">Дизайн</span>
 							</label>
@@ -396,9 +451,9 @@
 							<h2>Материал</h2>
 						</div>
 						
-						<div class="style">
+						<div class="style form-item_checkbox">
 							<label class="unselectable">
-								<input class="checkbox" id="checkbox" type="checkbox"/>
+								<input name="Canvas, acrylic" class="checkbox" id="checkbox" type="checkbox"/>
 								<span class="custom-checkbox"></span>
 								<span class="text">Холст, акрил</span>
 							</label>
@@ -448,18 +503,19 @@
 							<div class="number">8</div>
 							<h2>Сертификат</h2>
 						</div>
-						<label class="unselectable">
-							<input class="checkbox" id="checkbox" type="checkbox"/>
-							<span class="custom-checkbox"></span>
-							<span class="text">Произведение искусства включает в себя сертификат подлинности</span>
-						</label>
-						<br>
-						<label class="unselectable">
-							<input class="checkbox" id="checkbox" type="checkbox"/>
-							<span class="custom-checkbox"></span>
-							<span class="text">Произведение искусства включает в себя роспись художника</span>
-						</label>
-						<label for="checkbox"></label>
+						<div class="form-item_checkbox">
+							<label class="unselectable">
+								<input name="Certificate of authenticity" class="checkbox" id="checkbox" type="checkbox"/>
+								<span class="custom-checkbox"></span>
+								<span class="text">Произведение искусства включает в себя сертификат подлинности</span>
+							</label>
+							<br>
+							<label class="unselectable">
+								<input name="Artist's painting" class="checkbox" id="checkbox" type="checkbox"/>
+								<span class="custom-checkbox"></span>
+								<span class="text">Произведение искусства включает в себя роспись художника</span>
+							</label>	
+						</div>
 					</div>
 					<div class="line">
 						<div class="title">
@@ -468,61 +524,18 @@
 						</div>
 						<input id="picture_price" type="number" placeholder="Введите стоимость">
 					</div>
+					
 				</form>
-			</div>
-			<div class="preview">
-				<div class="title">
-					<h2>Так будет выглядить ваша картина на нашей площадке:</h2>
-				</div>
-				<div class="main-content">
-					<div class="conteiner-of-pic">
-						<div class="block">
-							<a href="picture-page.html">
-								<img  class="horiz-img" src="../img/2.jpg" alt="">
-							
-							
-								<div class="info">
-									<div class="top">
-										<div class="wrapper"><i class="fas fa-eye"></i></div>
-										<div class="wrapper"><i class="fas fa-bookmark"></i></i></div>
-									</div>	
-								</div>
-							</a>
-							<div class="bottom">
-								
-								<div class="meta">
-									
-									<div class="name">
-										<h2 id="result_picture_name" class="pic-name">*Имя картины*</h2>
-										<h3 class="autor">La Gioconda</h3>
-										<div id="result_picture_size" class="size">*Размер*</div>
-									</div>
-									
-									<div class="size-and-price">
-										<div id="result_picture_price" class="price">*Цена*</div>
-										<i class="fas fa-cart-plus"></i>
-									</div>
-								</div>
-								
-							</div>
+				<div class="line">
+						<div class="title">
+							<div class="number">10</div>
+							<h2>End</h2>
 						</div>
+						<p>Если вы закончили заполнять поля выши, вы можите нажать на кнопку "Дальше" и посмотреть на свою картину</p>
+						<button id="add_picture" class="add">Continue</button>
 					</div>
-				</div>
-				<div class="title">
-					<h2>По следующим характеристикам покупатели смогут найти вашу картину:</h2>
-				</div>
-				<div class="hashtag">
-					<ul id="hashtag">
-						<li id="result_picture_tag"></li>
-						<li id="result_picture_"></li>
-						<li id="result_picture_tag"></li>
-						<li id="result_picture_size_tag"></li>
-						<li id="result_picture_"></li>
-						<li id="result_picture_"></li>
-					</ul>
-				</div>
-				
 			</div>
+			
 		</div>
 	</section>
 </body>
@@ -654,7 +667,6 @@
 </footer>
 <link rel="stylesheet" href="../css/media_add_picture.css">
 <link rel="stylesheet" href="../css/media.css">
-<script src="../js/script_scroll.js"></script>
 <script src="../js/add-picture.js"></script>
 <script src="../js/script.js"></script>
 

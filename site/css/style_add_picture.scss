@@ -1,24 +1,87 @@
 * {
 	transition: 0.2s all;
 }
+
 section.create-artwork {
 	width: 100%;
-	padding: 0 36px 40px 36px;
+	
+	 
 	.hat {
-		height: 100px;
+		height: 60px;
 		width: 100%;
-		padding: 25px 0px;
 		position: sticky;
 		top:0;
-		display: flex;
-		justify-content: space-between;
+		padding: 10px 36px;
+		box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+		overflow: hidden;
 		background-color: #fff;
 		z-index: 1;
+		.visible {
+			
+			display: flex;
+			justify-content: space-between;
+			.cell {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				font-size: 20px;
+				i {
+					font-size: 30px;
+
+				}
+			}
+		}
+		.unvisible{
+			display: none;
+			.preview {
+			display: flex;
+			flex-direction: column;
+    		align-items: center;
+			.title {
+				padding: 20px 0px 0px 0px;
+				display: flex;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			.hashtag{
+				ul {
+					display: flex;
+					padding: 0;
+					flex-wrap: wrap;
+					li {
+						margin-right: 10px;
+						margin-bottom: 10px;
+						background-color: #dadedf;
+						border-radius: 20px;
+						padding: 10px;
+						list-style: none;
+						font-weight: 500;
+						margin-right: 10px;
+						color: #9a9ea2;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		}
+
 	}
+	.hat-active {
+		height: 100vh;
+		position: fixed;
+		overflow: scroll;
+		transition: 0.5s;
+		.unvisible {
+			display: block;
+		}
+	}
+	
+	
+	
 	.content {
 		display: flex;
+		padding: 0 36px 40px 36px;
 		.form {
-			width: 50%;
 			.line {
 				width: 100%;
 				.style {
@@ -33,7 +96,7 @@ section.create-artwork {
 					display: flex;
 					margin: 20px 0;
 					.number {
-						    width: 30px;
+						    min-width: 30px;
 						    height: 30px;
 						    line-height: 30px;
 						    background: #333;
@@ -104,36 +167,6 @@ section.create-artwork {
 				}
 			}
 		}
-		.preview {
-			width: 50%;
-			display: flex;
-			flex-direction: column;
-    		align-items: center;
-			.title {
-				width: 80%;
-				display: flex;
-				text-align: center;
-				margin-bottom: 20px;
-			}
-			.hashtag{
-				ul {
-					display: flex;
-					padding: 0;
-					flex-wrap: wrap;
-					li {
-						margin-right: 10px;
-						margin-bottom: 10px;
-						background-color: #dadedf;
-						border-radius: 20px;
-						padding: 10px;
-						list-style: none;
-						font-weight: 500;
-						margin-right: 10px;
-						color: #9a9ea2;
-						cursor: pointer;
-					}
-				}
-			}
-		}
+		
 	}
 }
