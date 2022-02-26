@@ -1,0 +1,14 @@
+@media (max-width: 500px) {
+
+}
+@media (max-width: 800px) {
+	.picture-main .picture-main-conteiner{
+		flex-direction: column;
+	}
+	.picture-main .picture-main-conteiner .picture-body{
+		padding: 0;
+	}
+}
+@media (max-width: 1000px) {
+
+}

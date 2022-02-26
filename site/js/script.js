@@ -91,11 +91,11 @@ $(document).ready(function(){
   });
   $('#filter_button').on('click',function(){
     $('#filter').addClass('filter-active');
-    document.getElementById('body').style.overflow = 'hidden';
+    document.getElementsByTagName('body').style.overflow = 'hidden';
   });
   $('#close_filter_button').on('click',function(){
     removeActiveClass('#filter','filter-active')
-    document.getElementById('body').style.overflow = 'auto';
+    document.getElementsByTagName('body').style.overflow = 'auto';
   });
 });
 
